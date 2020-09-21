@@ -1,0 +1,2187 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-moz-selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+::selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Prata', serif;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.hide {
+  display: none; }
+
+.mediumBtn {
+  border: 0.2em solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2em 0.5em 2em;
+  margin: 0.5em;
+  color: #6d6d6d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.355em; }
+  .mediumBtn:hover {
+    color: #4D4D4D;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15); }
+
+.profilePicTiny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.8em;
+  min-height: 2.8em;
+  border-radius: 3em;
+  background: #fff; }
+  .profilePicTiny .innerWrap {
+    width: 2.2em;
+    height: 2.2em; }
+    .profilePicTiny .innerWrap img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 6em;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0.2em 0;
+  color: #000000; }
+
+a {
+  text-decoration: none; }
+
+/* The animation code */
+@-webkit-keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+@keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+
+@-webkit-keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@-webkit-keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+@keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+/* The element to apply the animation to */
+#shakeHands {
+  -webkit-animation: upAndDown 1.5s infinite;
+  animation: upAndDown 1.5s infinite; }
+
+#botBgd {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: scaleYHighAndLow 2s infinite;
+  animation: scaleYHighAndLow 2s infinite; }
+
+#tree {
+  -webkit-transform-origin: 70% 100%;
+  -ms-transform-origin: 70% 100%;
+  transform-origin: 70% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+#loadTree {
+  -webkit-transform-origin: 72% 100%;
+  -ms-transform-origin: 72% 100%;
+  transform-origin: 72% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #6d6d6d; }
+
+::-webkit-scrollbar-track {
+  height: 0.5em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.6em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar-thumb {
+  height: 0.5em;
+  background-color: #a5a5a5; }
+
+.line {
+  width: 90%;
+  height: 0.1em;
+  border-radius: 0.2em;
+  background: #e4e4e4;
+  margin: 0.4em 0; }
+
+.columnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 0.5em; }
+
+.hide {
+  display: none; }
+
+/* overflow: hidden; */
+.productDetailsContainer {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  margin: 1.8em 0; }
+  .productDetailsContainer .returnModalContent {
+    width: 100%;
+    max-height: 22em;
+    overflow-y: auto; }
+    .productDetailsContainer .returnModalContent .modalWrapper {
+      width: 100%; }
+      .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer {
+        width: 100%; }
+        .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 1em; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .headerContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .headerContainer h1 {
+              margin: 0; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .headerContainer .line {
+              margin-top: 0.2em;
+              width: 50%; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            width: 100%; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer .contentColorContainer .colorSelect {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 90%;
+              background: #e4e4e4;
+              margin: 0.5em auto;
+              padding: 0.3em; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer .contentColorContainer .colorSelect:hover {
+                cursor: pointer; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer .contentColorContainer .colorSelect .colorContainer {
+                width: 4em;
+                height: 4em; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer .contentColorContainer .colorSelect .columnContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-left: 0.5em; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer .contentColorContainer .border {
+              border: 0.2em solid #000000; }
+        .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 1em; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .headerContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .headerContainer h1 {
+              margin: 0; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .headerContainer .line {
+              margin-top: 0.2em;
+              width: 50%; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            width: 100%; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 90%;
+              background: #e4e4e4;
+              margin: 0.5em auto;
+              padding: 0.3em; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect:hover {
+                cursor: pointer; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect img {
+                width: 4em;
+                height: 4em;
+                -o-object-fit: cover;
+                object-fit: cover; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .border {
+              border: 0.2em solid #000000; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .hide {
+            display: none; }
+          .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1em; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .headerContainer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .headerContainer h1 {
+                margin: 0; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .headerContainer .line {
+                margin-top: 0.2em;
+                width: 50%; }
+            .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .finishContentContainer {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr;
+              width: 100%; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 90%;
+                background: #e4e4e4;
+                margin: 0.5em 0;
+                padding: 0.3em; }
+                .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect:hover {
+                  cursor: pointer; }
+                .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .finishSelect img {
+                  width: 4em;
+                  height: 4em;
+                  -o-object-fit: cover;
+                  object-fit: cover; }
+              .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContainerWrapper .finishContentContainer .contentFinishContainer .finishDetails .border {
+                border: 0.2em solid #000000; }
+    .productDetailsContainer .returnModalContent .contentmaterialContainer {
+      width: 95%; }
+      .productDetailsContainer .returnModalContent .contentmaterialContainer .materialDetails {
+        width: 100%; }
+        .productDetailsContainer .returnModalContent .contentmaterialContainer .materialDetails .materialSelect {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 92%;
+          background: #e4e4e4;
+          padding: 0.7em;
+          margin: 0.5em; }
+          .productDetailsContainer .returnModalContent .contentmaterialContainer .materialDetails .materialSelect:hover {
+            cursor: pointer; }
+          .productDetailsContainer .returnModalContent .contentmaterialContainer .materialDetails .materialSelect .boldParagraph {
+            color: #212529; }
+        .productDetailsContainer .returnModalContent .contentmaterialContainer .materialDetails .border {
+          border: 0.2em solid #000000; }
+    .productDetailsContainer .returnModalContent .contentSizeContainer {
+      width: 95%; }
+      .productDetailsContainer .returnModalContent .contentSizeContainer .sizeDetails {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%; }
+        .productDetailsContainer .returnModalContent .contentSizeContainer .sizeDetails:hover {
+          cursor: pointer; }
+        .productDetailsContainer .returnModalContent .contentSizeContainer .sizeDetails p {
+          width: 92%;
+          color: #212529;
+          background: #e4e4e4;
+          padding: 0.7em;
+          margin: 0.5em; }
+      .productDetailsContainer .returnModalContent .contentSizeContainer .border {
+        border: 0.2em solid black; }
+  .productDetailsContainer .proceedButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0.5em 0; }
+    .productDetailsContainer .proceedButtonContainer .whiteButtonWrapper {
+      background: #212529;
+      color: #ffffff; }
+  .productDetailsContainer .hide {
+    display: none; }
+  .productDetailsContainer .productDetailsContainerInnerLayer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto; }
+    .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 12%;
+      width: 25%;
+      padding: 0.5em;
+      margin-top: 1em; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer {
+          width: 100%; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .imagesInnerContainer {
+              width: 80%;
+              height: 17em;
+              margin-right: 0.5em;
+              padding: 0.4em;
+              background: #F2F2F2; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .imagesInnerContainer .productImages {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%;
+                height: 17em;
+                -webkit-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .imagesInnerContainer .productImages:hover {
+                  cursor: -webkit-zoom-in;
+                  cursor: zoom-in;
+                  opacity: 0.5; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .imagesInnerContainer .productImages img {
+                  max-width: 100%;
+                  max-height: 100%; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .sliderContainer {
+              width: 100%; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer .productImages .returnProductImagesOuterLayer .imagesContainer .sliderContainer .productView .innerViewProductLayer .slider-main-images-container .inner-wrap-image-slider {
+                padding: 15px 0 0 0;
+                margin: 0 auto; }
+    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 40%;
+      margin: 0.5em 1em;
+      padding: 0.5em; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails {
+          width: 100%;
+          margin: 0.5em 0; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader {
+            width: 100%; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader h3 {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 0.9em;
+              font-weight: 400;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-transition: 0.2s;
+              -o-transition: 0.2s;
+              transition: 0.2s;
+              color: #000000; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader h3:hover {
+                text-decoration: underline; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader .iconBox {
+              margin: 0 0.7em;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader .iconBox p {
+                font-size: 0.9em;
+                font-weight: 500;
+                color: #a5a5a5; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 100%; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productHeadingWrapperContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%;
+                margin: 1em 0; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productHeadingWrapperContainer h1 {
+                  background: #ffffff;
+                  font-size: 1.2em;
+                  padding: 0.2em;
+                  margin: 0; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productHeadingWrapperContainer p {
+                  background: #F2F2F2;
+                  padding: 0.2em 0.3em;
+                  border-radius: 0.3em; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDescriptionContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                margin: 1em 0;
+                margin-top: 0.3em; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDescriptionContainer p {
+                  width: 100%;
+                  text-align: left;
+                  font-size: 0.80em;
+                  color: #000000;
+                  font-weight: 400; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productCodeWrapperContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%;
+                margin: 1em 0; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productCodeWrapperContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productCodeWrapperContainer h1 {
+                  color: #ffffff;
+                  background: #8cc63f;
+                  margin: 0.5em 0;
+                  padding: 0.5em;
+                  border-radius: 0.3em; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer .productColorsOuterLayer .contentColorContainer {
+                  display: -webkit-inline-box;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  margin: 0.5em; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer .productColorsOuterLayer .contentColorContainer:hover {
+                    cursor: pointer; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer .productColorsOuterLayer .contentColorContainer .colorSelected {
+                    width: 4em;
+                    height: 4em; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productColorsContainer .productColorsOuterLayer .contentColorContainer .border {
+                    border: 0.2em solid #000000; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%;
+                margin: 1em 0; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer h3 {
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer {
+                  display: -webkit-inline-box;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  width: 100%; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    margin: 0.5em; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer .finishDetails {
+                      width: 4em;
+                      height: 4em;
+                      display: -webkit-inline-box;
+                      display: -ms-inline-flexbox;
+                      display: inline-flex; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer .finishDetails:hover {
+                        cursor: pointer; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer .finishDetails img {
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer .finishDetails .border {
+                        border: 0.22em solid #000000; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFinishesContainer .productFinishesOuterLayer .contentFinishContainer .finishDetails .hide {
+                        width: 4em;
+                        height: 4em;
+                        -o-object-fit: cover;
+                        object-fit: cover; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer {
+                  width: 100%; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    width: 100%; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer .materialDetails {
+                      width: 100%; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer .materialDetails .materialSelected {
+                        width: 96%;
+                        padding: 0.5em 0 0.5em 0.5em;
+                        margin: 0.5em 0;
+                        background: #F2F2F2; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer .materialDetails .materialSelected:hover {
+                          cursor: pointer; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer .materialDetails .materialSelected .boldParagraph {
+                          font-size: 0.9em;
+                          color: #212529;
+                          font-weight: 700; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productMaterialsContainer .productMaterialsOuterLayer .contentmaterialContainer .materialDetails .border {
+                        border: 0.2em solid #000000; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer {
+                  width: 100%; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    width: 99%; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer .sizeDetails {
+                      width: 100%; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer .sizeDetails p {
+                        font-size: 0.9em;
+                        color: #212529;
+                        font-weight: 700;
+                        background: #F2F2F2; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer .sizeDetails p:hover {
+                          cursor: pointer; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer .sizeDetails .sizeSelected {
+                        padding: 0.7em 0.5em;
+                        margin: 0.5em 0;
+                        background: #F2F2F2; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productSizesContainer .productSizesOuterLayer .contentSizeContainer .sizeDetails .border {
+                        border: 0.2em solid #000000; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer .productFeaturesOuterLayer {
+                  width: 100%; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer .productFeaturesOuterLayer .contentFeatureContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    width: 100%;
+                    margin: 0.5em 0; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer .productFeaturesOuterLayer .contentFeatureContainer .featureDetails {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: start;
+                      -ms-flex-pack: start;
+                      justify-content: flex-start;
+                      -webkit-box-align: start;
+                      -ms-flex-align: start;
+                      align-items: flex-start;
+                      width: 100%; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer .productFeaturesOuterLayer .contentFeatureContainer .featureDetails .squareBullets {
+                        width: 0.5em;
+                        height: 0.5em;
+                        background: #b9b9b9;
+                        margin: 0.35em 0.7em 0 0; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productFeaturesContainer .productFeaturesOuterLayer .contentFeatureContainer .featureDetails p {
+                        width: 100%;
+                        text-align: left;
+                        color: #4D4D4D; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDesignStyleContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDesignStyleContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDesignStyleContainer .productDesignStyleOuterLayer {
+                  margin-top: 0.5em; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDesignStyleContainer .productDesignStyleOuterLayer .contentDesignStyleContainer {
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productDesignStyleContainer .productDesignStyleOuterLayer .contentDesignStyleContainer p {
+                      margin: 0.3em;
+                      padding: 0.7em;
+                      background: #6d6d6d;
+                      border-radius: 0.3em;
+                      font-size: 0.75em;
+                      color: #ffffff; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productTagsContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productTagsContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productTagsContainer .productTagsOuterLayer {
+                  margin: 0.5em 0; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productTagsContainer .productTagsOuterLayer .contentTagsContainer {
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productTagsContainer .productTagsOuterLayer .contentTagsContainer p {
+                      background: #e4e4e4;
+                      border-radius: 0.3em;
+                      margin: 0.3em;
+                      padding: 0.7em;
+                      color: #212529; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer {
+                  display: -ms-grid;
+                  display: grid;
+                  -ms-grid-columns: 1fr 1fr;
+                  grid-template-columns: 1fr 1fr;
+                  width: 95%; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer .contentvideosContainer {
+                    width: 95%;
+                    margin: 0.5em 0; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .hide {
+                display: none; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productBrandLogoContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin: 1em 0;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productBrandLogoContainer h3 {
+                  font-size: 1.1em;
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productBrandLogoContainer .productBrandLogoOuterLayer {
+                  margin: 0.5em; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productBrandLogoContainer .productBrandLogoOuterLayer p {
+                    font-size: 0.85em; }
+    .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 11%;
+      width: 26%;
+      height: 85vh;
+      background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+      background: -webkit-linear-gradient(#F2F2F2, #ffffff);
+      background: -o-linear-gradient(#F2F2F2, #ffffff);
+      background: linear-gradient(#F2F2F2, #ffffff); }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 90%;
+        height: 97%;
+        padding: 0.5em 1em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .line {
+          width: 100%;
+          margin: 0.5em 0;
+          height: 0.1em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: 100%;
+          height: 100%; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer {
+            width: 100%; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .headerContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .headerContainer h1 {
+                  margin: 0;
+                  font-size: 1em;
+                  font-weight: bold; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .headerContainer .line {
+                  position: inherit;
+                  width: 100%;
+                  margin: 0.5em 0;
+                  border: 0 none;
+                  border-top: 2px dashed #b9b9b9;
+                  background: none;
+                  height: 0; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions h3 {
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer {
+                  width: 100%;
+                  max-height: 8em;
+                  overflow-y: auto;
+                  background: #ffffff;
+                  margin: 0.5em 0; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    width: 94%;
+                    margin: 0.3em auto; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .dashed-line {
+                      position: inherit;
+                      width: 100%;
+                      margin: 0.5em 0;
+                      border: 0 none;
+                      border-top: 2px dashed #b9b9b9;
+                      background: none;
+                      height: 0; }
+                    .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer {
+                      width: 100%; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .iconContainer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .iconContainer h3 {
+                          margin: 0 0 0 0.5em;
+                          text-decoration: underline;
+                          font-size: 0.8em; }
+                      .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        margin: 0.3em 0; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .contentColorFinsihContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-align: start;
+                          -ms-flex-align: start;
+                          align-items: flex-start; }
+                          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .contentColorFinsihContainer .colorDetails {
+                            height: 2em;
+                            width: 2.5em;
+                            margin-top: 0.3em; }
+                            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .contentColorFinsihContainer .colorDetails img {
+                              width: 100%;
+                              height: 100%;
+                              -o-object-fit: cover;
+                              object-fit: cover; }
+                          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .contentColorFinsihContainer .colorName {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            justify-content: flex-start;
+                            -webkit-box-align: start;
+                            -ms-flex-align: start;
+                            align-items: flex-start;
+                            margin-left: 0.5em; }
+                            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .contentColorFinsihContainer .colorName .boldText {
+                              font-weight: bold;
+                              color: #212529; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .columnContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-align: start;
+                          -ms-flex-align: start;
+                          align-items: flex-start; }
+                        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer .productCustomizeOptionsInnerLayer .productCustomizeContainer .productCustomizeContentContainer .buttonContainer .whiteButtonWrapper {
+                          background: #6d6d6d;
+                          color: #ffffff;
+                          -webkit-box-shadow: none;
+                          box-shadow: none;
+                          font-size: 0.75em;
+                          margin: 0;
+                          padding: 0.4em 0.7em; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .line {
+              position: inherit;
+              width: 100%;
+              margin: 0.5em 0;
+              border: 0 none;
+              background: #9c9c9c;
+              height: 0.1em; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              width: 100%; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .inputSection {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                width: 100%; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .inputSection h3 {
+                  text-decoration: underline; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .inputSection input {
+                  background: #ffffff;
+                  border: none;
+                  padding: 0.3em 0.5em;
+                  width: 30%;
+                  border-radius: 0.3em;
+                  margin-left: 1em; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .inputSection .switchContainer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  margin-left: 0.5em; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .inputSection .switchContainer p {
+                    color: #212529;
+                    font-size: 0.7em; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productQuantityInput .errorContent p {
+                color: #ffffff;
+                margin: 0.5em 0;
+                padding: 0.3em;
+                background: #D4145A; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 100%;
+              margin: 0.5em 0; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .noDiscountPrice {
+                text-decoration: line-through;
+                font-size: 1.1em;
+                margin: 0.2em 0 0 0;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                color: #4D4D4D; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost h3 {
+                text-decoration: underline;
+                margin: 0.2em 0; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost p {
+                margin: 0.3em 0;
+                font-size: 0.8em;
+                font-weight: 400;
+                color: #4D4D4D; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost p .notePoint {
+                  color: #000000; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost p span {
+                  color: #ff2c6b;
+                  font-size: 1em;
+                  font-weight: 800; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .inclusiveCostRate {
+                margin: 0;
+                font-size: 0.9em;
+                color: #ff0000;
+                text-decoration: none;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                font-weight: bold; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .inclusiveCostRate span {
+                  font-size: 2em;
+                  font-weight: 450;
+                  color: #212529; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .inclusiveCostRate .per-piece-text {
+                  font-size: 1em;
+                  font-weight: 450; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .offer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .offer .discountOffer {
+                  color: #ffffff;
+                  background: #82c727;
+                  padding: 0.3em 0.5em; }
+                .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .offer .priceSaved {
+                  margin-left: 0.5em;
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  font-weight: 400;
+                  color: #000000; }
+                  .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .offer .priceSaved span {
+                    color: #000000; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productTotalCost .hide {
+                display: none; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .hide {
+              display: none; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button {
+            position: relative;
+            width: 100%; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .disable {
+              cursor: not-allowed; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .disable .whiteButtonWrapper {
+                background-color: #cccccc;
+                color: #666666;
+                cursor: not-allowed; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .gradientButtonWrapper {
+              font-size: 1em;
+              padding: 0.5em 1.2em;
+              font-weight: 400;
+              text-align: center; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .cartButton .whiteButtonWrapper {
+              border: 0.15em solid #000000;
+              -webkit-transition: 0.2s;
+              -o-transition: 0.2s;
+              transition: 0.2s; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .cartButton .whiteButtonWrapper:hover {
+                background: #000000;
+                color: #ffffff; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .small-loader {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin: 0.5em 0; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .go-cart .whiteButtonWrapper {
+              border: 0.15em solid #000000;
+              -webkit-transition: 0.2s;
+              -o-transition: 0.2s;
+              transition: 0.2s; }
+              .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .go-cart .whiteButtonWrapper:hover {
+                background: #000000;
+                color: #ffffff; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button .hide {
+              display: none; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .buttonWrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .disabled {
+          cursor: not-allowed;
+          opacity: 0.5; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .hide {
+          display: none; }
+  .productDetailsContainer .returnModal-image-Content .sliderContainerForModal {
+    position: fixed;
+    bottom: 5%;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+    margin: 0 auto; }
+    .productDetailsContainer .returnModal-image-Content .sliderContainerForModal .sliderContainerForModalOuterLayer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto; }
+
+input {
+  border: none;
+  background: transparent;
+  color: #212529;
+  outline: none;
+  height: 1.5em;
+  width: 100%;
+  border-bottom: 0.2em solid #e4e4e4; }
+  input:focus + .InputSeparatorLine {
+    -webkit-transform: scaleX(1) translateY(-2px);
+    -ms-transform: scaleX(1) translateY(-2px);
+    transform: scaleX(1) translateY(-2px);
+    opacity: 1; }
+  input:hover + .InputSeparatorLine {
+    -webkit-transform: scaleX(1) translateY(-2px);
+    -ms-transform: scaleX(1) translateY(-2px);
+    transform: scaleX(1) translateY(-2px);
+    opacity: 1; }
+
+.InputSeparatorLine {
+  height: 0.2em;
+  width: 100%;
+  background: #6d6d6d;
+  display: block;
+  -webkit-transform: scaleX(0) translateY(-2px);
+  -ms-transform: scaleX(0) translateY(-2px);
+  transform: scaleX(0) translateY(-2px);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear; }
+
+* :focus {
+  outline-color: transparent;
+  outline-style: none; }
+
+.checkBox {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+  height: 0.6em;
+  width: 0.6em;
+  min-width: 0.7em;
+  min-height: 0.7em;
+  background: #ffffff;
+  border: 0.15em solid #6d6d6d;
+  margin-right: 0.5em;
+  cursor: pointer; }
+  .checkBox:hover {
+    background: #6d6d6d; }
+
+.checkBoxSelect {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+  height: 0.6em;
+  width: 0.6em;
+  min-width: 0.7em;
+  min-height: 0.7em;
+  background: #00b0d8;
+  border: 0.15em solid #6d6d6d;
+  margin-right: 0.5em;
+  cursor: pointer; }
+  .checkBoxSelect:hover {
+    background: #6d6d6d; }
+
+@media screen and (max-width: 1024px) {
+  .productDetailsContainer {
+    margin: 6em 0 0 0; }
+    .productDetailsContainer .productDetailsContainerInnerLayer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        position: static;
+        width: 50%;
+        margin: 1em 0; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        width: 95%; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer h3 {
+          font-size: 1.2em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer p {
+          font-size: 0.9em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader {
+          display: inline-block; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader h3 {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            font-size: 1em;
+            font-weight: bold; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader .iconBox {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          width: 100%; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer .contentvideosContainer {
+            width: 93%;
+            margin: 0.5em auto; }
+            .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer .contentvideosContainer .videosDetails .container {
+              height: 13em; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        position: static;
+        width: 100%;
+        height: auto; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer h3 {
+          font-size: 1.2em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer p {
+          font-size: 0.9em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer {
+          width: 93%;
+          margin: 0 auto; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .headerContainer h1 {
+            font-size: 1.1em; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer {
+            height: auto;
+            max-height: none; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+    .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      width: 100%; }
+    .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      width: 100%; }
+    .productDetailsContainer .returnModal-image-Content .sliderContainerForModal {
+      position: fixed;
+      bottom: 3%;
+      z-index: 3;
+      left: 0;
+      width: 100%; }
+      .productDetailsContainer .returnModal-image-Content .sliderContainerForModal .sliderContainerForModalOuterLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto; } }
+
+@media screen and (max-width: 420px) {
+  .productDetailsContainer {
+    margin: 6em 0 0 0; }
+    .productDetailsContainer .productDetailsContainerInnerLayer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productImagesContainer {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        position: static;
+        width: 85%;
+        margin: 0.5em 0; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        width: 95%; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer h3 {
+          font-size: 1.2em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer p {
+          font-size: 0.9em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader {
+          display: inline-block; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader h3 {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            font-size: 1em;
+            font-weight: bold; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .productLineDetails .productTypeContainerHeader .iconBox {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+          width: 100%; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productDetailedDataContainer .dataContainerOuterLayer .dataContainerInnerLayer .returnProductDetailedDataOuterLayer .productDetailDataContainer .productVideoContainer .productVideoOuterLayer .contentvideosContainer {
+            width: 100%; }
+      .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        position: static;
+        width: 100%;
+        height: auto; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer h3 {
+          font-size: 1.2em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer p {
+          font-size: 0.9em; }
+        .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer {
+          width: 93%;
+          margin: 0 auto; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .headerContainer h1 {
+            font-size: 1.1em; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .product-detail-cost-container-inner-layer .productDetailCostHeader .productCustomizeOptions .productCustomizeOptionsOuterLayer {
+            height: auto;
+            max-height: none; }
+          .productDetailsContainer .productDetailsContainerInnerLayer .productCostEstimatorContainer .costEstimatorContainerInnerLayer .productDetailCostContainer .active-gradient-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 80%;
+            margin: 0.5em 0; }
+    .productDetailsContainer .returnModalContent {
+      max-height: 30em; }
+      .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .colorContainerWrapper .colorContentContainer {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%; }
+      .productDetailsContainer .returnModalContent .modalWrapper .modalWrapperInnerLayer .finishContainerWrapper .finishContentContainer {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%; }
+    .productDetailsContainer .returnModal-image-Content .sliderContainerForModal {
+      position: fixed;
+      bottom: 1%;
+      z-index: 3;
+      left: 0;
+      width: 100%; }
+      .productDetailsContainer .returnModal-image-Content .sliderContainerForModal .sliderContainerForModalOuterLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto; } }

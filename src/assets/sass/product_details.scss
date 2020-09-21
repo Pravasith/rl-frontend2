@@ -1,0 +1,1531 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+.line{
+    
+    width: 90%;
+    height: 0.1em;
+    border-radius: 0.2em;
+    background: $lightGrey;
+    margin: 0.4em 0;
+}
+
+.columnContainer{
+    @include flexCentreCol;
+    margin-left: 0.5em;
+}
+
+.hide{
+    display: none;
+}
+
+    /* overflow: hidden; */
+    // /* text-overflow: ellipsis;
+
+.productDetailsContainer{
+    position: relative;
+    width: 100%;
+    background: $white;
+    margin: 1.8em 0;
+    // .line{
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 0.2em;
+    //     background: linear-gradient(-45deg, #EE7752, #23A6D5, #23D5AB, #23D5AB, #23A6D5, #E73C7E, #EE7752, #23D5AB);
+    //     top: 1.5%;
+    // }
+
+    .returnModalContent{
+        width: 100%;
+        max-height: 22em;
+        overflow-y: auto;
+        .modalWrapper{
+            width: 100%;
+            // height: 24em;
+            // overflow-y: auto;
+            .modalWrapperInnerLayer{
+                width: 100%;
+                // height: 22em;
+                // overflow-y: auto;
+                .colorContainerWrapper{
+                    @include flexCentreCol;
+                    width: 100%;
+                    margin-bottom: 1em;
+                    .headerContainer{
+                        @include flexCentreCol;
+                        h1{
+                            // font-size: 1.2em;
+                            // font-weight: 500;
+                            margin: 0;
+                        }
+                        .line{
+                            margin-top: 0.2em;
+                            width: 50%;
+                        }
+                    }
+                    .colorContentContainer{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        width: 100%;
+                        .contentColorContainer{
+                            // @include flexCentreRow;
+                            // justify-content: flex-start;
+                            // align-items: flex-start;
+                            // width: 95%;
+                            // background: $lightGrey;
+                            // margin: 0.5em 0;
+                            // padding: 0.3em;
+                            .colorSelect{
+                                @include flexCentreRow;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                width: 90%;
+                                background: $lightGrey;
+                                margin: 0.5em auto;
+                                padding: 0.3em;
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                                .colorContainer{
+                                    width: 4em;
+                                    height: 4em;
+                                }
+                                .columnContainer{
+                                    @include flexCentreCol;
+                                    margin-left: 0.5em;
+                                }
+                            }
+                            .border{
+                                border: 0.2em solid $black;
+                            }
+                        }
+                    }
+                }
+                .finishContainerWrapper{
+                    @include flexCentreCol;
+                    width: 100%;
+                    margin-bottom: 1em;
+                    .headerContainer{
+                        @include flexCentreCol;
+                        h1{
+                            // font-size: 1.2em;
+                            // font-weight: 500;
+                            margin: 0;
+                        }
+                        .line{
+                            margin-top: 0.2em;
+                            width: 50%;
+                        }
+                    }
+                    .finishContentContainer{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        width: 100%;
+                        .contentFinishContainer{
+                            .finishDetails{
+                                // img{
+        
+                                // }
+                                .finishSelect{
+                                    @include flexCentreRow;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 90%;
+                                    background: $lightGrey;
+                                    margin: 0.5em auto;
+                                    padding: 0.3em;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                    img{
+                                        width: 4em;
+                                        height: 4em;
+                                        object-fit: cover;
+                                    }
+                                }
+                                .border{
+                                    border: 0.2em solid $black;
+                                }
+                            }
+                        }
+                    }
+                    .hide {
+                        display: none;
+                    }
+                    .finishContainerWrapper{
+                        @include flexCentreCol;
+                        width: 100%;
+                        margin-bottom: 1em;
+                        .headerContainer{
+                            @include flexCentreCol;
+                            h1{
+                                // font-size: 1.2em;
+                                // font-weight: 500;
+                                margin: 0;
+                            }
+                            .line{
+                                margin-top: 0.2em;
+                                width: 50%;
+                            }
+                        }
+                        .finishContentContainer{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            width: 100%;
+                            .contentFinishContainer{
+                                .finishDetails{
+                                    // img{
+            
+                                    // }
+                                    .finishSelect{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+                                        width: 90%;
+                                        background: $lightGrey;
+                                        margin: 0.5em 0;
+                                        padding: 0.3em;
+                                        &:hover{
+                                            cursor: pointer;
+                                        }
+                                        img{
+                                            width: 4em;
+                                            height: 4em;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .border{
+                                        border: 0.2em solid $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contentmaterialContainer{
+            width: 95%;
+            .materialDetails{
+                width: 100%;
+                .materialSelect {
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    width: 92%;
+                    background: $lightGrey;
+                    padding: 0.7em;
+                    margin: 0.5em;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .boldParagraph{
+                        color: $darkerGrey;
+                    }
+                }
+                .border{
+                    border: 0.2em solid $black;
+                }
+            }
+        }
+        .contentSizeContainer{
+            width: 95%;
+            .sizeDetails{
+                @include flexCentreCol;
+                align-items: flex-start;
+                width: 100%;
+                &:hover{
+                    cursor: pointer;
+                }
+                p{
+                    width: 92%;
+                    color: $darkerGrey;
+                    background: $lightGrey;
+                    padding: 0.7em;
+                    margin: 0.5em;
+                }
+            }
+            .border{
+                border: 0.2em solid black;
+            }
+        }
+    }
+    .proceedButtonContainer{
+        @include flexCentreRow;
+        margin: 0.5em 0;
+        .whiteButtonWrapper{
+            background: $darkerGrey;
+            color: $white;
+        }
+    }
+
+    .hide{
+        display: none;
+    }
+    .productDetailsContainerInnerLayer{
+        @include flexCentreRow;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 99%;
+        margin: 0 auto;
+        .productImagesContainer{
+            // position: fixed;
+            position: sticky;
+            top: 12%;
+            width: 25%;
+            // left: 1%;
+            padding: 0.5em;
+            margin-top: 1em;
+            // margin: 1em 0;
+            .productImages{
+                @include flexCentreRow;
+                // width: 100%;
+                .returnProductImagesOuterLayer{
+                    width: 100%;
+                    .imagesContainer{
+                        @include flexCentreCol;
+                        .imagesInnerContainer{
+                            width: 80%;
+                            height: 17em;
+                            margin-right: 0.5em;
+                            padding: 0.4em;
+                            background: $veryLightGrey;
+                            .productImages{
+                                @include flexCentreRow;
+                                width: 100%;
+                                height: 17em;
+                                transition: 0.2s;
+
+                                 &:hover{
+                                    cursor: zoom-in;
+                                    opacity: 0.5;
+                                }
+                                img{
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                    // width: 100%;
+                                    // height: 100%;
+                                    // object-fit: cover;
+                                }
+                            }
+                        }
+                        .sliderContainer{
+                            width: 100%;
+                            .productView{
+                               .innerViewProductLayer{
+                                   .slider-main-images-container{
+                                        .inner-wrap-image-slider{
+                                            padding: 15px 0 0 0;
+                                            margin: 0 auto;
+                                        }
+                                   }
+                               } 
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+        .productDetailedDataContainer{
+            @include flexCentreRow;
+            width: 40%;
+            margin: 0.5em 1em;
+            padding: 0.5em;
+            .dataContainerOuterLayer{
+                @include flexCentreCol;
+                width: 100%;
+                margin-bottom: 1em;
+                .productLineDetails{
+                    // position: sticky;
+                    // background: $white;
+                    // top: 14%;
+                    // padding: 0.5em 0;
+                    width: 100%;
+                    margin: 0.5em 0;
+                    // margin-bottom: 1em;
+                    .productTypeContainerHeader{
+                        // @include flexCentreRow;
+                        // justify-content: flex-start;
+                        width: 100%;
+                        h3{
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 0.9em;
+                            font-weight: 400;
+                            // text-decoration: underline;
+                            display: inline-flex;
+                            transition: 0.2s;
+                            color: $black;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        // a{
+                        //     h1{
+                        //         font-size: 0.8em;
+                        //         // font-weight: 600;
+                        //         text-decoration: underline;
+                        //         display: inline-flex;
+                        //     }
+                        // }
+                        .iconBox{
+                            margin: 0 0.7em;
+                            display: inline-flex;
+                            p{
+                                font-size: 0.9em;
+                                font-weight: 500;
+                                color: $mediumGrey;
+                            }
+                        }
+                    }
+                }
+
+                .dataContainerInnerLayer{
+                    @include flexCentreRow;
+                    width: 100%;
+                    .returnProductDetailedDataOuterLayer{
+                        @include flexCentreRow;
+                        width: 100%;
+                        .productDetailDataContainer{
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            width: 100%;
+
+                            .productHeadingWrapperContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 100%;
+                                margin: 1em 0;
+                                // z-index: 1;
+
+                                h1{
+                                    background: $white;
+                                    font-size: 1.2em;
+                                    padding: 0.2em;
+                                    margin: 0;
+                                }
+
+                                p{
+                                    background: $veryLightGrey;
+                                    padding: 0.2em 0.3em;
+                                    border-radius: 0.3em;
+                                }
+                            }
+
+                            .productDescriptionContainer{
+                                @include flexCentreRow;
+                                justify-content: flex-start;
+                                margin: 1em 0;
+                                margin-top: 0.3em;
+                                p{
+                                    // width: 95%;
+                                    width: 100%;
+                                    text-align: left;
+                                    font-size: 0.80em;
+                                    color: $black;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .productCodeWrapperContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 100%;
+                                margin: 1em 0;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                h1{
+                                    color: $white;
+                                    background: $green;
+                                    margin: 0.5em 0;
+                                    padding: 0.5em;
+                                    border-radius: 0.3em;
+                                }
+                            }
+
+                            .productColorsContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productColorsOuterLayer{
+                                    // margin: 0.5em 0;
+                                    .contentColorContainer{
+                                        display: inline-flex;
+                                        margin: 0.5em;
+                                        &:hover{
+                                            cursor: pointer;
+                                        }
+                                        .colorSelected{
+                                            width: 4em;
+                                            height: 4em;
+                                        }
+                                        .border{
+                                            border: 0.2em solid $black;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productFinishesContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 100%;
+                                margin: 1em 0;
+                                h3{
+                                    text-decoration: underline;
+                                }
+                                .productFinishesOuterLayer{
+                                    display: inline-flex;
+                                    width: 100%;
+                                    .contentFinishContainer{
+                                        @include flexCentreRow;
+                                        margin: 0.5em;
+                                        .finishDetails{
+                                            width: 4em;
+                                            height: 4em;
+                                            display: inline-flex;
+                                            &:hover{
+                                                cursor: pointer;
+                                            }
+                                            img{
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                            .finishSelected { 
+                                            }
+                                            .border{
+                                                    border: 0.22em solid $black;
+                                                }
+                                            .hide{
+                                                width: 4em;
+                                                height: 4em;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productMaterialsContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productMaterialsOuterLayer{
+                                    // width: 94%;
+                                    width: 100%;
+                                    .contentmaterialContainer{
+                                        @include flexCentreCol;
+                                        align-items: flex-start;
+                                        width: 100%;
+                                        .materialDetails{
+                                            width: 100%;
+                                            .materialSelected{
+                                                width: 96%;
+                                                padding: 0.5em 0 0.5em 0.5em;
+                                                margin: 0.5em 0;
+                                                background: $veryLightGrey;
+                                                &:hover{
+                                                    cursor: pointer;
+                                                }
+                                                .boldParagraph{
+                                                    font-size: 0.9em;
+                                                    color: $darkerGrey;
+                                                    font-weight: 700;
+                                                }
+                                                p{
+
+                                                }
+                                            }
+                                            .border {
+                                                border: 0.2em solid $black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productSizesContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productSizesOuterLayer{
+                                    width: 100%;
+                                    .contentSizeContainer{
+                                        @include flexCentreCol;
+                                        align-items: flex-start;
+                                        width: 99%;
+                                        // background: $veryLightGrey;
+                                        .sizeDetails{
+                                            width: 100%;
+                                            // background: $veryLightGrey;
+                                            p{
+                                                font-size: 0.9em;
+                                                color: $darkerGrey;
+                                                font-weight: 700;
+                                                background: $veryLightGrey;
+                                                &:hover{
+                                                    cursor: pointer;
+                                                }
+                                                }
+                                                .sizeSelected{
+                                                    padding: 0.7em 0.5em;
+                                                    margin: 0.5em 0;
+                                                    background: $veryLightGrey;
+                                                }
+                                                .border {
+                                                    border: 0.2em solid $black;
+                                                }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productFeaturesContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productFeaturesOuterLayer{
+                                    width: 100%;
+                                    .contentFeatureContainer{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        width: 100%;
+                                        margin: 0.5em 0;
+                                        .featureDetails{
+                                            @include flexCentreRow;
+                                            justify-content: flex-start;
+                                            align-items: flex-start;
+                                            width: 100%;
+
+                                            .squareBullets{
+                                                width: 0.5em;
+                                                height: 0.5em;
+                                                background: $semiLightGrey;
+                                                margin: 0.35em 0.7em 0 0;
+                                            }
+                                            p{
+                                                width: 100%;
+                                                text-align: left;
+                                                color: $darkestGrey;
+                                                // font-weight: bold;
+                                                
+                                            }
+                                        }
+                                        // ul{
+                                        //     list-style-type: none;
+                                        //     // list-style-type: square;
+                                        //     margin: 0;
+                                        //     padding: 0;
+                                        //     li{
+                                        //     }
+                                        //     li::before {
+                                        //         content: ".";
+                                        //         font-size: 1em;
+                                        //         width: 1em;
+                                        //         height: 1em; 
+                                        //         color: red
+                                        //     }
+                                        // }
+                                    }
+                                }
+                            }
+
+                            .productDesignStyleContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productDesignStyleOuterLayer{
+                                    // display: inline-flex;
+                                    // width: 100%;
+                                    margin-top: 0.5em;
+                                    .contentDesignStyleContainer{
+                                        display: inline-flex;
+                                        p{
+                                            margin: 0.3em;
+                                            padding: 0.7em;
+                                            // background: $semiLightGrey;
+                                            background: $darkGrey;
+                                            border-radius: 0.3em;
+                                            font-size: 0.75em;
+                                            
+                                            color: $white;
+                                            // padding: 0.3em;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productTagsContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productTagsOuterLayer{
+                                    margin: 0.5em 0;
+                                    .contentTagsContainer{
+                                        display: inline-flex;
+                                        p{
+                                            background: $lightGrey;
+                                            border-radius: 0.3em;
+                                            margin: 0.3em;
+                                            padding: 0.7em;
+                                            color: $darkerGrey;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .productVideoContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productVideoOuterLayer{
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    width: 95%;
+                                    .contentvideosContainer{
+                                        width: 95%;
+                                        margin: 0.5em 0;
+                                    }
+                                }
+                            }
+                            .hide {
+                                display: none;
+                            }
+
+                            .productBrandLogoContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin: 1em 0;
+                                width: 100%;
+                                h3{
+                                    font-size: 1.1em;
+                                    text-decoration: underline;
+                                }
+                                .productBrandLogoOuterLayer{
+                                    margin: 0.5em;
+                                    // img{
+                                    //     width: 5em;
+                                    //     height: 5em;
+                                    //     object-fit: cover;
+                                    // }
+                                    p{
+                                        // margin: 0.5em 0;
+                                        font-size: 0.85em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .productCostEstimatorContainer{
+            // position: fixed;
+            position: sticky;
+            top: 11%;
+            width: 26%;
+            height: 85vh;
+            // right: 0;
+            // background: $veryLightGrey;
+            background: linear-gradient( $veryLightGrey, $white);
+
+            .costEstimatorContainerInnerLayer{
+                @include flexCentreRow;
+                // align-items: flex-start;
+                width: 90%;
+                height: 97%;
+                padding: 0.5em 1em;
+                .line{
+                    width: 100%;
+                    margin: 0.5em 0;
+                    height: 0.1em;
+                }
+                .productDetailCostContainer{
+                    @include flexCentreCol;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    .product-detail-cost-container-inner-layer{
+                        width: 100%;
+                    .productDetailCostHeader{
+                        @include flexCentreCol;
+                        width: 100%;
+                        .headerContainer{
+                            @include flexCentreCol;
+                            width: 100%;
+                            h1{
+                                margin: 0;
+                                font-size: 1em;
+                                font-weight: bold;
+                            }
+                            .line{
+                                position: inherit;
+                                width: 100%;
+                                margin: 0.5em 0;
+                                border: 0 none;
+                                border-top: 2px dashed $semiLightGrey;
+                                background: none;
+                                height:0;
+                            }
+                        }
+                        .productCustomizeOptions{
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            width: 100%;
+                            h3{
+                                text-decoration: underline;
+                            }
+                            .productCustomizeOptionsOuterLayer{
+                                width: 100%;
+                                max-height: 8em;
+                                overflow-y: auto;
+                                background: $white;
+                                margin: 0.5em 0;
+                                .productCustomizeOptionsInnerLayer{
+                                    @include flexCentreCol;
+                                    width: 94%;
+                                    margin: 0.3em auto;
+                                    .dashed-line{
+                                        position: inherit;
+                                        width: 100%;
+                                        margin: 0.5em 0;
+                                        border: 0 none;
+                                        border-top: 2px dashed $semiLightGrey;
+                                        background: none;
+                                        height:0;
+                                    }
+                                    .productCustomizeContainer{
+                                        width: 100%;
+                                        // margin: 0.5em 0;
+                                        .iconContainer{
+                                            @include flexCentreRow;
+                                            justify-content: flex-start;
+                                            // margin-right: 0.5em;
+                                            h3{
+                                                margin: 0 0 0 0.5em;
+                                                text-decoration: underline;
+                                                font-size: 0.8em;
+                                            }
+                                        }
+                                        .productCustomizeContentContainer{
+                                            @include flexCentreRow;
+                                            
+                                            justify-content: space-between;
+                                            margin: 0.3em 0;
+                                            .contentColorFinsihContainer{
+                                                @include flexCentreRow;
+                                                align-items: flex-start;
+                                                // justify-content: flex-start;
+                                                .colorDetails{
+                                                    height: 2em;
+                                                    width: 2.5em;
+                                                    margin-top: 0.3em;
+                                                    img{
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+                                                .colorName{
+                                                    @include flexCentreCol;
+                                                    justify-content: flex-start;
+                                                    align-items: flex-start;
+                                                    margin-left: 0.5em;
+                                                    .boldText{
+                                                        font-weight: bold;
+                                                        color: $darkerGrey;
+                                                    }
+                                                }
+                                            }
+                                            .columnContainer{
+                                                @include flexCentreCol;
+                                                align-items: flex-start;
+                                                // width: 100%;/
+                                            }
+                                            .buttonContainer{
+                                                .whiteButtonWrapper{
+                                                    background: $darkGrey;
+                                                    color: $white;
+                                                    box-shadow: none;
+                                                    font-size: 0.75em;
+                                                    margin: 0;
+                                                    padding: 0.4em 0.7em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    // .productCustomizeSi/
+                                }
+                            }
+                        }
+                        // .imageDescription{
+                        //     @include flexCentreRow;
+                        //     justify-content: flex-start;
+                        //     align-items: flex-start;
+                        //     width: 100%;
+                        //     margin-top:0.5em;
+                        //     .imgContainer{
+                        //         width: 3.5em;
+                        //         height: 3.5em;
+                        //         padding: 0.3em;
+                        //         background: $white;
+                        //         img{
+                        //             width: 100%;
+                        //             height: 100%;
+                        //             object-fit: cover;
+                        //         }
+                        //     }
+                        //     .productTitle{
+                        //         @include flexCentreCol;
+                        //         align-items: flex-start;
+                        //         margin-left: 1em;
+                        //         .productCodeWrapper{
+                        //             margin-top: 0.3em;
+                        //             background: $semiLightGrey;
+                        //             border-radius: 0.3em;
+                        //             .productCodeheader{
+                        //                 padding: 0.2em 0.4em;
+                        //             }
+                        //         }
+                        //     }
+                            
+                        // }
+                    }                   
+                    
+                    .line{
+                        position: inherit;
+                        width: 100%;
+                        margin: 0.5em 0;
+                        border: 0 none;
+                        // border-top: 2px dashed $semiLightGrey;
+                        background: $semiDarkGrey;
+                        height: 0.1em;
+                    }
+                    .productQuantityInput{
+                        @include flexCentreCol;
+                        justify-content: flex-start;
+                        // align-items: flex-start;
+                        width: 100%;
+                        .inputSection{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            // align-items: flex-start;
+                            width: 100%;
+                            h3{
+                                text-decoration: underline;
+                            }
+                            input{
+                                background: $white;
+                                border: none;
+                                padding: 0.3em 0.5em;
+                                width: 30%;
+                                border-radius: 0.3em;
+                                margin-left: 1em;
+                            }
+                            .switchContainer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin-left: 0.5em;
+                                p{
+                                    color: $darkerGrey;
+                                    font-size: 0.7em;
+                                }
+                            }
+                        }
+                        .errorContent{
+                            p{
+                                color: $white;
+                                margin: 0.5em 0;
+                                padding: 0.3em;
+                                background: $primaryMagenta;
+                            }
+                        }
+                    }
+                    .productTotalCost{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin: 0.5em 0;
+
+                        .noDiscountPrice{
+                            text-decoration: line-through;
+                            font-size: 1.1em;
+                            margin: 0.2em 0 0 0;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+                            color: $darkestGrey;
+                        }
+                        h3{
+                            text-decoration: underline;
+                            margin: 0.2em 0;
+                        }
+                        p{
+                            margin: 0.3em 0;
+                            font-size: 0.8em;
+                            font-weight: 400;
+                            color: $darkestGrey;
+
+                            .notePoint{
+                                color: $black;
+                            }
+                            span{
+                                color: $highLightBlue;
+                                font-size: 1em;
+                                font-weight: 800;
+                            }
+                        }
+                        .inclusiveCostRate{
+                            margin: 0;
+                            font-size: 0.9em;
+                            color: $red;
+                            text-decoration: none;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+                            color: $black;
+                            font-weight: bold;
+                            span{
+                                font-size: 2em;
+                                font-weight: 450;
+                                color: $darkerGrey;
+                            }
+                            .per-piece-text{
+                                font-size: 1em;
+                                font-weight: 450;
+                            }
+                        }
+                        .offer{
+                            @include flexCentreRow;
+                            .discountOffer{
+                                color: $white;
+                                background: $primaryGreen;
+                                padding: 0.3em 0.5em;
+                            }
+                            .priceSaved{
+                                margin-left: 0.5em;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-weight: 400;
+                                color: $black;
+
+                                span{
+                                    color: $black;
+                                }
+                            }
+                        }  
+                        .hide {
+                            display: none;
+                        }
+                    }
+                    
+                    .hide {
+                        display: none;
+                    }
+                }
+                .add-to-cart-button-container{
+                    .whiteButtonWrapper{
+                        
+                    }
+                }
+                .active-gradient-button{
+                    position: relative;
+                    width: 100%;
+                    .disable{
+                        cursor: not-allowed;
+                        .whiteButtonWrapper{
+                            background-color: #cccccc;
+                            color: #666666;
+                            cursor: not-allowed;
+                        }
+                    }
+                    .gradientButtonWrapper{
+                        font-size: 1em;
+                        padding: 0.5em 1.2em;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    .cartButton{
+                        .whiteButtonWrapper{
+                            border: 0.15em solid $black;
+                            transition: 0.2s;
+                            &:hover{
+                                background: $black;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .small-loader{
+                        @include flexCentreCol;
+                        margin: 0.5em 0;
+                    }
+                    .go-cart{
+                        .whiteButtonWrapper{
+                            border: 0.15em solid $black;
+                            transition: 0.2s;
+                            &:hover{
+                                background: $black;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .hide{
+                        display: none;
+                    }
+                    // p{
+                    //     margin: 0.3em 0;
+                    //     font-size: 0.8em;
+                    //     .notePoint{
+                    //         color: $black;
+                    //     }
+                    //     span{
+                    //         color: $highLightBlue;
+                    //         font-size: 1em;
+                    //         font-weight: 800;
+                    //     }
+                    // }
+                }
+            }
+                .buttonWrapper{
+                    @include flexCentreRow;
+                    width: 100%;
+                }
+                .disabled{
+                    cursor: not-allowed;
+                    opacity: 0.5;
+                }
+                .hide{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .returnModal-image-Content{
+        // height: 100vh;
+        // width: 100vw;
+        .sliderContainerForModal{
+            position: fixed;
+            bottom: 5%;
+            z-index: 3;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            .sliderContainerForModalOuterLayer{
+                @include flexCentreRow;
+                width: 50%;
+                margin: 0 auto;
+            }
+          }
+    }
+}
+
+
+input{
+    border: none;
+    // border-bottom: 0.2em solid $black;
+    background: transparent;
+    color: $darkerGrey;
+    outline: none;
+    height: 1.5em;
+    width: 100%;
+    border-bottom: 0.2em solid $lightGrey;
+    &:focus + .InputSeparatorLine {
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+    &:hover + .InputSeparatorLine{
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+}
+
+
+.InputSeparatorLine {
+    height:0.2em;
+    width: 100%;
+    background: $darkGrey;
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all .15s $curve;
+}
+
+
+* :focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.checkBox{
+    transition: 0.2s;
+    border-radius: 50%;
+    height: 0.6em;
+    width: 0.6em;
+    min-width: 0.7em;
+    min-height: 0.7em;
+    background: $white;
+    border: 0.15em solid $darkGrey;
+    // margin: 0.2em;
+    margin-right: 0.5em;
+    // margin-top: 0.3em;
+    cursor: pointer;
+    &:hover{
+        background: $darkGrey; 
+    }
+}
+.checkBoxSelect{
+    transition: 0.2s;
+    border-radius: 50%;
+    height: 0.6em;
+    width: 0.6em;
+    min-width: 0.7em;
+    min-height: 0.7em;
+    background: $secondaryMagenta;
+    border: 0.15em solid $darkGrey;
+    // margin: 0.2em;
+    margin-right: 0.5em;
+    // margin-top: 0.3em;
+    cursor: pointer;
+    &:hover{
+        background: $darkGrey; 
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .productDetailsContainer{
+        margin: 6em 0 0 0;
+        .productDetailsContainerInnerLayer{
+            @include flexCentreCol;
+           .productImagesContainer{
+               order: 1;
+               position: static;
+               width: 50%;
+               margin: 1em 0;
+               .productImages{
+                   .returnProductImagesOuterLayer{
+                       .imagesContainer{
+                           .imagesInnerContainer{}
+                           .sliderContainer{
+                            //    width: 50%;
+                           }
+                       }
+                   }
+               }
+           }
+           .productDetailedDataContainer{
+               order: 3;
+               width: 95%;
+               h3{
+                   font-size: 1.2em;
+               }
+               p{
+                   font-size: 0.9em;
+               }
+               .dataContainerOuterLayer{
+                   .productLineDetails{
+                       .productTypeContainerHeader{
+                           display: inline-block;
+                           h3{
+                               display: inline-flex;
+                               font-size: 1em;
+                               font-weight: bold;
+                            //    text-decoration: none;
+                           }
+                           .iconBox{
+                               display: inline-flex;
+                           }
+                       }
+                   }
+                   .dataContainerInnerLayer{
+                       .returnProductDetailedDataOuterLayer{
+                           .productDetailDataContainer{
+                               .productVideoContainer{
+                                   .productVideoOuterLayer{
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    width: 100%;
+                                       .contentvideosContainer{
+                                           width: 93%;
+                                           margin: 0.5em auto;
+                                           .videosDetails{
+                                               .container{
+                                                   height: 13em;
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+           .productCostEstimatorContainer{
+               order: 2;
+               position: static;
+               width: 100%;
+               height: auto;
+               h3{
+                font-size: 1.2em;
+               }
+               p{
+                   font-size: 0.9em;
+               }
+               .costEstimatorContainerInnerLayer{
+                width: 93%;
+                margin: 0 auto;
+                   .productDetailCostContainer{
+                       .product-detail-cost-container-inner-layer{
+                           .productDetailCostHeader{
+                               .headerContainer{
+                                   h1{
+                                       font-size: 1.1em;
+                                   }
+                               }
+                               .productCustomizeOptions{
+                                   h3{}
+                                   .productCustomizeOptionsOuterLayer{
+                                       height: auto;
+                                       max-height: none;
+                                   }
+                               }
+                           }
+                           .productQuantityInput{}
+                           .productTotalCost{}
+                       }
+                       .active-gradient-button{
+                           @include flexCentreRow;
+                       }
+                   }
+               }
+           } 
+        }
+        .returnModalContent{
+            .modalWrapper{
+                .modalWrapperInnerLayer{
+                    .colorContainerWrapper{
+                        .colorContentContainer{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            width: 100%;
+                        }
+                    }
+                    .finishContainerWrapper{
+                        .finishContentContainer{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .returnModal-image-Content{
+            .sliderContainerForModal{
+                position: fixed;
+                bottom: 3%;
+                z-index: 3;
+                left: 0;
+                width: 100%;
+                .sliderContainerForModalOuterLayer{
+                    @include flexCentreRow;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+              }
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .productDetailsContainer{
+        margin: 6em 0 0 0;
+        .productDetailsContainerInnerLayer{
+            @include flexCentreCol;
+           .productImagesContainer{
+               order: 1;
+               position: static;
+               width: 85%;
+               margin: 0.5em 0;
+               .productImages{
+                   .returnProductImagesOuterLayer{
+                       .imagesContainer{
+                           .imagesInnerContainer{}
+                           .sliderContainer{
+                            //    width: 50%;
+                           }
+                       }
+                   }
+               }
+           }
+           .productDetailedDataContainer{
+               order: 3;
+               width: 95%;
+               h3{
+                   font-size: 1.2em;
+               }
+               p{
+                   font-size: 0.9em;
+               }
+               .dataContainerOuterLayer{
+                   .productLineDetails{
+                       .productTypeContainerHeader{
+                           display: inline-block;
+                           h3{
+                               display: inline-flex;
+                               font-size: 1em;
+                               font-weight: bold;
+                            //    text-decoration: none;
+                           }
+                           .iconBox{
+                               display: inline-flex;
+                           }
+                       }
+                   }
+                   .dataContainerInnerLayer{
+                       .returnProductDetailedDataOuterLayer{
+                           .productDetailDataContainer{
+                               .productVideoContainer{
+                                   .productVideoOuterLayer{
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                                    width: 100%;
+                                       .contentvideosContainer{
+                                           width: 100%;
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+           .productCostEstimatorContainer{
+               order: 2;
+               position: static;
+               width: 100%;
+               height: auto;
+               h3{
+                font-size: 1.2em;
+               }
+               p{
+                   font-size: 0.9em;
+               }
+               .costEstimatorContainerInnerLayer{
+                width: 93%;
+                margin: 0 auto;
+                   .productDetailCostContainer{
+                       .product-detail-cost-container-inner-layer{
+                           .productDetailCostHeader{
+                               .headerContainer{
+                                   h1{
+                                       font-size: 1.1em;
+                                   }
+                               }
+                               .productCustomizeOptions{
+                                   h3{}
+                                   .productCustomizeOptionsOuterLayer{
+                                       height: auto;
+                                       max-height: none;
+                                   }
+                               }
+                           }
+                           .productQuantityInput{}
+                           .productTotalCost{}
+                       }
+                       .active-gradient-button{
+                            @include flexCentreCol;
+                            width: 80%;
+                            margin: 0.5em 0;
+                       }
+                   }
+               }
+           } 
+        }
+        .returnModalContent{
+            max-height: 30em;
+            .modalWrapper{
+                .modalWrapperInnerLayer{
+                    .colorContainerWrapper{
+                        .colorContentContainer{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            width: 100%;
+                        }
+                    }
+                    .finishContainerWrapper{
+                        .finishContentContainer{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .returnModal-image-Content{
+            .sliderContainerForModal{
+                position: fixed;
+                bottom: 1%;
+                z-index: 3;
+                left: 0;
+                width: 100%;
+                .sliderContainerForModalOuterLayer{
+                    @include flexCentreRow;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+              }
+        }
+    }
+}
+
+
+
+
+// cost-breakDown image-url - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/customDesignSubmit_cost_breakdown-01.png
+// image-one - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/customDesignSubmit_cost_breakdown-01.png
+// kitchen-Sink-options - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/customDesignSubmit_element_segregation-01.png
+// man-image - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/customDesignSubmit_installer-01.png
+// image-two - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/customDesignSubmit_requirement_list-01.png
+// blackBackground Image - https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/home-page-background.png

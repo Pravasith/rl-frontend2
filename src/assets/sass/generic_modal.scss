@@ -1,0 +1,661 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+
+.hide{
+    display: none;
+}
+
+
+.generic-modal-outer-wrapper{
+    // position: absolute;
+    position: fixed;
+    top: 9%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    // background: $transparentWhite;
+    // background: $white;
+    background: #ffffffd6;
+    animation: fadeIn 0.2s ease;
+    z-index: 3;
+    .generic-modal-inner-wrapper{
+        // @include flexCentreRow;
+        // position: relative;
+        width: 100%;
+        height: 100%;
+        .modal-inner-wrap{
+            // padding: 1em;
+            // @include flexCentreRow;
+
+            position: relative;           
+            width: 100%;
+            height: 100%;
+            .modal-wrap-inner-style{
+                @include flexCentreRow;           
+                width: 100%;
+                height: 100%;
+                .modal-inner-wrap-2{
+                    position: absolute;
+                    top: 6%;
+                    width: 40%;
+                    background-color: $white;
+                    // min-width: 34.5em; 
+                    // background: green;
+                    // margin-top: 1em;
+                    @include box_shadow;
+
+                    .loadingAnim{
+                        margin-top: 2em;
+                        .architectureBuildingAnimationWrapper{
+                            height: 65vh;
+                        }
+                    }
+
+                    .modalClass{
+                        width: 100%;
+                        // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/logInBackground.png");
+
+                        background-repeat: no-repeat;
+                        // background-size: auto;
+                        background-size: 100% 100%;
+                        background-color: $veryLightGrey;
+                        .modal-content-outer-wrapper{
+                            width: 100%;
+                            .modal-content{
+                                width: 100%;
+                                @include flexCentreCol;
+
+                                header{
+                                    margin: 1em 0;
+                                    @include flexCentreRow;
+                                    position: relative;
+                                    width: 100%;
+                                    .main-modal-title{
+                                        text-align: center;
+                                        margin: 0.5em;
+                                        margin-left: 1.5em;
+                                        width: 65%;
+                                    }
+                                    .headerBigText{
+                                        font-size: 2.5em;
+                                        text-align: center;
+                                        margin: 0.5em;
+                                        margin-left: 1.5em;
+                                        width: 65%;
+                                        font-weight: 500;
+                                    }
+                                    .hide{
+                                        display: none;
+                                    }
+                                    .side-text-title{
+                                        position: absolute;
+                                        left: 0;
+                                        background: $primaryMagenta;
+                                        padding: 0.5em;
+                                        top: 1em;
+                                        color: $white
+                                    }
+                                    // .side-text-title::after {
+                                    //     border-bottom: 1.3em solid transparent;
+                                    //     border-left: 10px solid $primaryMagenta;
+                                    //     border-top: 13px solid transparent;
+                                    //     content: '';
+                                    //     position: absolute;
+                                    //     right: -0.8em;
+                                    //     top: 0;
+                                    // }
+                                    .close-modal-button{
+                                        position: absolute;
+                                        right: 3%;
+                                        cursor: pointer;
+                                        top: -21%;
+
+                                        .icon-wrap{
+                                            margin: 0.25em;
+                                            margin-left: 1em;
+                                        }
+
+                                    }
+                                }
+
+                                .separation-content{
+                                    width: 100%;
+                                    height: 0.3em;
+                                    // background: $veryVeryLightGrey;
+                                }
+
+                                .main-modal-body{
+                                    // background: yellow;
+                                    padding:  0 1em;
+                                    // min-height: 29em;
+                                    // height: 45%;
+                                    width: 88%;
+
+                                    .main-body-content{
+                                        width: 100%;
+                                        height: 100%;
+                                        .adRequestQuote{
+                                            width: 100%;
+                                            min-height: 30em;
+                                            max-height: 30em;
+                                            .adRequestQuoteInnerLayer{
+                                                @include flexCentreCol;
+                                                justify-content: space-between;
+                                                align-items: flex-start;
+                                                width: 100%;
+                                                // height: 100%;
+                                                // height: 48vh;
+                                                height: 29em;
+                                                .inputAreaSection{
+                                                    width: 100%;
+                                                    .inputSectionContainer{
+                                                        width: 80%;
+                                                        .dataInput{
+                                                            width: 100%;
+                                                            margin: 0.5em 0;
+                                                            p{
+                                                                background: $highLightBlue;
+                                                                color: $white;
+                                                                width: 100%;
+                                                                padding: 0.5em;
+                                                                text-align: center;
+                                                            }
+                                                        }
+                                                    }
+                                                    .callback{
+                                                        margin: 0.5em 0;
+                                                        h3{
+                                                            text-decoration: underline;
+                                                        }
+                                                    }
+                                                }
+                                                .proceedButtonContainer{
+                                                    @include flexCentreRow;
+                                                    justify-content: flex-start;
+                                                    .whiteButtonWrapper{
+                                                        font-size: 0.9em;
+                                                        background: $darkerGrey;
+                                                        color: $white;
+                                                        padding: 0.5em 2em;
+                                                        &:hover{
+                                                            background: $secondaryMagenta;
+                                                            color: $white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .materialReuestQuote{
+                                            .materialReuestQuoteInnerLayer{
+                                                .inputSectionContainer{
+                                                    .dataInput{
+                                                        p{
+                                                            background: $highLightBlue;
+                                                            color: $white;
+                                                            width: 100%;
+                                                            padding: 0.5em;
+                                                            text-align: center;
+                                                        }
+                                                    }
+                                                }
+                                                .callTimingContainer{
+                                                    .callTimingContainerInnerLayer{
+                                                        .displayCallTimeValueValidationError{
+                                                            background: $highLightBlue;
+                                                            color: $white;
+                                                            width: 100%;
+                                                            padding: 0.5em;
+                                                            text-align: center;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .loadingWrapperRequests{
+                                            height: 50vh;
+                                            // text-align: center;
+                                            h3{
+                                               font-size: 1.2em; 
+                                               font-weight: 400;
+                                               text-align: center;
+                                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                            }
+
+                                            .loadingWrapperRequestsInnerLayer{
+                                                @include flexCentreCol;
+                                                align-items: flex-start;
+                                                width: 100%;
+                                                margin: 1em 0;
+                                                .errorHeader{
+                                                    font-size: 2em;
+                                                }
+                                                .loadingHeader{
+                                                    font-size: 1.2em;
+                                                    width: 40%;
+                                                    text-align: left;
+                                                    margin: 1em 0;
+                                                }
+                                                h3{
+                                                    span{
+                                                        text-decoration: underline;
+                                                        &:hover{
+                                                            cursor: pointer;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .loadingWrapperProducts{
+                                            @include flexCentreCol;
+                                            width: 100%;
+                                            height: 70vh;
+                                            text-align: center;
+                                            .loadingWrapperProductsInnerLayer{
+                                                @include flexCentreCol;
+                                                // height: 100%;
+                                                width: 100%;
+                                                h3{
+                                                    margin: 0.5em 0;
+                                                    font-size: 1.5em; 
+                                                 }
+                                            }
+                                        }
+                                        .materialReuestQuote{
+                                            width: 100%;
+                                            // background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/askForProductsBackground.png");
+                                            // background-size: 100%;
+                                            // background-repeat: no-repeat;
+                                            height: 70vh;
+                                            .materialReuestQuoteInnerLayer{
+                                                @include flexCentreCol;
+                                                width: 100%;
+                                                .inputSectionContainer{
+                                                    @include flexCentreCol;
+                                                    width: 100%;
+                                                    .dataInput{
+                                                        @include flexCentreCol;
+                                                        width: 80%;
+                                                        margin: 0.3em 0;
+                                                    }
+                                                    .sampleOption{
+                                                        @include flexCentreRow;
+                                                        // align-items: flex-start;
+                                                        justify-content: flex-start;
+                                                        width: 80%;
+                                                        margin-top: 0.5em;
+                                                    }
+                                                }
+                                                .callTimingContainer{
+                                                    @include flexCentreRow;
+                                                    width: 100%;
+                                                    margin: 1em 0;
+                                                    .callTimingContainerInnerLayer{
+                                                        @include flexCentreCol;
+                                                        align-items: flex-start;
+                                                        width: 80%;
+                                                        .timingHeaderContainer{
+                                                            @include flexCentreRow;
+                                                            justify-content: flex-start;
+                                                            width: 100%;
+                                                            h1{
+                                                                text-decoration: underline;
+                                                            }
+                                                        }
+                                                        .timingContentOuterLayer{
+                                                            @include flexCentreCol;
+                                                            align-items: flex-start;
+                                                            width: 100%;
+                                                            margin: 0.5em 0;
+                                                            .timingContent{
+                                                                @include flexCentreRow;
+                                                                justify-content: flex-start;
+                                                                margin: 0.5em 0;
+                                                                &:hover{
+                                                                    cursor: pointer;
+                                                                    .checkBox{
+                                                                        background: $darkGrey;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .hide{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        .subscribe-form-outer-layer{
+                                            position: relative;
+                                            margin-top: 1em;
+                                            .image-wrapper{
+                                                @include flexCentreRow;
+                                                justify-content: flex-start;
+                                                align-items: flex-end;
+                                                width: 100%;
+                                                height: 13.5em;
+                                                .winner-text{
+                                                    p{
+                                                        color:$black;
+                                                        font-weight: 500;
+                                                    }
+                                                }
+                                            }
+                                            .subscription-form-innner-layer{
+                                                .input-section-container{
+                                                    width: 85%;
+                                                    .dataInput{
+                                                        margin: 1em 0 0 0;
+                                                        p{
+                                                            background: $highLightBlue;
+                                                            color: $white;
+                                                            width: 100%;
+                                                            padding: 0.5em;
+                                                            text-align: center;
+                                                        }
+                                                        .otp-generate-input{
+                                                            @include flexCentreRow;
+                                                            justify-content: flex-start;
+                                                            .button-container{
+                                                                margin-left: 1em;
+                                                                .whiteButtonWrapper{
+                                                                    border: 0.1em solid $black;
+                                                                    color: $black;
+                                                                    padding: 0.3em 0.7em;
+                                                                    transition: 0.2s;
+                                                                    box-shadow: none;
+                                                                    &:hover{
+                                                                        background: $black;
+                                                                        color: $white;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .otp-input{
+                                                        width: 60%;
+                                                    }
+                                                }
+                                                .proceedButtonContainer{
+                                                    @include flexCentreRow;
+                                                    justify-content: flex-start;
+                                                    margin: 1em 0 0 0;
+                                                    .whiteButtonWrapper{
+                                                        margin-left: 0;
+                                                        border: 0.1em solid $black;
+                                                        color: $black;
+                                                        transition: 0.2s;
+                                                        box-shadow: none;
+                                                        &:hover{
+                                                            border: 0.1em solid $darkGrey;
+                                                            background: $darkGrey;
+                                                            color: $white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .orders-modal-outer-layer{
+                                            width: 100%;
+                                            margin: 0.5em 0;
+                                            .orders-modal-inner-layer{
+                                                @include flexCentreCol;
+                                                width: 85%;
+                                                margin: 0 auto;
+                                                h3{
+                                                    text-align: center;
+                                                    font-size: 1.5em;
+                                                    font-weight: 600;
+                                                }
+                                                .cancel-order-button-container{
+                                                    margin: 1em 0;
+                                                    .go-back-button-container{
+                                                        .whiteButtonWrapper{
+                                                            border-radius: 0;
+                                                            background: $black;
+                                                            color: $white;
+                                                            box-shadow: none;
+                                                        }
+                                                    }
+                                                    .cancel-button-container{
+                                                        .whiteButtonWrapper{
+                                                            border-radius: 0;
+                                                            box-shadow: none;
+                                                            border: 0.1em solid $black;
+                                                        }
+                                                    }
+                                                }
+                                            }   
+                                        }
+                                        .cancelled-order-container{
+                                            width: 100%;
+                                            margin: 0.5em 0;
+                                            .cancelled-order-inner-container{
+                                                @include flexCentreCol;
+                                                width: 75%;
+                                                margin: 0 auto;
+                                                h3{
+                                                    text-align: center;
+                                                    font-size: 1.5em;
+                                                    font-weight: 600;
+                                                }
+                                                .cancel-confirmation-button-container{
+                                                    margin: 1em 0;
+                                                     .whiteButtonWrapper{
+                                                            border-radius: 0;
+                                                            background: $black;
+                                                            color: $white;
+                                                            box-shadow: none;
+                                                            p{
+                                                                font-size: 1em;
+                                                                margin: 0 0.1em;
+                                                                color: $white
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                footer{
+                                    margin: 0.5em;
+                                    @include flexCentreRow;
+                                    width: 88%;
+                                }
+                            }
+                        }
+                    }
+                }  
+            }  
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+     .generic-modal-outer-wrapper{
+        .generic-modal-inner-wrapper{
+        .modal-inner-wrap{
+            .modal-wrap-inner-style{
+                    .modal-inner-wrap-2{
+                            top: 15%;
+                            width: 30%;
+                            background: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .generic-modal-outer-wrapper{
+        .generic-modal-inner-wrapper{
+        .modal-inner-wrap{
+            .modal-wrap-inner-style{
+                    .modal-inner-wrap-2{
+                            width: 70%;
+                            top: 10%;
+                            background: $white;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+    .generic-modal-outer-wrapper{
+        .generic-modal-inner-wrapper{
+        .modal-inner-wrap{
+            .modal-wrap-inner-style{
+                    .modal-inner-wrap-2{
+                            width: 70%;
+                            top: 12%;
+                            background: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .generic-modal-outer-wrapper{
+        // top: 5em;
+        top: 0em;
+        z-index: 2;
+        background: $white;
+        .generic-modal-inner-wrapper{
+            .modal-inner-wrap{
+                // padding: 1em 0 0 0;
+                height: 100vh;
+                .modal-wrap-inner-style{
+                    .modal-inner-wrap-2{
+                            top: 0;
+                            width: 100%;
+                            background: $white;
+                            box-shadow: none;
+                            height: 100%;
+                            .modalClass{
+                                // background-image: none !important;
+                                height: 100%;
+                                .modal-content-outer-wrapper{
+                                    .modal-content{
+                                        .main-modal-body{
+                                            padding: 0;
+                                            width: 96%;
+                                            .main-body-content{
+                                                .modalOuterWrapper{
+                                                    .dropModalInnerLayer{
+                                                        .loginModalContainerOne{
+                                                            .loginModalContainerInnerLayer{
+                                                                .formComponent{
+                                                                    .forminputSection{
+                                                                        width: 100%;
+                                                                    }
+                                                                }
+                                                                .socialNetworksForm{
+                                                                    width: 80%;
+                                                                }
+                                                            }
+                                                            .sign-up-option{
+                                                                .whiteButtonWrapper{
+                                                                    box-shadow: none;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .loadingWrapperRequests{
+
+                                                }
+                                                .subscribe-form-outer-layer{
+                                                    .image-wrapper{
+                                                        height: 9.5em;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 412px){
+    .generic-modal-outer-wrapper{
+        // top: 5em;
+        top: 0em;
+        z-index: 2;
+        background: $white;
+        .generic-modal-inner-wrapper{
+            .modal-inner-wrap{
+                // padding: 1em 0 0 0;
+                height: 100vh;
+                .modal-wrap-inner-style{
+                    .modal-inner-wrap-2{
+                            width: 100%;
+                            background: $white;
+                            box-shadow: none;
+                            height: 100%;
+                            .modalClass{
+                                // background-image: none !important;
+                                height: 100%;
+                                .modal-content-outer-wrapper{
+                                    .modal-content{
+                                        header{
+                                            margin: 1em 0.5em;
+                                            h3{
+                                                margin: 0.5em 0.5em 0.5em 0;
+                                            }
+                                            .close-modal-button{
+                                                .icon-wrap{
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                        .main-modal-body{
+                                            padding: 0;
+                                            width: 96%;
+                                            .main-body-content{
+                                                .modalOuterWrapper{
+                                                    .dropModalInnerLayer{
+                                                        .loginModalContainerOne{
+                                                            .loginModalContainerInnerLayer{
+                                                                .formComponent{
+                                                                    .forminputSection{
+                                                                        width: 100%;
+                                                                    }
+                                                                }
+                                                                .socialNetworksForm{
+                                                                    width: 90%;
+                                                                }
+                                                            }
+                                                            .sign-up-option{
+                                                                .whiteButtonWrapper{
+                                                                    box-shadow: none;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            } 
+        }
+    }
+}

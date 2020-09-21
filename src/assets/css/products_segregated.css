@@ -1,0 +1,1675 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-moz-selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+::selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Prata', serif;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.hide {
+  display: none; }
+
+.mediumBtn {
+  border: 0.2em solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2em 0.5em 2em;
+  margin: 0.5em;
+  color: #6d6d6d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.355em; }
+  .mediumBtn:hover {
+    color: #4D4D4D;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15); }
+
+.profilePicTiny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.8em;
+  min-height: 2.8em;
+  border-radius: 3em;
+  background: #fff; }
+  .profilePicTiny .innerWrap {
+    width: 2.2em;
+    height: 2.2em; }
+    .profilePicTiny .innerWrap img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 6em;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0.2em 0;
+  color: #000000; }
+
+a {
+  text-decoration: none; }
+
+/* The animation code */
+@-webkit-keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+@keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+
+@-webkit-keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@-webkit-keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+@keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+/* The element to apply the animation to */
+#shakeHands {
+  -webkit-animation: upAndDown 1.5s infinite;
+  animation: upAndDown 1.5s infinite; }
+
+#botBgd {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: scaleYHighAndLow 2s infinite;
+  animation: scaleYHighAndLow 2s infinite; }
+
+#tree {
+  -webkit-transform-origin: 70% 100%;
+  -ms-transform-origin: 70% 100%;
+  transform-origin: 70% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+#loadTree {
+  -webkit-transform-origin: 72% 100%;
+  -ms-transform-origin: 72% 100%;
+  transform-origin: 72% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #6d6d6d; }
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 3px #82c727;
+    box-shadow: 0 0 3px #82c727; }
+  50% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 1em #82c727;
+    box-shadow: 0 0 1em #82c727; }
+  100% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 3px #82c727;
+    box-shadow: 0 0 3px #82c727; } }
+
+@keyframes glowing {
+  0% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 3px #82c727;
+    box-shadow: 0 0 3px #82c727; }
+  50% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 1em #82c727;
+    box-shadow: 0 0 1em #82c727; }
+  100% {
+    background-color: #82c727;
+    -webkit-box-shadow: 0 0 3px #82c727;
+    box-shadow: 0 0 3px #82c727; } }
+
+@-webkit-keyframes slidein {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+
+@keyframes slidein {
+  from {
+    width: 0%; }
+  to {
+    width: 50%; } }
+
+.discount-container {
+  width: 95%;
+  padding: 0 0.5em 1em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .discount-container .footerWrapper {
+    display: none; }
+  .discount-container .cost-container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 0.2em 0.5em;
+    margin-left: 0;
+    margin-top: 0.5em; }
+    .discount-container .cost-container .real-cost {
+      padding: 0.15em 0;
+      padding-right: 0.2em; }
+      .discount-container .cost-container .real-cost h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: line-through; }
+    .discount-container .cost-container .offer-cost {
+      padding: 0.2em 0.3em;
+      padding-bottom: 0.1em;
+      padding-left: 0; }
+      .discount-container .cost-container .offer-cost h3 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 1.1em; }
+  .discount-container .discount-offer-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .discount-container .discount-offer-wrap .discount-percent-wrap h3 {
+      font-family: 'Athiti', sans-serif;
+      font-size: 0.85em;
+      background: #8cc63f;
+      color: #ffffff;
+      padding: 0.3em 0.8em;
+      margin: 0.2em 0.5em;
+      margin-left: 0; }
+    .discount-container .discount-offer-wrap .you-save-wrap {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.8em;
+      font-weight: 400;
+      color: #000000; }
+
+.productGalleryDynamicContainer {
+  width: 85%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F2F2F2), color-stop(#fafafa), to(#ffffff));
+  background: -webkit-linear-gradient(bottom, #F2F2F2, #fafafa, #ffffff);
+  background: -o-linear-gradient(bottom, #F2F2F2, #fafafa, #ffffff);
+  background: linear-gradient(0deg, #F2F2F2, #fafafa, #ffffff);
+  padding: 0.7em;
+  margin: 1em auto;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
+  .productGalleryDynamicContainer:hover {
+    -webkit-transform: translateY(-0.4em);
+    -ms-transform: translateY(-0.4em);
+    transform: translateY(-0.4em);
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+    .productGalleryDynamicContainer:hover .imageContainer .see-more-of {
+      opacity: 1; }
+  .productGalleryDynamicContainer .imageContainerProdSeg {
+    position: relative;
+    background: #ffffff; }
+    .productGalleryDynamicContainer .imageContainerProdSeg .see-more-of {
+      position: absolute;
+      width: 100%;
+      background: #000000;
+      top: -1%;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .productGalleryDynamicContainer .imageContainerProdSeg .see-more-of .inner-see-more {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .productGalleryDynamicContainer .imageContainerProdSeg .see-more-of .inner-see-more p {
+          padding: 0.5em 1em;
+          font-size: 0.8em;
+          font-weight: 400;
+          color: #ffffff;
+          text-align: center; }
+    .productGalleryDynamicContainer .imageContainerProdSeg .image-inner-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .productGalleryDynamicContainer .imageContainerProdSeg .image-inner-container .image-wrap-dummy {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .productGalleryDynamicContainer .imageContainerProdSeg .brandLogoContainer {
+      position: absolute;
+      width: 4em;
+      height: 4em;
+      padding: 0.3em;
+      background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(#ffffff), to(#fafafa));
+      background: -webkit-linear-gradient(#F2F2F2, #ffffff, #fafafa);
+      background: -o-linear-gradient(#F2F2F2, #ffffff, #fafafa);
+      background: linear-gradient(#F2F2F2, #ffffff, #fafafa);
+      bottom: 5%;
+      left: -9%;
+      border-radius: 0.1em; }
+      .productGalleryDynamicContainer .imageContainerProdSeg .brandLogoContainer .brandLogoContainerInnerLayer {
+        background: #ffffff;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+  .productGalleryDynamicContainer .titleContainerProd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 0.7em 0 0 0; }
+    .productGalleryDynamicContainer .titleContainerProd h1 {
+      font-size: 0.85em;
+      margin: 0 0.5em;
+      color: #000000;
+      font-weight: 600; }
+    .productGalleryDynamicContainer .titleContainerProd p {
+      font-size: 0.7em;
+      font-weight: 400;
+      margin: 0.2em 0;
+      color: #4D4D4D;
+      background: #ffffff;
+      padding: 0.3em 0.5em;
+      margin-top: 0.3em; }
+    .productGalleryDynamicContainer .titleContainerProd .installation-cost {
+      background: none;
+      font-size: 0.8em; }
+  .productGalleryDynamicContainer .color-previews {
+    padding: 0 0.2em;
+    width: 100%; }
+    .productGalleryDynamicContainer .color-previews .color-preview-wrap {
+      width: 1.4em;
+      height: 1.4em;
+      margin: 0.2em; }
+      .productGalleryDynamicContainer .color-previews .color-preview-wrap .color-inner-wrap {
+        width: 100%;
+        height: 100%;
+        border-radius: 2em; }
+    .productGalleryDynamicContainer .color-previews .finish-preview-wrap {
+      width: 1.4em;
+      height: 1.4em;
+      margin: 0.2em; }
+      .productGalleryDynamicContainer .color-previews .finish-preview-wrap img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2em; }
+  .productGalleryDynamicContainer .color-previews div {
+    display: inline-block; }
+  .productGalleryDynamicContainer .costContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0.5em 0; }
+    .productGalleryDynamicContainer .costContainer h3 {
+      color: #000000;
+      font-size: 1.3em;
+      margin: 0 0.5em 0 0; }
+    .productGalleryDynamicContainer .costContainer p {
+      padding: 0.3em;
+      color: #ffffff;
+      background: #82c727;
+      border-radius: 0.3em;
+      font-size: 0.6em; }
+
+.loading-more-wrap {
+  width: 91%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .loading-more-wrap .icon-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.2em 0.5em 0.2em 0; }
+  .loading-more-wrap h3 {
+    font-weight: 600; }
+
+.hide {
+  display: none; }
+
+.productsSegregated {
+  width: 100%; }
+  .productsSegregated .productsSegregatedContentContainer {
+    position: relative;
+    background: #ffffff;
+    height: 100%;
+    margin-top: 2em; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage {
+        position: fixed;
+        top: 9%;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        z-index: 3; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalCloseButton {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          margin: 1em 0;
+          width: 97%;
+          cursor: pointer; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer {
+          width: 95%;
+          height: 73vh;
+          overflow-y: auto;
+          margin: 1em auto;
+          scrollbar-width: none;
+          -ms-overflow-style: none; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            width: 91%;
+            margin: 0 auto; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 100%;
+              margin: 0.8em 0; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .expansionButtonContainier {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .expansionButtonContainier h1 {
+                  font-size: 1em;
+                  margin: 0 0 0.3em 0;
+                  text-decoration: underline; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .expansionButtonContainier .highLightSubCategory {
+                  color: #ff2c6b;
+                  font-weight: 800; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .expansionButtonContainier .iconBox {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  width: 1.2em;
+                  height: 1.2em;
+                  border-radius: 0.2em;
+                  margin-left: 0.5em;
+                  background: #e4e4e4;
+                  cursor: pointer; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .productTypesContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin-top: 0; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName:hover p {
+                  cursor: pointer;
+                  text-decoration: underline; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName p {
+                  margin: 0.25em 0;
+                  font-size: 0.9em; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName .highLightSubCategory {
+                  color: #ff2c6b;
+                  text-decoration: underline; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer .modalPageInnerLayer .subCategoryHead .line {
+                width: 100%;
+                height: 0.2em;
+                background: #00b0d8; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage .modalPageOuterLayer::-webkit-scrollbar {
+          /* WebKit */
+          width: 0px; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(#F2F2F2, #ffffff);
+        background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+        background: -webkit-linear-gradient(#F2F2F2, #ffffff);
+        background: -o-linear-gradient(#F2F2F2, #ffffff);
+        background: linear-gradient(#F2F2F2, #ffffff);
+        background: -moz-linear-gradient(#F2F2F2, #ffffff);
+        background-attachment: fixed; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer {
+          background: #ffffff;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 10%;
+          height: 80vh;
+          width: 27%;
+          padding-left: 0.5em; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            width: 100%; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer:hover .segregatedSubcategoriesDataContainerOuterLayer {
+              overflow-y: auto; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer {
+              width: 95%;
+              max-height: 83vh;
+              overflow-y: hidden;
+              margin: 1em 0.25em 0em 1em;
+              scroll-behavior: smooth;
+              -webkit-transition: 0.2s;
+              -o-transition: 0.2s;
+              transition: 0.2s; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 95%;
+                margin: 0.5em; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  margin: 0.8em 0; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .expansionButtonContainier {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .expansionButtonContainier h1 {
+                      margin: 0 0 0.3em 0;
+                      text-decoration: underline; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .expansionButtonContainier .highLightSubCategory {
+                      color: #ff2c6b;
+                      font-size: 1.1em;
+                      font-weight: 800; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .expansionButtonContainier .iconBox {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      width: 1.2em;
+                      height: 1.2em;
+                      border-radius: 0.2em;
+                      margin-left: 0.5em;
+                      background: #e4e4e4;
+                      cursor: pointer; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .productTypesContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    margin-top: 0; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName:hover p {
+                      cursor: pointer;
+                      text-decoration: underline; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName p {
+                      margin: 0.25em 0;
+                      font-size: 0.8em; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .subCategoryHead .productTypesContainer .dataSectionProductTypeName .highLightSubCategory {
+                      color: #ff2c6b;
+                      font-weight: 800;
+                      text-decoration: underline; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer .segregatedSubcategoriesInnerLayer .hide {
+                  display: none; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer {
+          width: 72%;
+          padding: 0 0.5em;
+          padding-right: 0; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%;
+              margin-top: 0.5em; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 98%;
+                margin-left: 1em; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer {
+                  width: 100%; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    width: 100%; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                      justify-content: space-between;
+                      width: 95%; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .product-category-name-container {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start; }
+                        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .product-category-name-container h3 {
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                          color: #000000;
+                          font-size: 0.85em;
+                          margin: 0;
+                          font-weight: 400;
+                          -webkit-transition: 0.2s;
+                          -o-transition: 0.2s;
+                          transition: 0.2s;
+                          cursor: pointer; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .product-category-name-container h3:hover {
+                            text-decoration: underline; }
+                        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .product-category-name-container .iconBox {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          margin: 0 0.7em; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .product-category-name-container .iconBox p {
+                            font-size: 0.9em;
+                            font-weight: 500;
+                            color: #e4e4e4; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center; }
+                        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container .chat-container-inner-layer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          background: #000000;
+                          color: #ffffff;
+                          border-radius: 2.5em;
+                          -webkit-transition: .2s;
+                          -o-transition: .2s;
+                          transition: .2s;
+                          padding: 0.5em 1.5em; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container .chat-container-inner-layer:hover {
+                            background: #ffffff;
+                            color: #000000;
+                            -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                            box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                            cursor: pointer; }
+                            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container .chat-container-inner-layer:hover p {
+                              color: #000000; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container .chat-container-inner-layer p {
+                            color: #ffffff; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .live-chat-container .chat-container-inner-layer .chat-indicator {
+                            width: 0.8em;
+                            height: 0.8em;
+                            border-radius: 50%;
+                            margin-right: 0.5em;
+                            -webkit-animation: glowing 1500ms infinite;
+                            animation: glowing 1500ms infinite; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .hide {
+                        display: none; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-two {
+                      display: none; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-two .gradientButtonWrapper {
+                        font-size: 0.8em;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        background: #ffffff;
+                        border: 0.12em solid #000000;
+                        margin-right: 1em;
+                        color: #000000; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type {
+                  overflow: auto;
+                  height: 76vh;
+                  width: 100%;
+                  margin: 1em 0 0 0; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    width: 100%;
+                    margin-top: 0.5em; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer {
+                      display: -ms-grid;
+                      display: grid;
+                      -ms-grid-columns: 1fr 1fr 1fr;
+                      grid-template-columns: 1fr 1fr 1fr;
+                      width: 91%;
+                      margin-left: 0.5em; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        height: 95%;
+                        width: 98%;
+                        margin: 0.5em 0;
+                        background: #ffffff;
+                        -webkit-transition: .2s;
+                        -o-transition: .2s;
+                        transition: .2s; }
+                        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer:hover, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne:hover {
+                          cursor: pointer;
+                          -webkit-transform: translateY(-0.4em);
+                          -ms-transform: translateY(-0.4em);
+                          transform: translateY(-0.4em);
+                          background: #ffffff;
+                          -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                          box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+                        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer .productsContainerInnerLayer, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne .productsContainerInnerLayer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-align: start;
+                          -ms-flex-align: start;
+                          align-items: flex-start;
+                          background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+                          background: -webkit-linear-gradient(#F2F2F2, #ffffff);
+                          background: -o-linear-gradient(#F2F2F2, #ffffff);
+                          background: linear-gradient(#F2F2F2, #ffffff);
+                          width: 97%;
+                          padding: 1em 0.5em; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer .productsContainerInnerLayer .imageCategory, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne .productsContainerInnerLayer .imageCategory {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 100%;
+                            min-height: 160px;
+                            background: #ffffff; }
+                          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer .productsContainerInnerLayer .titleCategory, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne .productsContainerInnerLayer .titleCategory {
+                            margin: 0.5em 0.8em;
+                            padding: 0.5em 0; }
+                            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer .productsContainerInnerLayer .titleCategory h3, .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainerOne .productsContainerInnerLayer .titleCategory h3 {
+                              font-size: 1em;
+                              font-weight: 800; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container {
+        top: 0;
+        right: 0;
+        width: 0;
+        z-index: 1;
+        position: fixed;
+        overflow-x: hidden;
+        height: 100%;
+        background: #ffffff;
+        -webkit-animation: slidein 0.2s ease;
+        animation: slidein 0.2s ease; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container {
+          position: relative;
+          width: 93%;
+          margin: 0 auto;
+          padding: 0.5em; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .close-button-container {
+            position: absolute;
+            right: 1em;
+            background: #ffffff;
+            padding: 0.2em;
+            cursor: pointer; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chat-header-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0.5em 0; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chat-header-container h3 {
+              font-size: 2em;
+              font-weight: 600;
+              color: #000000; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container {
+              width: 100%;
+              height: 23em;
+              overflow-y: auto; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer {
+                display: inline-block;
+                width: 98%; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container {
+                  width: 100%;
+                  float: left;
+                  margin: 1em 0; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container .msg-recieved-inner-container {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container .msg-recieved-inner-container .img-container {
+                      width: 3em;
+                      height: 3em;
+                      border-radius: 50%;
+                      background: #e4e4e4;
+                      margin-right: 1em; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container .msg-recieved-inner-container .recieved-name-container {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: vertical;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-align: start;
+                      -ms-flex-align: start;
+                      align-items: flex-start;
+                      width: 90%; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container .msg-recieved-inner-container .recieved-name-container h3 {
+                        font-weight: 600; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-recieved-container .msg-recieved-inner-container .recieved-name-container p {
+                        margin: 0.7em 0;
+                        text-align: left; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container {
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                  float: right;
+                  margin: 1em 0; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container .msg-sent-inner-container {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container .msg-sent-inner-container .img-container {
+                      width: 3em;
+                      height: 3em;
+                      border-radius: 50%;
+                      background: #e4e4e4;
+                      margin-left: 1em; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container .msg-sent-inner-container .sent-name-container {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: vertical;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-align: end;
+                      -ms-flex-align: end;
+                      align-items: flex-end;
+                      width: 90%; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container .msg-sent-inner-container .sent-name-container h3 {
+                        font-weight: 600; }
+                      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .chatbox-container .chatbox-container-inner-layer .msg-sent-container .msg-sent-inner-container .sent-name-container p {
+                        margin: 0.7em 0;
+                        text-align: right; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              width: 100%; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container .bubble-msg-inner-container {
+                margin: 0.5em 0; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container .bubble-msg-inner-container .bubble-content {
+                  display: -webkit-inline-box;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  margin: 0.3em;
+                  padding: 0.2em;
+                  border: 0.1em solid #000000;
+                  border-radius: 2em;
+                  -webkit-transition: 0.2s;
+                  -o-transition: 0.2s;
+                  transition: 0.2s; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container .bubble-msg-inner-container .bubble-content:hover {
+                    background: #D4145A;
+                    border: 0.1em solid #D4145A;
+                    cursor: pointer; }
+                    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container .bubble-msg-inner-container .bubble-content:hover p {
+                      color: #ffffff; }
+                  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .bubble-msg-container .bubble-msg-inner-container .bubble-content p {
+                    padding: 0.2em 1em; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .textarea-container-outer-layer {
+              width: 100%; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .textarea-container-outer-layer .text-area-container-inner-layer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .textarea-container-outer-layer .text-area-container-inner-layer .text-area-content-container textarea {
+                  border: 0.15em solid #a5a5a5;
+                  border-radius: 1em;
+                  padding: 0.3em; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .chatroom-outer-container .chatroom-inner-container .chatroom-content-container .textarea-container-outer-layer .text-area-container-inner-layer .send-button-container .whiteButtonWrapper {
+                  background: #000000;
+                  color: #ffffff;
+                  border-radius: 2em;
+                  -webkit-box-shadow: none;
+                  box-shadow: none; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .hide {
+        display: none; }
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .productsSegregated {
+    height: 90.5vh; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer .dataContainer .segregatedSubcategoriesDataContainerOuterLayer {
+      max-height: 85vh; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type {
+      height: 83vh; } }
+
+@media screen and (max-width: 1024px) {
+  .productsSegregated {
+    margin-top: 6em; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer {
+      top: 8%; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type {
+      height: 90vh; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 768px) {
+  .productsSegregated {
+    margin: 5em 0 0 0; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer {
+      display: none; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer {
+      width: 100%;
+      padding: 0.5em 0; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer {
+        width: 100%;
+        margin-left: 0; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer {
+          position: relative;
+          background: #ffffff;
+          padding: 1em 1em 0 1em;
+          width: 95%;
+          margin: 0 auto; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one h3 {
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              font-size: 1em; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .iconBox {
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              margin: 0 0.5em; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-two {
+            display: block;
+            margin: 0.5em 0; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type {
+          height: 78vh; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent {
+            width: 100%; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr;
+              width: 95%;
+              margin: 0.5em auto; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer a .productsContainer {
+                width: 90%;
+                margin: 1em auto; } }
+
+@media screen and (max-width: 600px) {
+  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .modalPage {
+    top: 12%; }
+  .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 {
+    margin: 0; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedSubcategoriesDataContainer {
+      display: none; }
+    .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer {
+      width: 100%;
+      padding: 0; }
+      .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer {
+        margin-top: 0em; }
+        .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer {
+          width: 99%;
+          margin: 0 auto; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0%;
+            background: #ffffff;
+            padding: 1em 0.5em 0 0.5em;
+            width: 95%; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one {
+              display: block; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one h3 {
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-one .iconBox {
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                margin: 0 0.5em; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .product-type-container-header-outer-layer .productTypeContainerHeader .product-type-container-header-two {
+              display: block; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type {
+            height: 72vh; }
+            .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr;
+              grid-template-columns: 1fr;
+              width: 100%; }
+              .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer {
+                width: 100%; }
+                .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type .productTypeContainerContent .productsContainerOuterLayer .productsContainer .productsContainerInnerLayer .titleCategory p {
+                  font-size: 0.9em; }
+          .productsSegregated .productsSegregatedContentContainer .segregatedProductsContainer .mainClass .segregated-product-container-layer-2 .segregatedProductTypeDataContainer .dataContainerOuterLayer .segregatedProductTypeInnerLayer .productTypeContainer .outer-scroll-product-type::-webkit-scrollbar {
+            /* WebKit */
+            width: 0px; } }

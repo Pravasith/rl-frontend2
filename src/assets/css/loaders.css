@@ -1,0 +1,6 @@
+.outer-loading-wrap-simple {
+  border-radius: 0.2em;
+  width: 100%; }
+  .outer-loading-wrap-simple .simple-loader-inner-wrap {
+    width: 100%;
+    min-height: 1.5em; }

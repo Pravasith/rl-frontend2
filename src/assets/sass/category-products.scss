@@ -1,0 +1,210 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+.category-products-main-container{
+    width: 100%;
+    margin-top: 2em;
+    .category-products-inner-container{
+        @include flexCentreCol;
+        width: 97%;
+        margin: 0 auto;
+        padding: 0.5em;
+        .category-products-header{
+            margin: 1.5em 0;
+            h3{
+                font-size: 2em;
+            }
+        }
+        .category-products-outer-layer{
+            width: 100%;
+            .category-products-inner-layer{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .category-container{
+                    width: 95%;
+                    margin: 0.5em auto;
+                    .category-content-container{
+                        @include flexCentreCol;
+                        justify-content: flex-start;
+                        width: 100%;
+                        padding: 0.5em 0;
+                        border-radius: 0.3em;
+                        background: $veryVeryLightGrey;
+                        transition: 0.3s;
+                        height: 24em;
+                        &:hover{
+                            cursor: pointer;
+                            transform: translateY(-0.4em);
+                            background: $white;
+                            @include box_shadow;
+
+                        }
+                        .category-image-container{
+                            width: 100%;
+                            height: 12em;
+                        }
+                        .category-header-container{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            width: 90%;
+                            margin: 0.5em auto;
+                            a{
+                                width: 100%;
+                                h3{
+                                    font-size: 1em;
+                                    font-weight: 500;
+                                    width: 95%;
+                                    &:hover{
+                                        // color: $white;
+                                    }
+                                } 
+                            }
+
+                        }
+                        .sub-category-container{
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            width: 90%;
+                            margin: 0 auto;
+                            p{
+                                font-size: 0.9em;
+                                margin-bottom: 0.3em;
+                                transition: 0.2s;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            a{
+                                display: block !important;
+                                p{
+                                    font-weight: 600;
+
+                                }
+                            }
+                            .subCat-products{
+                                a{
+                                    p{
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                            .subCat-products:nth-child(n+6){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .category-products-main-container{
+        // margin: 0;
+        .category-products-inner-container{
+            width: 96%;
+            .category-products-header{
+                h3{
+                    font-size: 1.5em;
+                }
+            }
+            .category-products-outer-layer{
+                .category-products-inner-layer{
+                    grid-template-columns: 1fr 1fr 1fr;
+                    .category-container{
+                        .category-content-container{
+                            .category-header-container{
+                                a{
+                                    h3{
+                                        font-size: 1.2em;
+                                    }
+                                }
+                            }
+                            .sub-category-container{
+                                a{
+                                    p{
+                                        font-size: 1em;
+                                    }
+                                }
+                                .subCat-products{
+                                    a{
+                                        p{
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .category-products-main-container{
+        margin: 0;
+        .category-products-inner-container{
+            .category-products-outer-layer{
+                .category-products-inner-layer{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .category-products-main-container{
+        margin: 0;
+        .category-products-inner-container{
+            width: 96%;
+            .category-products-header{
+                h3{
+                    font-size: 1.2em;
+                }
+            }
+            .category-products-outer-layer{
+                .category-products-inner-layer{
+                    grid-template-columns: 1fr;
+                    .category-container{
+                        width: 100%;
+                        .category-content-container{
+                            .category-header-container{
+                                a{
+                                    h3{
+                                        font-size: 1.2em;
+                                    }
+                                }
+                            }
+                            .sub-category-container{
+                                a{
+                                    p{
+                                        font-size: 1em;
+                                    }
+                                }
+                                .subCat-products{
+                                    a{
+                                        p{
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

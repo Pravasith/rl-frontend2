@@ -1,0 +1,1155 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-moz-selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+::selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Prata', serif;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.hide {
+  display: none; }
+
+.mediumBtn {
+  border: 0.2em solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2em 0.5em 2em;
+  margin: 0.5em;
+  color: #6d6d6d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.355em; }
+  .mediumBtn:hover {
+    color: #4D4D4D;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15); }
+
+.profilePicTiny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.8em;
+  min-height: 2.8em;
+  border-radius: 3em;
+  background: #fff; }
+  .profilePicTiny .innerWrap {
+    width: 2.2em;
+    height: 2.2em; }
+    .profilePicTiny .innerWrap img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 6em;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0.2em 0;
+  color: #000000; }
+
+a {
+  text-decoration: none; }
+
+/* The animation code */
+@-webkit-keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+@keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+
+@-webkit-keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@-webkit-keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+@keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+/* The element to apply the animation to */
+#shakeHands {
+  -webkit-animation: upAndDown 1.5s infinite;
+  animation: upAndDown 1.5s infinite; }
+
+#botBgd {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: scaleYHighAndLow 2s infinite;
+  animation: scaleYHighAndLow 2s infinite; }
+
+#tree {
+  -webkit-transform-origin: 70% 100%;
+  -ms-transform-origin: 70% 100%;
+  transform-origin: 70% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+#loadTree {
+  -webkit-transform-origin: 72% 100%;
+  -ms-transform-origin: 72% 100%;
+  transform-origin: 72% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #6d6d6d; }
+
+.line {
+  width: 90%;
+  height: 0.1em;
+  border-radius: 0.2em;
+  background: #e4e4e4;
+  margin: 0.4em 0; }
+
+.hide {
+  display: none; }
+
+.companyHeaderSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0 1em;
+  margin-top: 1em; }
+  .companyHeaderSection h1 {
+    margin: 0;
+    font-family: 'Prata', serif;
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 600; }
+  .companyHeaderSection .line {
+    background: #e4e4e4;
+    width: 10%; }
+  .companyHeaderSection p {
+    font-size: 0.8em;
+    font-weight: 400; }
+
+.vendorPublicUrlOuterWrap {
+  position: relative;
+  width: 100%; }
+  .vendorPublicUrlOuterWrap .vendorPublicUrl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.8em;
+    background: #ffffff; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails {
+      width: 21%;
+      padding: 1em 0.5em;
+      background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+      background: -webkit-linear-gradient(#F2F2F2, #ffffff);
+      background: -o-linear-gradient(#F2F2F2, #ffffff);
+      background: linear-gradient(#F2F2F2, #ffffff);
+      top: 7%; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 93%;
+        padding: 0.5em;
+        margin: 0 auto; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 100%; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorImageCategory .vendorImageContainerInnerLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 0.2em;
+            min-width: 5em;
+            min-height: 5em;
+            background: #ffffff; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorImageCategory .vendorImageContainerInnerLayer img {
+              width: 4em;
+              height: 4em; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory {
+            margin: 0.6em 0; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory p {
+              margin: 0.4em 0;
+              text-align: left;
+              font-size: 0.8em;
+              font-weight: 400; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              margin-top: 0.8em; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation .locationIconContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: end;
+                -ms-flex-align: end;
+                align-items: flex-end; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation h3 {
+                font-size: 0.85em;
+                font-weight: 500;
+                margin: 0.5em 0.8em;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation .iconCategoryContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: end;
+                -ms-flex-align: end;
+                align-items: flex-end; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            margin: 1em 0; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .headerContainer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .headerContainer h3 {
+                margin: 0; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .headerContainer .line {
+                background: #e4e4e4;
+                width: 10%; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%;
+              margin: 0.5em 0; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails .vendorProfilePic {
+                min-width: 4em;
+                min-height: 4em;
+                margin-right: 0.5em; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails .vendorProfilePic .vendorProfilePicInnerLayer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  width: 4em;
+                  height: 4em;
+                  border-radius: 50%;
+                  background: #F2F2F2; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails .vendorProfilePic .vendorProfilePicInnerLayer img {
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 50%; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails .vendorNameContainer {
+                width: 75%; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .vendorDetails .vendorNameContainer h3 {
+                  font-family: 'Prata', serif;
+                  font-size: 0.85em; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts {
+      width: 75%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: #ffffff;
+      padding: 1.5em 1em;
+      margin: 0; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer {
+        width: 98%;
+        margin: 0;
+        background: #ffffff; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 97%; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              width: 100%;
+              margin-bottom: 0.5em; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 1.2em; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer .iconBox {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  width: 1.2em;
+                  height: 1.2em;
+                  border-radius: 0.2em;
+                  margin-left: 0.5em;
+                  background: #e4e4e4;
+                  cursor: pointer; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer .expandButtonContainer {
+                  width: 1.5em;
+                  height: 1.5em;
+                  margin-left: 0.5em;
+                  border-radius: 0.2em;
+                  background: #e4e4e4; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer .expandButtonContainer:hover {
+                    cursor: pointer; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer .expandButtonContainer .iconBox {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .line {
+                background: #00b0d8;
+                width: 3%;
+                margin: 0.1em 0 0 0; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%; }
+              .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%;
+                margin: 0 0 1em 0; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: end;
+                  -ms-flex-align: end;
+                  align-items: flex-end; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader p {
+                    font-size: 0.8em;
+                    font-weight: 500; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .iconBox {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    width: 1.2em;
+                    height: 1.2em;
+                    border-radius: 0.2em;
+                    margin-left: 0.5em;
+                    background: #e4e4e4;
+                    cursor: pointer; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    margin-left: 0.5em;
+                    padding: 0.5em;
+                    border-radius: 0.2em;
+                    background: #e4e4e4; }
+                    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer:hover {
+                      cursor: pointer; }
+                  .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-left: 0.5em;
+                    padding: 0.2em 0.5em;
+                    border-radius: 0.2em;
+                    background: #e4e4e4;
+                    -webkit-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    transition: 0.3s; }
+                    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo:hover {
+                      background: #9c9c9c;
+                      cursor: pointer; }
+                      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo:hover p {
+                        color: #ffffff;
+                        text-decoration: underline; }
+                    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo p {
+                      font-size: 0.6em; }
+                .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .sliderContainer {
+                  width: 100%; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .hide {
+              display: none; }
+  .vendorPublicUrlOuterWrap .hide {
+    display: none; }
+  .vendorPublicUrlOuterWrap .showAllContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffffd6;
+    z-index: 3; }
+    .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+      .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .closeModalButton {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        cursor: pointer; }
+      .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0.5em;
+        background: #ffffff;
+        max-height: 70vh; }
+        .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .modalHeaderClass {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .modalHeaderClass h3 {
+            font-size: 1em; }
+          .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .modalHeaderClass .line {
+            background: #00b0d8;
+            width: 15%; }
+        .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin: 0.5em 0; }
+          .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            height: 62vh;
+            overflow-y: auto; }
+            .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer .productImagesAndTitle {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              margin: 0.5em; }
+              .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer .productImagesAndTitle .productImagesAndTitleInnerLayer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 80%;
+                padding: 0.5em;
+                background: #ffffff;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s; }
+                .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer .productImagesAndTitle .productImagesAndTitleInnerLayer:hover {
+                  cursor: pointer; }
+                .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer .productImagesAndTitle .productImagesAndTitleInnerLayer p {
+                  margin: 0.3em 0; }
+
+.hide {
+  display: none; }
+
+@media screen and (max-width: 1300px) {
+  .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap {
+    width: 80%; }
+    .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 768px) {
+  .vendorPublicUrlOuterWrap .vendorPublicUrl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4em; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails {
+      width: 99%;
+      margin: 0 auto;
+      position: relative;
+      padding: 1em 0; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer {
+        width: 96%; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory {
+          margin: 0.9em 0 0 0; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .companyHeaderSection h1 {
+            font-size: 1.2em; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory p {
+            font-size: 0.9em; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation h3 {
+            font-size: 1.1em; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .headerContainer h3 {
+          font-size: 1.1em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails h1 {
+        font-size: 1.2em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails h3 {
+        font-size: 1.1em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails p {
+        font-size: 0.9em; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .lineSection {
+      height: 0.2em;
+      width: 100%;
+      background: #000000; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts {
+      width: 99%;
+      margin: 0;
+      background: #ffffff;
+      padding: 1.5em 0; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer {
+        width: 95%;
+        height: auto;
+        background: #ffffff; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer h3 {
+          font-size: 1.2em; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages {
+          width: 100%;
+          margin: 1em 0; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            width: 100%;
+            margin: 0.5em 0; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader p {
+              font-size: 1em; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo {
+              width: 20%; }
+  .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap {
+    width: 95%; }
+    .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 600px) {
+  .vendorPublicUrlOuterWrap .vendorPublicUrl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails {
+      width: 99%;
+      margin: 0 auto;
+      position: relative;
+      padding: 1em 0; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer {
+        width: 96%; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory {
+          margin: 0.9em 0 0 0; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .companyHeaderSection h1 {
+            font-size: 1.2em; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory p {
+            font-size: 0.9em; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorCompanyDescriptionCategory .vendorCompanyLocation h3 {
+            font-size: 1.1em; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails .vendorProfileDetailsInnerLayer .vendorInfoContainer .vendorpersonalDescription .headerContainer h3 {
+          font-size: 1.1em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails h1 {
+        font-size: 1.2em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails h3 {
+        font-size: 1.1em; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileDetails p {
+        font-size: 0.9em; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .lineSection {
+      height: 0.2em;
+      width: 100%;
+      background: #000000; }
+    .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts {
+      width: 99%;
+      margin: 0;
+      background: #ffffff;
+      padding: 1.5em 0; }
+      .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer {
+        width: 95%;
+        height: auto;
+        background: #ffffff; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .categoryDataHeader .headerExpansionContainer h3 {
+          font-size: 1.2em; }
+        .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages {
+          width: 100%;
+          margin: 1em 0; }
+          .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            width: 100%;
+            margin: 0.5em 0; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader p {
+              font-size: 1em; }
+            .vendorPublicUrlOuterWrap .vendorPublicUrl .vendorProfileProducts .vendorProfileProductsInnerLayer .vendorProfileProductsInnerLayerContainer .categoryDataContainer .subCategoriesWrapper .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainerTwo {
+              width: 20%; }
+  .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap {
+    width: 95%; }
+    .vendorPublicUrlOuterWrap .showAllContainer .showAllContainerInnerWrap .modalContainerOuterWrap .modalContainerInnerWrap .uploadedProductsContainer .uploadedProductsInnerContainer {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }

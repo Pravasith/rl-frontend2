@@ -1,0 +1,1509 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+@keyframes slideinModal {
+    from {
+      width: 0%; 
+    }
+  
+    to {
+      width: 40%;
+    }
+}
+
+#backdrop{
+    background: $black;
+}
+
+.payment-modal{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000000000;
+    background: #ffffffd6;
+    .payment-modal-inner-layer{
+        @include flexCentreRow;
+        width: 100%;
+        height: 100%;
+        .payment-success-message{
+            position: relative;
+            @include flexCentreCol;
+            width: 40%;
+            height: 20em;
+            background-color: $veryLightGrey;
+            @include box_shadow;
+            .success-screen-button-container{
+                @include flexCentreCol;
+                margin: 0.5em 0;
+                h3{
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .button-container{
+                    .whiteButtonWrapper{
+                        box-shadow: none;
+                        background: $black;
+                        color: $white;
+                        border-radius: 0;
+                    }
+                    &:hover{
+                        .whiteButtonWrapper{
+                            background: $white;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+            .closeButton{
+                position: absolute;
+                top: 1em;
+                right: 1em;
+            }
+        }
+    }
+}
+
+.line{
+    
+    width: 90%;
+    height: 0.1em;
+    border-radius: 0.2em;
+    background: $lightGrey;
+    margin: 0.4em 0;
+}
+
+.hide{
+    display: none;
+}
+
+.empty-cart-text{
+    margin: 1em 0;
+    h3{
+        font-size: 0.9em;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.sliderInput{
+    -webkit-appearance: none;
+        width: 100%;
+        height: 0.1em;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      
+      &:hover {
+        opacity: 1;
+      }
+}
+.sliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    background: $primaryMagenta;
+    cursor: pointer;
+  }
+
+input{
+    border: none;
+    // border-bottom: 0.2em solid $black;
+    background: transparent;
+    color: $darkerGrey;
+    outline: none;
+    height: 1.5em;
+    width: 100%;
+    border-bottom: 0.1em solid $semiDarkGrey;
+    &:focus + .InputSeparatorLine {
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+    &:hover + .InputSeparatorLine{
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+}
+
+
+.InputSeparatorLine {
+    height:0.1em;
+    width: 100%;
+    background: $darkGrey;
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all .15s $curve;
+}
+
+#map {
+    width: 100%;
+    height: 20em;
+    position: relative;
+     .centerMarker {
+        position: absolute;
+        /*url of the marker*/
+        background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/map-marker+(1).png") no-repeat;
+        // /*center the marker*/
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        /*fix offset when needed*/
+        margin-left: -10px;
+        margin-top: -34px;
+        /*size of the image*/
+        height: 34px;
+        width: 20px;
+        z-index: 1;
+        cursor: pointer;
+      }
+} 
+
+// google-maps-marker: http://maps.gstatic.com/mapfiles/markers2/marker.png
+
+.centerMarker {
+    position: absolute;
+    /*url of the marker*/
+    background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/map-marker+(1).png") no-repeat;
+    // /*center the marker*/
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    /*fix offset when needed*/
+    margin-left: -10px;
+    margin-top: -34px;
+    /*size of the image*/
+    height: 34px;
+    width: 20px;
+    // z-index: 1;
+    cursor: pointer;
+  }
+
+.checkout-container-outer-layer{
+    position: relative;
+    width: 100%;
+    background: $white;
+    margin-top: 1.8em;
+    // z-index: 3;
+    .checkout-truck-container{
+        width: 100%;
+        height: 87vh;
+        background: $white;
+        .checkout-truck-inner-container{
+            @include flexCentreCol;
+            width: 60%;
+            margin: 0 auto;
+            .truck-img-container{
+                width: 75%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .text-container{
+                text-align: center;
+                h3{
+                    font-size: 4em;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 2em;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .checkout-container-inner-layer{
+        @include flexCentreRow;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        .checkout-items-outer-layer{
+            width: 60%;
+            // height: 100vh;
+            padding: 0.3em;
+            background: $veryLightGrey;
+            .checkout-items-inner-layer{
+                @include flexCentreCol;
+                width: 100%;
+                margin: 1em 0;
+                .item-header-conatiner{
+                    margin: 0.5em 0;
+                    width: 100%;
+                    .item-header-inner-container{
+                        @include flexCentreRow;
+                        width: 70%;
+                        margin: 0 auto;
+                        justify-content: flex-start;
+                        .svg-img-conatiner{
+                            margin-right: 0.5em;
+                        }
+                        h3{
+                            font-size: 2em;
+                            font-family: sans-serif;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .item-content-container{
+                    width: 100%;
+                    .item-content-inner-container{
+                        width: 70%;
+                        padding: 0.5em;
+                        margin: 0.5em auto;
+                        .item-content-header-container{
+                            width: 100%;
+                        }
+                        .added-item-container{
+                            // width: 75%;
+                            width: 100%;
+                            margin: 0.5em auto;
+                            p{
+                                text-align: center;
+                            }
+                            .added-item-outer-container{
+                                width: 98%;
+                                position: relative;
+                                background: $white;
+                                padding: 0.5em 0.3em;
+                                margin: 0.5em 0;
+                                .added-items-inner-container{
+                                    @include flexCentreRow;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    background: $white;
+                                    padding: 0.5em 1em;
+                                    // margin: 0.5em 0;
+                                    .item-img-container{
+                                        width: 3em;
+                                        height: 3em;
+                                        background: yellow
+                                    }
+                                    .item-details-container{
+                                        @include flexCentreCol;
+                                        align-items: flex-start;
+                                        // width: 55%;
+                                        margin-left: 1em;
+                                        .item-name-header-container{
+                                            h3{
+                                                font-size: 0.9em;
+                                                font-weight: 600;
+                                                transition: 0.2s;
+                                                &:hover{
+                                                    text-decoration: underline;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+                                        .item-qunatity-container{
+                                            @include flexCentreRow;
+                                            margin: 0.5em 0 0 0;
+                                            .x-sign{
+                                                margin-right: 1em;
+                                                h3{
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                            .show{
+                                                @include flexCentreCol;
+                                                width: 50%;
+                                                // margin: 0 auto;
+                                                cursor: pointer;
+                                                input{
+                                                    // background: $veryLightGrey;
+                                                    // text-align: center;
+                                                    background: $veryLightGrey;
+                                                    color: $primaryMagenta;
+                                                    font-weight: 500;
+                                                    font-size: 1em;
+                                                    border-bottom: 0;
+                                                    text-align: center
+                                                }
+                                                .form-group{
+                                                    .cartproductQuantity{
+                                                        z-index: 1;
+                                                    }
+                                                }
+                                            }
+                                            .empty-cart-text{
+                                                margin: 1em 0;
+                                                p{
+                                                    font-size: 0.9em;
+                                                    font-weight: 600
+                                                }
+                                            }
+                                        }
+                                        .line{
+                                            width: 35%;
+                                        }
+                                        .price-tag-container{
+                                            margin: 0.5em 0;
+                                            h1{
+                                                font-family: unset;
+                                                span{
+                                                    font-size: 0.7em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .add-remove-btn-container{
+                                        @include flexCentreCol;
+                                        .details-btn-container{
+                                            .whiteButtonWrapper{
+                                                box-shadow: none;
+                                                background: $darkerGrey;
+                                                color: $white; 
+                                                border-radius: 0;
+                                                font-size: 0.75em;
+                                            }
+                                        }
+                                        .remove-button-container{
+                                            width: 100%;
+                                            .whiteButtonWrapper{
+                                                box-shadow: none;
+                                                background: $lightGrey;
+                                                color: $black; 
+                                                border-radius: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                .delete-cart-data{
+                                    position: absolute;
+                                    right: 0.5em;
+                                    top: 0.2em;
+                                }
+                            }
+                        }
+                        .added-item-container:last-child {
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+            }
+        }
+        .checkout-location-outer-layer{
+            // position: sticky;
+            // top: 14%;
+            // z-index: 3;
+            width: 38%;
+            padding: 0.3em;
+            position: relative;
+            .checkout-location-inner-layer{
+                @include flexCentreCol;
+                width: 100%;
+                margin: 1em 0;
+                .location-header-container{
+                    margin: 0.5em 0;
+                    width: 100%;
+                    .location-header-inner-container{
+                        @include flexCentreRow;
+                        justify-content: flex-start;
+                        position: relative;
+                        width: 80%;
+                        margin: 0 auto;
+                        .back-button-container{
+                            position: absolute;
+                            left: -2.1em;
+                            cursor: pointer;
+                        }
+                        .setBack{
+                            position: absolute;
+                            left: -3em;
+                            cursor: pointer;
+                            margin-right: 0.3em;
+                        }
+                        h3{
+                            font-size: 2em;
+                            font-weight: 600;
+                            // font-size: 1.5em;
+                            // font-weight: 300;
+                            font-family: sans-serif;
+                        }
+                        .hide{
+                            display: none;
+                        }
+                    }
+                }
+                .selcetion-container-outer-layer{
+                    @include flexCentreCol;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 75%;
+                    max-height: 30em;
+                    overflow-y: auto;
+                    margin: 0 auto;
+                    padding-right: 1em;
+                    .address-input-field-container{
+                        width: 100%;
+                        margin: 0.5em 0;
+                        .map-detailed-container{
+                            // position: relative;
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            input{
+                                height: 1.7em;;
+                            }
+                            .get-back{
+                                position: absolute;
+                                top: 2.3em;
+                                left: 1em;
+                                cursor: pointer;
+                                .whiteButtonWrapper{
+                                    background: $lightGrey;
+                                    color: $black;
+                                    box-shadow: none;
+                                    margin-left: 0;
+                                    border-radius: 0;
+                                    transition: 0.2s;
+                                    &:hover{
+                                        background: $black;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            .address-search-input{
+                                width: 100%;
+                                margin: 0.5em 0;
+                                .get-address-location{
+                                    @include flexCentreCol;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    .enable-btn{
+                                        
+                                    }
+                                    .disbale-btn{
+
+                                    }
+                                    .location-address-input{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+                                        margin: 0.5em 0;
+                                        .location-icon{
+                                            margin-right: 1em;
+                                        }
+                                        .input-address-field{
+                                            .address-label{
+                                                font-size:1em;
+                                                font-weight: 400;
+                                                margin: 0;
+                                            }
+                                            p{
+                                                font-size: 0.75em;
+                                                margin: 0.3em 0;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                    .additional-info-input-fields{
+                                        width: 80%;
+                                        input{
+                                            margin-top: 1em;
+                                        }
+                                        p{
+                                            color: $white;
+                                            background: $primaryMagenta;
+                                            padding: 0.2em;
+                                            text-align: -webkit-center;
+                                        }
+                                    }
+                                }
+                                .show{
+                                    @include flexCentreCol;
+                                    align-items: flex-start;
+                                    .gradientButtonWrapper{
+                                        background: $black;
+                                        color: $white;
+                                        border-radius: 0;
+                                        margin-left: 0;
+                                        margin-top: 1em;
+                                        box-shadow: none;
+                                    }
+                                    input{
+                                        margin: 1em 0 0 0;
+                                    }
+                                }
+                                .hide{
+                                    display: none;
+                                }
+                            }
+                            .show{
+                                position: relative;
+                                @include flexCentreRow;
+                            }
+                            .map-container{
+                                position: relative;
+                                width: 100%;
+                                height: 15em;
+                                background: $veryLightGrey;
+                                margin: 0.5em 0;
+                                #map {
+                                    width: 100%;
+                                    height: 15em;
+                                    position: relative;
+                                }
+                                .centerMarker {
+                                    position: absolute;
+                                    /*url of the marker*/
+                                    background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/map-marker+(2).png") no-repeat;
+                                    // /*center the marker*/
+                                    top: 50%;
+                                    left: 50%;
+                                    z-index: 1;
+                                    /*fix offset when needed*/
+                                    margin-left: -10px;
+                                    margin-top: -34px;
+                                    /*size of the image*/
+                                    height: 34px;
+                                    width: 20px;
+                                    z-index: 1;
+                                    cursor: pointer;
+                                }
+                            }
+                            .current-address{
+                                width: 100%;
+                                // border: 0.1em solid $semiLightGrey;
+                                padding: 0;
+                                display: block;
+                                position: relative;
+                                .current-default-address{
+                                    border: 0.1em solid $semiLightGrey;
+                                    .address-label{
+                                        position: absolute;
+                                        font-size: 0.85em;
+                                        font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+                                        color: $darkGrey;
+                                        top: 0.85em;
+                                        left: 1em;
+                                    }
+                                    input{
+                                        white-space: nowrap; 
+                                        width: 90%; 
+                                        overflow: hidden;
+                                        color: $black;
+                                        text-overflow: ellipsis; 
+                                        border-bottom: none;
+                                        padding: 2.5em 1em 0.5em 1em;
+                                    }
+                                }
+                            }
+                            .current-address-edit-option{
+                                width: 100%;
+                                .current-address-input{
+                                    width: 100%;
+                                    // margin: 1em 0 0 0;
+                                    input{
+                                        margin: 1em 0 0 0;
+                                    }
+                                   p{
+                                        color: $white;
+                                        background: $primaryMagenta;
+                                        padding: 0.2em;
+                                        text-align: -webkit-center;
+                                    }
+                                }
+                                .save-current-address{
+                                    @include flexCentreRow;
+                                    justify-content: flex-start;
+                                    margin-top: 0.7em;
+                                    .whiteButtonWrapper{
+                                        background: $black;
+                                        box-shadow: none;
+                                        color: $white;
+                                        border-radius: 0;
+                                    }
+                                }
+                            }
+                            .hide{
+                                display: none;
+                            }
+                            .add-details{
+                                margin: 0.5em 0;
+                                .add-input-field{
+                                    margin: 0.5em 0;
+                                    input{
+                                        // border-bottom: 0.2em solid $black;
+                                    }
+                                }
+                            }
+                            .save-button{
+                                margin: 1em 0;
+                                .whiteButtonWrapper{
+                                    box-shadow: none;
+                                    background: $black;
+                                    color: $white;
+                                }
+                            }
+                            .hide{
+                                display: none;
+                            }
+                            .modalContainer{
+                                // top: 0;
+                                // right: 0;
+                                // width: 0;
+                                // position: fixed;
+                                // overflow-x: hidden;
+                                // height: 100%;
+                                // background: $white;
+                                // animation: slideinModal 0.2s ease;
+                                // z-index: 3;
+                                .generic-modal-outer-wrapper{
+                                    // position: relative;
+                                    left: 0;
+                                    .generic-modal-inner-wrapper{
+                                        .modal-inner-wrap{
+                                            .modal-wrap-inner-style{
+                                                .modal-inner-wrap-2{
+                                                    // position: unset;
+                                                    // width: 100%;
+                                                    // height: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .current-location-container{
+                        width: 80%;
+                        margin: 0.5em 0;
+                        .current-location-inner-layer{
+                            @include flexCentreRow;
+                            border: 0.1em solid $black;
+                            padding: 0.5em 1em;
+                            cursor: pointer;
+                            .svg-img-container{
+                                margin: 0 0.5em;
+                            }
+                            h3{
+                                font-family: sans-serif;
+                                // font-weight: 500;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .hide{
+                        display: none;
+                    }
+                    // .saved-address-container{
+                    //     margin: 0.5em 0;
+                    //     width: 100%;
+                        .save-address-header{
+                            font-size: 1em;
+                            font-weight: 500;
+                            margin: 1em 0 0 0; 
+                        } 
+                        .saved-address-container-scroll-container{
+                            width: 97%;
+                            max-height: 17em;
+                            margin: 1em 0;
+                            padding: 0.3em;
+                            overflow-y: auto;
+                            .saved-address-container-inner-layer{
+                                @include flexCentreCol;
+                                width: 97%;
+                                .saved-location-address-container{
+                                    position: relative;
+                                    width: 95%;
+                                    margin: 1em auto;
+                                    transition: 0.3s;
+                                    .delete-address{
+                                        position: absolute;
+                                        right: 1em;
+                                        top: 0.3em;
+                                    }
+                                    .location-details-content-container{
+                                        @include flexCentreRow;
+                                        align-items: flex-start;
+                                        width: 100%;
+                                        padding: 0.5em;
+                                        .location-icon{
+                                            margin-right: 1em;
+                                        }
+                                        .location-content-container{
+                                            .location-header{
+                                                margin-bottom: 0.5em;
+                                                h3{
+                                                    font-size: 1em;
+                                                    font-weight: 600;
+                                                    font-family: sans-serif;
+                                                }
+                                            }
+                                            .location-address{
+                                                p{
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        cursor: pointer;
+                                        @include box_shadow;
+                                        border-radius: 0.5em;
+                                        .location-details-content-container{
+                                            .location-content-container{
+                                                .location-header{
+                                                    h3{
+                                                        color: $primaryMagenta;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .small-loader-container{
+                            @include flexCentreRow;
+                            width: 100%;
+                            margin: 1em 0;
+                        }
+                    // }
+                }
+                .get-location-outer-layer{
+                    @include flexCentreCol;
+                    width: 70%;
+                    margin: 0 auto;
+                    .additional-details-container{
+                        width: 100%;
+                        margin: 0.5em 0;
+                        .additional-details-container-inner-layer{
+                            @include flexCentreCol;
+                            width: 100%;
+                            .input-field-container{
+                                width: 100%;
+                                margin: 0.5em 0;
+                            }
+                            .proceed-button-container{
+                                width: 100%;
+                                .whiteButtonWrapper{
+                                    box-shadow: none; 
+                                    background: $darkerGrey;
+                                    color: $white;
+                                    border-radius: 0;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+                .hide{
+                    display: none;
+                }
+            }
+            .login-button-page{
+                @include flexCentreCol;
+                padding: 0.5em;
+                margin-bottom: 3em;
+                .image-category-section{
+                    width: 80%;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .whiteButtonWrapper{
+                    background: $black;
+                    color: $white;
+                    border-radius: 0;
+                    box-shadow: none;
+                    padding: 0.5em 2em 0.7em 2em;
+                    width: 45%;
+                    margin: 0 auto;
+                    font-size: 1.5em;
+                }
+            }
+            .hide{
+                display: none;
+            }
+        }
+        .checkout-amount-container{
+            // @include flexCentreRow;
+            position: fixed;
+            bottom: 0;
+            width: 61%;
+            padding: 0.5em 0 1em 0;
+            background: $white;
+            height: 2em;
+            .total-amount-inner-layer{
+                @include flexCentreRow;
+                justify-content: space-between;
+                width: 70%;
+                height: 2em;
+                margin: 0 auto;
+                padding: 0.5em;
+                h1{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+            }
+            h3{
+                text-align: center;
+                font-weight: 600;
+                
+            }
+            .small-loader{
+                @include flexCentreRow;
+                width: 100%;
+           }
+            .hide{
+                display: none;
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+}
+
+.order-details-main-container{
+    position: relative;
+    width: 100%;
+    background: $white;
+    margin-top: 2em;
+    .order-details-inner-container{
+        @include flexCentreCol;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.5em;
+        .switch-tabs-outer-container{
+            width: 100%;
+            .switch-tabs-inner-container{
+                @include flexCentreRow;
+                background: $lightGrey;
+                justify-content: space-between;
+                .header-container{
+                    @include flexCentreRow;
+                    justify-content: flex-start;
+                    // margin: 1em 0;
+                    h3{
+                        font-size: 1.5em;
+                        margin-left: 0.5em;
+                    }
+                }
+                .switch-button-container{
+                    @include flexCentreRow;
+                    .whiteButtonWrapper{
+                        box-shadow: none;
+                        background: none       
+                    }
+                    .upcoming-orders-button-container,.cancelled-orders-button-container{
+                        &:hover{
+                            background: $black;
+                            .whiteButtonWrapper{
+                                color: $white;
+                            }
+                        }
+                    }
+                    .bgd-color{
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .order-items-content-container{
+            @include flexCentreCol;
+            width: 100%;
+            .order-page-login-container{
+                width: 70%;
+                margin: 2em 0;
+                .login-signup-container{
+                    .login-page-inner-container{
+                        .modalOuterWrapper{
+                            width: 70%;
+                            margin: 0 auto;
+                            .dropModalInnerLayer{
+                                .loginModalContainerOne{
+                                    .loginModalContainerInnerLayer{
+                                        .formComponent{
+                                            .buttonContainer{
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .loginSignup-button-container{
+                        @include flexCentreRow;
+                        .loginSignup-button-inner-container{
+                            @include flexCentreRow;
+                            // width: 20%;
+                            margin: 0.5em auto;
+
+                            h3{
+                                font-weight: 600;
+                                color: $black;
+                                &:hover{
+                                    color: $primaryMagenta;
+                                    cursor: pointer;   
+                                }
+                            }
+                            .whiteButtonWrapper{
+                                width: 100%;
+                                background: $black;
+                                color: $white;
+                                border-radius: 0;
+                                box-shadow: none;
+                                padding: 0.5em;
+                                font-size: 1em;
+                                transition: 0.2s;
+                                &:hover{
+                                    text-decoration: underline;
+                                    @include box_shadow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .order-items-content-inner-container{
+                @include flexCentreCol;
+                align-items: flex-start;
+                width: 100%; 
+                .main-item-content-container{
+                    background: $veryLightGrey;
+                    margin: 0.5em 0;
+                    width: 50%;
+                    .order-container-inner-layer{
+                        @include flexCentreCol;
+                        width: 100%;
+                        .product-image-info-container{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            width: 95%;
+                            margin: 0 auto;
+                            padding: 0.5em 0;
+                            .product-name-container{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                margin-left: 1em;
+                                h3{
+                                    font-weight: 600;
+                                }
+                                .product-quantity-container{
+                                    @include flexCentreRow;
+                                    // margin: 0.5em 0;
+                                    p{
+                                        margin-right: 0.5em;
+                                        font-weight: 500;
+                                    }
+                                    h3{
+                                        color: $primaryMagenta;
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            background: $white;
+                            height: 0.2em;
+                        }
+                        .address-details-content-container{
+                            width: 100%;
+                            .address-details-inner-container{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 70%;
+                                margin: 0 auto;
+                                .price-info-container{
+                                    margin: 0 0 0.5em 0;
+                                    p{
+                                        font-size: 1em;
+                                        font-weight: 600;
+                                        span{
+                                            margin-left: 0.5em;
+                                            font-size: 0.65em;
+                                        }
+                                    }
+                                    .line{
+                                        width: 70%;
+                                        background: $semiDarkGrey;
+                                        height: 0.1em;
+                                        margin: 0.1em 0;
+                                    }
+                                }
+                                .delivery-address-container{
+                                    width: 100%;
+                                    .delivery-address{
+                                        @include flexCentreRow;
+                                        align-items: flex-start;
+                                        .delivery-address-container{
+                                            @include flexCentreCol;
+                                            align-items: flex-start;
+                                            margin-left: 0.5em;
+                                            h3{
+                                                font-weight: 600;
+                                                // margin-bottom: 0.5em;
+                                            }
+                                            p{
+                                                font-size: 0.7em;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                                .cancel-order-field-container{
+                                    margin: 0.5em 0 1em 0;
+                                    .cancel-field{
+                                        @include flexCentreCol;
+                                        align-items: flex-start;
+                                        .whiteButtonWrapper{
+                                            border-radius: 0;
+                                            box-shadow: none;
+                                            transition: 0.2s;
+                                            &:hover{
+                                                color: $white;
+                                                background: $black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
+                .cancelled-item-container{
+                   @include flexCentreCol;
+                   align-items: flex-start;
+                   width: 100%; 
+                   .cancelled-item-outer-container{
+                     background: $veryLightGrey;
+                     margin: 0.5em 0;
+                     width: 100%;
+                     .cancelled-item-inner-container{
+                        @include flexCentreCol;
+                        width: 100%;
+                        padding: 0.5em 0;
+                        .cancelled-item-info-container{
+                            width: 100%;
+                            .info-container-inner-container{
+                                @include flexCentreRow;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                width: 98%;
+                                margin: 0 auto;
+                                .img-container{
+                                    @include flexCentreRow;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    width: 50%;
+                                    .info-container{
+                                        @include flexCentreCol;
+                                        align-items: flex-start; 
+                                        margin-left: 1em;
+                                        h3{
+                                            font-size: 1.2em;
+                                            font-weight: 600;
+                                        }
+                                        p{
+                                            // font-size: 0.9em;
+                                            // font-weight: 500;
+                                            span{
+                                                // font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                                .left-container{
+                                    @include flexCentreRow;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    .cancelled-item-price-container{
+                                        width: 21%;
+                                        margin: 1em 0;
+                                        // width: fit-content;
+                                        .item-price-inner-container{
+                                            @include flexCentreCol;
+                                            h3{
+                                                @include flexCentreRow;
+                                            }
+                                        }
+                                    }
+                                    .status-button-container{
+                                        width: 40%;
+                                        .button-container{
+                                            // background: #d20808;
+                                            text-align: center;
+                                            padding: 0 0.5em;
+                                            p{
+                                                color: $black;
+                                                font-weight: 600;
+                                                text-align: center;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                                .responsive-container{
+                                    display: none;
+                                    .cancelled-button-container{
+                                        p{
+                                            background: #980b0b;
+                                            color: $white;
+                                            font-size: 1em;
+                                            font-weight: 600;
+                                            padding: 0.5em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            background: $white;
+                            height: 0.2em;
+                        }
+                        .cancelled-item-price-container{
+                            width: 100%;
+                            .item-price-inner-container{
+                                @include flexCentreRow;
+                                justify-content: flex-start;
+                                width: 95%;
+                                margin: 0 auto;
+                                h3{
+                                  font-size: 1.2em;
+                                  font-weight: 600;
+                                }
+                            }
+                        }
+                        .cancelled-item-refund-container{
+                            width: 100%;
+                            margin-top: 0.5em;
+                            .refund-item-inner-layer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 95%;
+                                margin: 0 auto;
+                                .responsive-refund-amount{
+                                    display: none;
+                                    .responsive-refund-amount-inner-container{
+                                        @include flexCentreRow;
+                                        margin: 0.5em 0;
+                                        h3{
+                                            font-weight: 600;
+                                            margin-right: 1em;
+                                        }
+                                    }
+                                }
+                                .refund-header{
+                                    h3{
+                                        font-weight: 600;
+                                    }
+                                    .line{
+                                        width: 70%;
+                                        background: $semiDarkGrey;
+                                        height: 0.1em;
+                                        margin: 0.1em 0;
+                                    }
+                                }
+                                .status-container{
+                                    @include flexCentreRow;
+                                    .status-id-container{
+                                        @include flexCentreRow;
+                                        margin: 0.5em 0;
+                                        p{
+                                            font-size: 0.9em;
+                                            font-weight: 500;
+                                            margin-right: 1em;
+                                            span{
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                     }
+                   }
+                }  
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .checkout-container-outer-layer{
+            margin-top: 5em; 
+        .checkout-container-inner-layer{
+            .checkout-items-outer-layer{
+                width: 55%;
+                .checkout-items-inner-layer{
+                    .item-header-conatiner{
+                        .item-header-inner-container{
+                            width: 90%;
+                            h3{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    .item-content-container{
+                        .item-content-inner-container{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .checkout-location-outer-layer{
+                width: 43%;
+                .checkout-location-inner-layer{
+                    .location-header-container{
+                        .location-header-inner-container{
+                            width: 90%;
+                                h3{
+                                    font-size: 1.2em;
+                                }
+                        }
+                    }
+                    .selcetion-container-outer-layer{
+                        .address-input-field-container{
+                            .map-detailed-container{
+                                .address-search-input{
+                                    .add-address{
+                                        .current-location-container{
+                                            width: 100%;
+                                            .current-location-inner-layer{
+                                                h3{
+                                                    font-size: 0.8em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hide{
+            display: none;
+        }       
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .checkout-container-outer-layer{
+        margin-top: 5em;
+        .checkout-truck-container{
+            margin-top: 7em;
+            .checkout-truck-inner-container{
+                width: 70%;
+                .text-container{
+                    h3{
+                        font-size: 2.2em;
+                    }
+                    p{
+                        font-size: 1.2em;
+                        margin: 0.5em 0;
+                    }
+                }
+            }
+        }
+        .checkout-container-inner-layer{
+            @include flexCentreCol;
+            .checkout-items-outer-layer{
+                width: 97%;
+                .checkout-items-inner-layer{
+                    .item-header-conatiner{
+                        margin: 0.5em 0 0 0;
+                        .item-header-inner-container{
+                            @include flexCentreCol;
+                            width: 100%;
+                            text-align: center; 
+                            h3{
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                    .item-content-container{
+                        .item-content-inner-container{
+                            width: 96%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .checkout-location-outer-layer{
+                width: 97%;
+                .checkout-location-inner-layer{
+                    .location-header-container{
+                        .location-header-inner-container{
+                            h3{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                    .selcetion-container-outer-layer{
+                        width: 90%;
+                        max-height: none;
+                        padding: 0;
+                        .address-input-field-container{
+                            .map-detailed-container{
+                                .get-back{
+                                    position: absolute;
+                                    top: 1.7em;
+                                    left: 0.8em;
+                                    cursor: pointer;
+                                }
+                                .address-search-input{
+                                    .add-address{
+                                        .current-location-container{
+                                            width: 100%;
+                                        }
+                                        .saved-address-container-scroll-container{
+                                            max-height: none;
+                                        }
+                                    }
+                                    .get-address-location{
+                                        margin-bottom: 1.5em;
+                                    }
+                                }
+                                .current-address{
+                                    margin-bottom: 1.5em;
+                                }
+                            }
+                        }
+                    }
+                }
+                .login-button-page{
+                    .image-category-section{
+                    }
+                    .whiteButtonWrapper{
+                        width: fit-content;
+                        font-size: 0.8em;
+                        margin: 0.5em 0;
+                    }
+                }
+            }
+            .checkout-amount-container{
+                width: 97%;
+                position: fixed;
+                bottom:0;
+                background: $white;
+            }
+        }
+        .hide{
+            display: none;
+        }
+    }
+    .order-details-main-container{
+        margin-top: 6em;
+        .order-details-inner-container{
+            .header-container{
+                width: 100%;
+            }
+            .order-items-content-container{
+                .order-items-content-inner-container{
+                    .main-item-content-container{
+                        width: 100%;
+                        .order-container-inner-layer{
+                            .product-image-info-container{}
+                            .address-details-content-container{
+                                .address-details-inner-container{
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                    .cancelled-item-container{
+                        .cancelled-item-outer-container{
+                            width: 100%;
+                            .cancelled-item-inner-container{
+                                .cancelled-item-info-container{
+                                    .info-container-inner-container{
+                                        .info-container{
+                                            h3{
+                                                margin-bottom: 0.3em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (max-width: 500px){
+    .order-details-main-container{
+        margin-top: 6em;
+        .order-details-inner-container{
+            .order-items-content-container{
+                .order-items-content-inner-container{
+                    .cancelled-item-container{
+                        .cancelled-item-outer-container{
+                            .cancelled-item-inner-container{
+                                .cancelled-item-info-container{
+                                    .info-container-inner-container{
+                                        justify-content: space-between;
+                                        .img-container{
+                                            width: 75%;
+                                        }
+                                        .left-container{
+                                            display: none;
+                                        }
+                                        .responsive-container{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                .cancelled-item-refund-container{
+                                    .refund-item-inner-layer{
+                                        .responsive-refund-amount{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .checkout-container-outer-layer{
+        margin-top: 5em;
+        .checkout-truck-container{
+            margin-top: 7em;
+            .checkout-truck-inner-container{
+                width: 95%;
+                .text-container{
+                    h3{
+                        font-size: 2em;
+                    }
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        .hide{
+            display: none;
+        }
+    }
+}

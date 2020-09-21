@@ -1,0 +1,259 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+
+
+.ad-component-outer-layer{
+    width:100%; 
+    position: relative;
+    // margin-bottom: 2em;
+
+    .hide{
+        display: none;
+    }
+    
+    .modal-container{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: $white;
+        z-index: 3;
+    }
+
+    .ad-component-inner-layer{
+        position: relative;
+        width: 100%;
+        a{
+            .desktop-class{
+                display: block;
+            }
+            .tab-class,.tab-pro-class,.mobile-class,.full-hd-class{
+                display: none;
+            }
+        }
+        .a{
+            .desktop-class{
+                display: block;
+            }
+            .tab-class,.tab-pro-class,.mobile-class,.full-hd-class{
+                display: none;
+            }
+        }
+
+        img{
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .profile-container{
+            position: absolute;
+            left: 3em;
+            top: 1em;
+            .profile-container-inner-layer{
+                @include flexCentreRow;
+                align-items: flex-start;
+                a{
+                    @include flexCentreRow;
+                    .profile-picture{
+                        width: 3em;
+                        height: 3em;
+                        background: $white;
+                        // padding: 0.3em;
+                        @include flexCentreRow;
+
+                        .profile-pic-inner-wrap{
+                            max-width: 2.5em;
+                            max-height: 2.5em;
+                            img{
+                                max-width: 2.5em;
+                                max-height: 2.5em;
+                            }
+                        }
+                    }
+                    .profile-details{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        margin-left: 0.85em;
+                        margin-top: 0.5em;
+
+                        .boldText{
+                            font-size: 1em;
+                            font-weight: 600;
+                            text-decoration: underline;
+                        }
+
+                        h3{
+                            color: $black;
+                            font-size: 0.85em;
+                            font-weight: 400;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+        .hide {
+             display: none;
+        }
+
+
+        .ad-container{
+            position: absolute;
+            right: 0.8em;
+            bottom: 0.8em;
+            // width: 9.5%;
+            // height: 32%;
+            width: 8em;
+            // height: 7em;
+            padding: 0.5em;
+            background: $white;
+
+            .ad-container-inner-layer{
+                @include flexCentreCol;
+                align-items: flex-start;
+                background: linear-gradient(0deg, $veryLightGrey, $white);
+                padding: 0.5em;
+                h3{
+                    color: $black;
+                    width: 90%;
+                    // margin-left: 0.5em;
+                    font-weight: 700;
+                    font-size: 0.9em;
+                    margin-bottom: 0.25em;
+                }
+                p{
+                    // width: 75%;
+                    // margin: 0.5em;
+                    font-weight: 500;
+                    font-size: 0.7em;
+
+                    span{
+                        cursor: pointer;
+                        text-decoration: underline;
+                        color: $black;
+                        &:hover{
+                            color: $primaryMagenta;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1367px){
+    .ad-component-outer-layer{
+        .ad-component-inner-layer{
+            a{
+                .full-hd-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.tab-pro-class,.mobile-class{
+                    display: none;
+                }
+            }
+            .a{
+                .full-hd-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.tab-pro-class,.mobile-class{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .ad-component-outer-layer{
+        .ad-component-inner-layer{
+            a{
+                .tab-class{
+                    display: block;
+                }
+                .desktop-class,.tab-pro-class,.mobile-class,.full-hd-class{
+                    display: none;
+                }
+            }
+            .a{
+                .tab-class{
+                    display: block;
+                }
+                .desktop-class,.tab-pro-class,.mobile-class,.full-hd-class{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ad-component-outer-layer{
+        .ad-component-inner-layer{
+            a{
+                .tab-pro-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.mobile-class,.full-hd-class{
+                    display: none;
+                }
+            }
+            .a{
+                .tab-pro-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.mobile-class,.full-hd-class{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .ad-component-outer-layer{
+        .ad-component-inner-layer{
+            a{
+                .mobile-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.tab-pro-class,.full-hd-class{
+                    display: none;
+                }
+            }
+            .a{
+                .mobile-class{
+                    display: block;
+                }
+                .desktop-class,.tab-class,.tab-pro-class,.full-hd-class{
+                    display: none;
+                }
+            }
+            .profile-container,.ad-container{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+// screen-size:420px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/patio-bangalore-420x600.png
+// screen-size:768px:- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/patio-bangalore-768x420.png
+// screen-size:1024px:- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/patio-bangalore-1024x768.png
+// screen-size:1366px:- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/patio-bangalore-1366x768.png
+// screen-size:1920px:- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/patio-bangalore-1920x1080.png
+
+// ask-products-image
+// screen-size:420px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-for-products-420x600.png
+// screen-size:768px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-for-products-768x420.png
+// screen-size:1024px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-for-products-1024x768.png
+// screen-size:1366px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-for-products-1366x768.png
+// screen-size:1920px :- https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-for-products-1920x1080.png

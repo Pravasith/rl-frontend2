@@ -1,0 +1,40 @@
+location /  {
+    proxy_pass    http://localhost:3000;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+}
+
+sudo ln -s /etc/nginx/sites-available/pravasdesign.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/api.pravasdesign.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/rl.pravasdesign.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/apirl.pravasdesign.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/api2rl.pravasdesign.com /etc/nginx/sites-enabled/
+
+
+sudo certbot --nginx -d pravasdesign.com -d www.pravasdesign.com -d api.pravasdesign.com -d www.api.pravasdesign.com -d rl.pravasdesign.com -d www.rl.pravasdesign.com -d apirl.pravasdesign.com -d www.apirl.pravasdesign.com -d api2rl.pravasdesign.com -d www.api2rl.pravasdesign.com 
+
+
+// FRONT END without custom node server
+sudo pm2 start yarn --name "anynameuwant(lowecase)" --interpreter bash -- start
+
+and restart it like this - 
+pm2 restart NAMEOFTHESERVER
+
+// With custom server running at XXXX port specified inside server file
+sudo pm2 start ecosystem.config.js --env production
+
+
+NOTES ABOUT DEPLOYMENT -
+
+pravas-folio has 2 files  - frontend and backend. 
+Backend is run using pm2 by 'sudo pm2 start ANYSYSTEM.config.js --env production' command
+which means it is run by ROOT (because of sudo)
+
+frontend is run using pm2 and nextJs by 'pm2 start yarn --name "ANY NAME(lowecase)" --interpreter bash -- start' // interpreter bash is very IMPORTANT
+notice that there is no sudo, because its run by 'deploy' user
+
+and the rest are rollinglogs files, run normally using 'sudo pm2 start ANYSYSTEM.config.js --env production' command
+just like the backend of pravas-folio .

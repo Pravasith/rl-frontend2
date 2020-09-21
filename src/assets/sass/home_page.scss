@@ -1,0 +1,1877 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+// @include gradientAnimation;
+
+
+.line{
+    
+    width: 90%;
+    height: 0.1em;
+    border-radius: 0.2em;
+    background: $lightGrey;
+    margin: 0.4em 0;
+}
+
+.addthis_inline_share_toolbox{
+    @include flexCentreRow;
+    justify-content: center;
+    width: 100%;
+
+    margin: 1em 0;
+}
+
+
+.trending-container{
+    padding: 0 0.5em 1em 0.5em;
+}
+
+
+.discount-container{
+    width: 95%;
+    padding: 0 0.5em 1em 0.5em;
+    @include flexCentreCol;
+    align-items: flex-start;
+
+    .cost-container{
+        width: 90%;
+        @include flexCentreRow;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0.2em 0.5em;
+        margin-left: 0;
+        margin-top: 0.5em;
+
+        .real-cost{
+            padding: 0.15em 0;
+            padding-right: 0.2em;
+            // padding-left: 0;
+            h1{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 0.8em;
+                font-weight: 400;
+                
+                color: $black;
+                text-decoration: line-through;
+            }
+        }
+
+        .offer-cost{
+            padding: 0.2em 0.3em;
+            padding-bottom: 0.1em;
+            padding-left: 0;
+            h1{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                
+                color: $black;
+                font-size: 1.1em;
+            }
+            h3{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                
+                color: $black;
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    .discount-offer-wrap{
+        width: 100%;
+        @include flexCentreRow;
+        justify-content: flex-start;
+
+        .discount-percent-wrap{
+            h3{
+                font-family: 'Athiti', sans-serif;
+                font-size: 0.85em;
+                background: $green;
+                color: $white;
+                padding: 0.3em 0.8em;
+                margin: 0.2em 0.5em;
+                margin-left: 0;
+            }
+        }
+
+        .you-save-wrap{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 0.8em;
+            font-weight: 400;
+            
+            color: $black;
+        }
+    }
+}
+
+
+.outer-loader-container{
+    // background: $white ;
+    width: 90%;
+    margin: 1em 3em;
+    height: 15em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .inner-loader-container{
+        // padding: 1em;
+        width: 98%;
+        height: 95%;
+        background: $white;
+        @include flexCentreCol;
+       
+        .inner-wrap-loader{
+            width: 92%;
+            height: 90%;
+            // margin: 1em;
+            background: linear-gradient(-45deg, $white, $white, $lightGrey, $lightGrey, $white, $white);
+            background-size: 1000% 1000%;
+            -webkit-animation: Gradient 3s ease infinite;
+            -moz-animation: Gradient 3s ease infinite;
+            animation: Gradient 3s ease infinite;
+        }
+    }
+}
+
+
+.homePageWrapper{
+    margin-top: 1.75em;
+    position: relative;
+    
+    .hide{
+        display: none;
+    }
+
+    .modal-main-class{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        z-index: 3;
+        // .close-modal{
+        //     position: absolute;
+        //     right: 3%;
+        //     top: 3%;
+        //     cursor: pointer;
+        // }
+        .modal-main-class-outer-layer{
+            @include flexCentreRow;
+            width: 100%;
+            height: 100%;
+            .modal-main-class-inner-wrapper{
+                width: 40%;
+                // height: 35em;
+                background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/askForProductsBackground.png");
+                background-size: 100% 100%;
+                @include box_shadow;
+                padding: 0.5em;
+                .wrapper-inner-content{
+                    @include flexCentreCol;
+                    width: 100%;
+                    .wrapper-header-layer{
+                        @include flexCentreRow;
+                        h1{
+                            width: 70%;
+                            font-size: 1em;
+                            text-align: center;
+                        }
+                        .close-modal{}
+                    }
+                }
+            }
+        }
+    }
+
+    .mainClass{
+        .homePageInnerLayer{
+            width: 100%;
+            // background: $white;
+            // background: linear-gradient($veryVeryLightGrey, $white);
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            // height: 100%;
+            .dataContainer{
+                width: 100%;
+                .dataContainerInnerLayer{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin: 0 auto;
+                    .data-container-category-one{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        width: 92%;
+                        margin: 0 auto;
+                        .headerContainer{
+                            @include flexCentreCol;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            // width: 92%;
+                            margin: 3.5em 0 0 0;
+
+                            h1{
+                                color: $black;
+                                font-size: 2.5em;
+                                margin: 0em 0;
+                                font-weight: 300;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+
+                            h3{
+                                color: $black;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-size: 1.5em;
+                                font-weight: 300;
+                                span{
+                                    margin: 0 0.3em;
+                                }
+                            }
+
+                            .you-design-we-execute{
+                                display: none;
+                                font-size: 1.8em;
+                                margin: 0.3em 0;
+                                font-weight: 400;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+
+                           
+                            
+
+                        }
+                        .imagesContainer{
+                            width: 87%;
+                            margin: 1em 0;
+
+                            .imagesContainerInnerLayer{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                                .productGalleryContainer{
+                                    // width: 90%;
+                                    // height: 18em;
+                                    background: linear-gradient(45deg, $veryLightGrey, $veryVeryLightGrey, $white);
+
+                                    animation: Gradient 1s ease infinite;
+                                    background-size: 1000% 1000%;
+                                    padding: 0.5em;
+                                    margin: 1em 0.25em; 
+                                    cursor: pointer;
+                                    transition: .4s;
+
+                                    &:hover{
+                                        transform: translateY(-0.4em);
+                                        background: $white;
+                                        @include box_shadow;
+                                    }
+                                    .imageContainer{
+                                        width: 100%;
+                                        // background: $veryLightGrey;
+                                        // background: linear-gradient(-90deg,  $veryLightGrey, $veryLightGrey, $lightGrey , $lightGrey, $lightGrey, $veryLightGrey, $veryLightGrey);
+                                        // animation: Gradient 3s ease infinite;
+                                        // background-size: 1000% 1000%;
+                                        // img{
+                                        //     width: 100%;
+                                        //     height: 100%;
+                                        //     object-fit: cover;
+                                        // }
+                                    }
+                                    .titleContainer{
+                                        @include flexCentreCol;
+                                        align-items: flex-start;
+                                        margin: 0.7em 0;
+                                        p{
+                                            font-size: 0.6em;
+                                            margin: 0.2em 0;
+                                            color: $white;
+                                            background: $darkestGrey;
+                                            padding: 0.3em 0.5em;
+                                            border-radius: 0.3em;
+                                            margin-top: 0.3em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .trendingComponent{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin-bottom: 0.4em;
+                        padding: 1.5em 0;
+                        // background: $white;
+
+                        .headerContentSecondContainer{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            width: 92%;
+                            margin: 0em auto;
+                            margin-top: 1.2em;
+                            margin-bottom: 0.3em;
+
+                            h1{
+                                font-size: 1.1em;
+                                font-weight: 590;
+                                color: $black;
+                                font-family: 'Prata', serif;
+                            }
+
+                            h3{
+                                font-size: 1.1em;
+                                font-weight: 590;
+                                color: $black;
+                                font-family: 'Prata', serif;
+                            }
+
+                            .showButtonContainer{
+                                margin: 0 0.8em;
+                                .whiteButtonWrapper{
+                                    font-size: 0.7em;
+                                    background: $black;
+                                    color: $white;
+                                    box-shadow: none;
+                                    margin: 0 0.5em;
+                                    transition: .3s;
+                                    &:hover{
+                                        background: $secondaryMagenta;
+                                        color: $white;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            // .askProductHeader{
+                            //     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            //     font-size: 1.8em;
+                            //     font-weight: bold;
+                            // }
+                            
+                            // .ask-button-Container{
+                            //     @include flexCentreRow;
+                            //     justify-content: flex-start;
+                            //     width: 100%;
+                            //     margin: 0.5em 0;
+                            //     .whiteButtonWrapper{
+                            //         background: $black;
+                            //         padding: 0.5 0.7em;
+                            //         color: $white;
+                            //         font-size: 1em;
+                            //         box-shadow: none;
+                            //         &:hover{
+                            //             background: $white;
+                            //             text-decoration: underline;
+                            //             color: $black;
+                            //             @include box_shadow;
+                            //         }
+                            //     }
+                            // }
+                        }
+                        .headerContainerSecondContainer-one{
+                            width: 92%;
+                            margin: 0 auto;
+                            h1{
+                                font-size: 1em;
+                                font-weight: 600;
+                            }
+                            .askProductHeader{
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-size: 1.8em;
+                                font-weight: bold;
+                            }
+                            
+                            .ask-button-Container{
+                                @include flexCentreRow;
+                                justify-content: flex-start;
+                                width: 100%;
+                                margin: 0.5em 0;
+                                .whiteButtonWrapper{
+                                    background: $black;
+                                    padding: 0.5 0.7em;
+                                    color: $white;
+                                    font-size: 1em;
+                                    box-shadow: none;
+                                    &:hover{
+                                        background: $white;
+                                        text-decoration: underline;
+                                        color: $black;
+                                        @include box_shadow;
+                                    }
+                                }
+                            }
+                        }
+                        .sliderContainer{
+                            width: 100%;
+                            // margin: 0 auto;
+                        }
+                    }
+                    .productCategoryContainer{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        width: 100%;
+                        // margin: 0.5em 0;
+                        margin: 1.5em 0;
+                        .header{
+                            margin: 0.5em 0;
+                            h3{
+                                font-size: 1.1em;
+                            }
+                        }
+                        .sliderContainer{
+                            width: 100%;
+                            // margin: 0 auto;
+                        }
+                    }
+                }
+            }
+
+            .addProductDetailClass{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .zero{
+                // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/home-page-background.png");
+                // background-size: 100%;
+                // background-repeat: no-repeat;
+            }
+            // .three{
+            //     background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/askForProductsBackgroundDesktop.png");
+            //     background-size: 100%;
+            //     background-repeat: no-repeat;
+            //     height: 50vh;
+            //     h1{
+            //         font-size: 1.2em;
+            //         margin: 0.5em 0;
+            //     }
+            //     h3{
+            //         margin: 1em 0;
+            //         width: 51%;
+            //     }
+            // }
+
+            .dyanmicFooterContainer{
+                width: 100%;
+                // background: linear-gradient(0deg,$white,$veryLightGrey);
+                .dynamicFooterInnerLayer{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    .headerComponent{
+                        @include flexCentreRow;
+                        justify-content: flex-start;
+                        margin: 1em 0 0em 4em;
+
+                        .svgImageSection{
+                        }
+
+                        h1{
+                            margin: 1.2em 0.8em 0.5em 0.8em;
+                            font-size: 1em;
+                            font-weight: 600;
+                        }
+
+
+                        h3{
+                            font-family: "Prata", serif;
+                            margin: 0.3em 0.6em;
+                            margin-top: 0.6em;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .dynamicProductComponent{
+                        width: 100%;
+                        position: relative;
+                        max-height: 80em;
+                        overflow-y: hidden;
+                        // margin-bottom: 5em;
+                        .dynamicProductComponentInnerLayer{
+                            // .slidingComponent{
+                            //     margin: 0.5em 0;
+                            // }
+                            .dynamicImagesContainer{
+                                // width: 100%;
+                                // margin: 0.5em 0;
+                                width: 95%;
+                                // margin: 1.5em 0 0.5em 5em;
+                                margin: 1.5em auto;
+                                .dynamicImagesContainerInnerLayer{
+                                    // width: 95%;
+                                    // margin: 0 auto;
+                                    width: 100%;
+                                    // margin-left: 2em;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                                  
+
+
+                                    .productGalleryDynamicContainer{
+                                        // position: relative;
+                                        width: 85%;
+                                        // height: 85% * 1 / 1.614;
+                                        background: linear-gradient(0deg, $veryLightGrey, $veryVeryLightGrey, $veryLightGrey );
+                                        padding: 0.7em;
+                                        // margin: 1em 0.25em; 
+                                        margin: 1em auto;
+                                        cursor: pointer;
+                                        transition: .4s;
+                                        height: fit-content;
+
+                                        &:hover{
+                                            transform: translateY(-0.4em);
+                                            background: $white;
+                                            @include box_shadow;
+
+                                            .imageContainer{
+                                                .see-more-of{
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                        .imageContainer{
+                                            position: relative;
+                                            width: 100%;
+                                            height: 18em;
+                                            background: $white;
+
+                                            .see-more-of{
+                                                position: absolute;
+                                                width: 100%;
+                                                // height: 2em;
+                                                background: $black;
+                                                top: -1%;
+                                                left: 0;
+                                                opacity: 0;
+                                                transition: 0.2s;
+
+                                                .inner-see-more{
+                                                    width: 100%;
+                                                    @include flexCentreCol;
+
+                                                    p{
+                                                        padding: 0.5em 1em;
+                                                        font-size: 0.8em;
+                                                        font-weight: 400;
+                                                        color: $white;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+
+
+                                            .image-inner-container{
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+
+                                                .image-wrap-dummy{
+                                                    width: 100%;
+                                                    
+                                                    height: 100%;
+                                                    @include flexCentreRow;
+                                                }
+                                            }
+
+                                            // background: linear-gradient(-90deg,  $veryLightGrey, $veryLightGrey, $lightGrey , $lightGrey, $lightGrey, $veryLightGrey, $veryLightGrey);
+                                            // animation: Gradient 3s ease infinite;
+                                            // background-size: 1000% 1000%;
+                                            // img{
+                                            //     width: 100%;
+                                            //     height: 100%;
+                                            //     object-fit: cover;
+                                            // }
+                                            .brandLogoContainer{
+                                                position: absolute;
+                                                width: 4em;
+                                                height: 4em;
+                                                padding: 0.3em;
+                                                background: linear-gradient($veryLightGrey, $white, $veryVeryLightGrey);
+                                                bottom: 5%;
+                                                left: -9%;
+                                                border-radius: 0.1em;
+                                                
+                                                .brandLogoContainerInnerLayer{
+                                                    background: $white;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    @include flexCentreRow;
+                                                }
+                                            }
+                                        }
+                                        .titleContainer{
+                                            @include flexCentreCol;
+                                            align-items: flex-start;
+                                            margin: 0.7em 0 0 0;
+                                            // background: yellow;
+
+                                            h1{
+                                                font-size: 0.85em;
+                                            }
+                                            h3{
+                                                font-size: 0.85em;
+                                            }
+
+                                            p{
+                                                font-size: 0.75em;
+                                                font-weight: 400;
+                                                margin: 0.2em 0;
+                                                color: $darkestGrey;
+                                                background: $white;
+                                                padding: 0.3em 0.5em;
+                                                border-radius: 0.3em;
+                                                margin-top: 0.3em;
+                                            }
+                                        }
+                                        .costContainer{
+                                            @include flexCentreRow;
+                                            justify-content: flex-start;
+                                            margin: 0.5em 0;
+                                            h3{
+                                                color: $black;
+                                                font-size: 1.3em;
+                                                margin: 0 0.5em 0 0;
+                                            }
+                                            p{
+                                                padding: 0.3em;
+                                                color: $white;
+                                                background: $primaryGreen;
+                                                border-radius: 0.3em;
+                                                font-size: 0.6em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .showMoreButton{
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            // z-index: 1;
+                            height: 4em;
+                            padding-top: 50px;
+                            text-align: center;
+                            background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,#fff 45%);
+                            .showButtonInnerLayer{
+                                @include flexCentreRow;
+                                width: 100%;
+                                .whiteButtonWrapper{
+                                    background: $darkGrey;
+                                    color: $white;
+                                    font-size: 1.2em;
+                                    padding: 0.5em 1.5em 0.5em 1.5em;
+                                    p{
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .open{
+                        max-height: 526em;
+                        transition : max-height 0.7s;
+                    }
+                }
+            }
+
+            // .adComponentOuterLayer{
+            //     width: 100%;
+            //     // height: 50vh;
+            //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/banner-vendor-background.png");
+            //     background-repeat: no-repeat;
+            //     background-size: 100%;
+
+            //     // background-attachment: fixed;
+            //     // background-position: center;
+            //     // background-repeat: no-repeat;
+            //     // background-size: cover;
+
+            //     .adComponentInnerLayer{
+            //         @include flexCentreCol;
+            //         width: 100%;
+
+            //         .headerContainer{
+            //             @include flexCentreCol;
+            //             align-items: flex-start;
+            //             width: 90%;
+            //             margin: 0 auto;
+
+            //             h1{
+            //                 color: $white;
+            //                 font-size: 1.5em;
+            //                 width: 43%;
+            //                 margin: 0.8em 0 0 0;
+            //             }
+
+            //             .line{
+            //                 width: 15%;
+            //                 margin-bottom: 0;
+            //                 border: 0 none;
+            //                 border-top: 2px dashed $semiLightGrey;
+            //                 background: none;
+            //                 height:0;
+            //             }
+            //         }
+
+            //         .vendorInfoContainer{
+            //             @include flexCentreRow;
+            //             align-items: flex-start;
+            //             width: 98%;
+            //             padding: 0.5em;
+
+            //             .profileContainer{
+            //                 @include flexCentreCol;
+            //                 align-items: flex-start;
+            //                 width: 70%;
+            //                 padding: 0.3em;
+            //                 .profileImageConatiner{
+            //                     width: 3.5em;
+            //                     height: 3.5em;
+            //                     padding: 0.4em;
+            //                     background: $white;
+            //                     img{
+            //                         width: 100%;
+            //                         height: 100%;
+            //                         object-fit: cover;
+            //                     }
+            //                 }
+            //                 .profileDetailsContainer{
+            //                     margin-top: 0.4em;
+            //                     h1{
+            //                         width: 70%;
+            //                         font-weight: 400;
+            //                         color: $white;
+            //                         margin: 0;
+            //                         span{
+            //                             text-decoration: underline;
+            //                         }
+            //                     }
+            //                 }
+            //                 .buttonContainer{
+            //                     // width: 30%;
+            //                     .whiteButtonWrapper{
+            //                         font-size: 1em;
+            //                         font-weight: 400;
+            //                         margin: 1em 0.5em 0.5em 0;
+            //                         border-radius: 0;
+            //                         &:hover{
+            //                             color: $primaryMagenta;
+            //                         }
+            //                     }
+            //                 }
+            //             }
+
+            //             .adContainer{
+            //                 @include flexCentreRow;
+            //                 justify-content: flex-end;
+            //                 width: 22%;
+            //                 .adPromotionContainer{
+            //                     width: 8em;
+            //                     height: 7em;
+            //                     padding: 0.4em;
+            //                     background: $white;
+            //                     margin-top: 5em;
+            //                     // margin: 5em 0em 0em 7em;
+            //                     .adPromotionContainerInnerLayer{
+            //                         @include flexCentreCol;
+            //                         width: 100%;
+            //                         height: 100%;
+            //                         background: $veryLightGrey;
+            //                         h3{
+            //                             margin-left: 0.5em;
+            //                         }
+            //                         p{
+            //                             margin-left: 0.5em;
+            //                             span{
+            //                                 color: $black;
+            //                                 text-decoration: underline;
+            //                                 transition: .2s;
+            //                                 &:hover{
+            //                                     color: $primaryMagenta;
+            //                                     cursor: pointer;
+            //                                 }
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+@media screen and (max-width: 1920px){
+
+}
+
+@media screen and (max-width: 1024px){
+    .homePageWrapper{
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    background-image: none;
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                // font-weight: 600;
+                                margin: 3.5em 0 0 0;
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 300;
+                                }
+                                // h1{
+                                //     font-size: 1.5em;
+                                //     font-weight: 600;
+                                // }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    a:nth-child(n+4) {
+                                        display: none;
+                                    }
+                                    // .productGalleryContainer{
+                                    //     .imageContainer{
+                                    //     }
+                                    // }
+                                    // .productGalleryContainer:nth-child(n+3) {
+                                    //     display: none
+                                    // }
+                                    // .productGalleryContainer:nth-child(3) {
+                                    //     display: none
+                                    // }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                .requestAd{
+                                    width: 100%;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                
+                .dyanmicFooterContainer{
+                    // background-image: url(" https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    width: 99%;
+                                    .dynamicImagesContainerInnerLayer{
+                                        width: 100%;
+                                        grid-template-columns: 1fr 1fr;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .homePageWrapper{
+        margin-top: 6em;
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                // font-weight: 600;
+                                margin: 0;
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 300;
+                                }
+    
+                                h3{
+                                    color: $black;
+                                    span{
+                                        margin: 0 0.3em;
+                                    }
+                                }
+    
+                                .you-design-we-execute{
+                                    display: none;
+                                    font-size: 1.2em;
+                                    margin: 0.3em 0;
+                                    font-weight: 400;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                            }
+                            .imagesContainer{
+                                width: 77%;
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr 1fr;
+                                    a:nth-child(n+3){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                @include flexCentreRow;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                .requestAd{
+                                    width: 100%;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .dyanmicFooterContainer{
+                    // background-image: url(" https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    width: 92%;
+                                    margin: 1.5em auto;
+                                    .dynamicImagesContainerInnerLayer{
+                                        width: 100%;
+                                        grid-template-columns: 1fr 1fr;
+                                        .productGalleryDynamicContainer{
+                                            .imageContainer{
+                                            }
+                                            .titleContainer{}
+                                            .costContainer{}
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .outer-loader-container{
+        // background: $white ;
+        width: 90%;
+        margin: 1em auto;
+        height: 5em;
+        .inner-loader-container{
+            // padding: 1em;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            .inner-wrap-loader{
+            }
+        }
+    }
+    .homePageWrapper{
+        // margin-top: 0;
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                margin-top: 0;
+
+                                .amazing-products{
+                                    h1{
+                                        font-size: 2.5em;
+                                        font-weight: 300;
+                                    }
+                                    h3{
+                                        font-size: 1.2em;
+                                        font-weight: 300;
+                                    }
+        
+                                    h3{
+                                        color: $black;
+                                        span{
+                                            margin: 0 0.3em;
+                                        }
+                                    }
+                                }
+    
+                                .you-design-we-execute{
+                                    display: none;
+                                    font-size: 1.2em;
+                                    margin: 0.3em 0;
+                                    font-weight: 400;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(1),.productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            margin-bottom: 0;
+                            .headerContentSecondContainer{
+                                @include flexCentreRow;
+                                justify-content: space-between;
+                                h1{
+                                    font-size: 1em;
+                                    width: 68%;
+                                }
+                                h3{
+                                    font-size: 1.2em;
+                                    // width: 68%;
+                                }
+                                a{
+                                    width: 30%;
+                                    margin-left: 0.5em;
+                                    .showButtonContainer{
+                                        margin: 0;
+                                    }
+                                }
+                                .requestAd{
+                                    width: 100%;
+                                    // font-size: 0.8em;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-homepage-rolling-logs.png");
+                    background-image: none;
+                }
+                .dyanmicFooterContainer{
+                    // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-mobile-background.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            margin: 0 0 0 1em;
+                            width: 95%;
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            margin: 0.5em 0;
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    width: 100%;
+                                    margin: 0em 0 1.5em 0;
+                                    .dynamicImagesContainerInnerLayer{
+                                        // width: 100%;
+                                        width: 99%;
+                                        margin: 0 auto;
+                                        grid-template-columns: 1fr 1fr;
+                                        .productGalleryDynamicContainer{
+                                            width: 90%;
+                                            padding: 0.3em;
+                                            .imageContainer{
+                                                .brandLogoContainer{
+                                                    display: none;
+                                                }
+                                            }
+                                            .titleContainer{
+                                                width: 90%;
+                                                margin: 0.5em auto;
+                                                h1{
+                                                    font-size: 1em;
+                                                }
+                                                h3{
+                                                    font-size: 0.85em;
+                                                }
+                                                p{
+                                                    font-size: 0.85em;
+                                                }
+                                            }
+                                            .discount-container{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .homePageWrapper{
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 300;
+                                }
+    
+                                h3{
+                                    color: $black;
+                                    span{
+                                        margin: 0 0.3em;
+                                    }
+                                }
+    
+                                .you-design-we-execute{
+                                    display: none;
+                                    font-size: 1.2em;
+                                    margin: 0.3em 0;
+                                    font-weight: 400;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(1),.productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                h1{
+                                    font-size: 1em;
+                                    width: 65%;
+                                }
+                                h3{
+                                    font-size: 0.9em;
+                                    // width: 65%;
+                                }
+                                .requestAd{
+                                    width: 100%;
+                                    // font-size: 0.8em;
+                                }
+                                a{
+                                    width: 30%;
+                                    .showButtonContainer{
+
+                                    }
+                                }
+                                .ask-button-Container{
+                                    .whiteButtonWrapper{
+                                        font-size: 0.8em;
+                                    }
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-homepage-rolling-logs.png");
+                    background-image: none;
+                }
+                .dyanmicFooterContainer{
+                    // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-mobile-background.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{
+                                font-size: 1em;
+                            }
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    .dynamicImagesContainerInnerLayer{
+                                        // width: 92%;
+                                        // margin: 0 auto;
+                                        // grid-template-columns: 1fr;
+                                        .productGalleryDynamicContainer{
+                                            .titleContainer{
+                                                p{
+                                                    font-size: 0.75em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .homePageWrapper{
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 300;
+                                }
+    
+                                h3{
+                                    color: $black;
+                                    span{
+                                        margin: 0 0.3em;
+                                    }
+                                }
+    
+                                .you-design-we-execute{
+                                    display: none;
+                                    font-size: 1.2em;
+                                    margin: 0.3em 0;
+                                    font-weight: 400;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(1),.productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                h3{
+                                    font-size: 1em;
+                                    width: 69%;
+                                }
+                                .requestAd{
+                                    width: 100%;
+                                    font-size: 0.8em;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-homepage-rolling-logs.png");
+                    background-image: none;
+                }
+                // .one{
+                //     background-image: url("");
+                // }
+                // .two{
+                //     background-image: url("");
+                // }
+                // .three{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-ad-request-data-homepage-rolling-logs.png");
+                //     height: 57vh;
+                //     .requestAd{
+                //         width: 100%;
+                //         // font-size: 0.8em;
+                //     }
+                // }
+                // .adComponentOuterLayer{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-ad-homepage-rolling-logs.png");
+                //     height: 50vh;
+                //     .adComponentInnerLayer{
+                //         .headerContainer{
+                //             h1{
+                //                 font-size : 1em;
+                //                 width: 100%;
+                //             }
+                //             .line{
+                //                 width: 20%;
+                //             }
+                //         }
+                //         .vendorInfoContainer{
+                //             @include flexCentreRow;
+                //             justify-content: space-between;
+                //             align-items: flex-start;
+                //             width: 94%;
+                //             .profileContainer{
+                //                 width: 50%;
+                //                 .profileImageConatiner{
+                //                     width: 2.5em;
+                //                     height: 2.5em;
+                //                     padding: 0.2em;
+                //                 }
+                //                 .profileDetailsContainer{
+                //                     h1{
+                //                         font-size: 0.75em;
+                //                         width: 100%;
+                //                     }
+                //                 }
+                //                 .buttonContainer{
+                //                     .whiteButtonWrapper{
+                //                         font-size: 0.8em;
+                //                     }
+                //                 }
+                //             }
+                //             .adContainer{
+                //                 width: 40%;
+                //                 margin-top: 5em;
+                //                 .adPromotionContainer{
+                //                     margin: 0;
+                //                     width: fit-content;
+                //                     height: 5.5em;
+                //                     .adPromotionContainerInnerLayer{
+                //                         h3{
+                //                             font-size: 0.9em;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                .dyanmicFooterContainer{
+                    // background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-mobile-background.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    .dynamicImagesContainerInnerLayer{
+                                        // width: 95%;
+                                        // grid-template-columns: 1fr;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 450px){
+    .homePageWrapper{
+        margin-top: 5em;
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                // font-weight: 600;
+                                margin-top: 1em;
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                }
+                                // h1{
+                                //     font-size: 1.5em;
+                                //     font-weight: 600;
+                                // }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                // h3{
+                                //     font-size: 1em;
+                                // }
+                                .requestAd{
+                                    width: 100%;
+                                    // font-size: 0.8em;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png");
+                }
+                // .one{
+                //     background-image: url("");
+                // }
+                // .two{
+                //     background-image: url("");
+                // }
+                // .three{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-products-image-iPad.png");
+                //     height: 70vh;
+                //     background-size: 100% 100%;
+                //     .requestAd{
+                //         width: 100%;
+                //         // font-size: 0.8em;
+                //     }
+                //     .ask-button-Container{
+                //         .whiteButtonWrapper{
+                //             font-size: 1em;
+                //         }
+                //     }
+                // }
+                // .adComponentOuterLayer{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/vendor-ad-image-iPad.png");
+                //     background-size: 100% 100%;
+                //     height: 80vh;
+                //     .adComponentInnerLayer{
+                //         .headerContainer{
+                //             h1{
+                //                 // font-size : 1em;
+                //                 width: 54%;
+                //             }
+                //             .line{
+                //                 width: 25%;
+                //             }
+                //         }
+                //         .vendorInfoContainer{
+                //             @include flexCentreRow;
+                //             justify-content: space-between;
+                //             align-items: flex-start;
+                //             width: 94%;
+                //             .profileContainer{
+                //                 width: 50%;
+                //                 .profileImageConatiner{
+                //                     // width: 2.5em;
+                //                     // height: 2.5em;
+                //                     // padding: 0.2em;
+                //                 }
+                //                 .profileDetailsContainer{
+                //                     h1{
+                //                         // font-size: 0.75em;
+                //                         // width: 100%;
+                //                     }
+                //                 }
+                //                 .buttonContainer{
+                //                     .whiteButtonWrapper{
+                //                         // font-size: 0.8em;
+                //                     }
+                //                 }
+                //             }
+                //             .adContainer{
+                //                 width: 40%;
+                //                 margin-top: 3em;
+                //                 .adPromotionContainer{
+                //                     margin: 0;
+                //                     // width: fit-content;
+                //                     // height: 6em;
+                //                     .adPromotionContainerInnerLayer{
+                //                         h3{
+                //                             // font-size: 0.9em;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                .dyanmicFooterContainer{
+                    // background-image: url(" https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+                                .dynamicImagesContainer{
+                                    width: 92%;
+                                    margin: 1.5em auto;
+                                    .dynamicImagesContainerInnerLayer{
+                                        width: 100%;
+                                        grid-template-columns: 1fr 1fr;
+                                        .productGalleryDynamicContainer{
+                                            .imageContainer{
+                                            }
+                                            .titleContainer{}
+                                            .costContainer{}
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 320px){
+    .homePageWrapper{
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+                            .headerContainer{
+                                // font-weight: 600;
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                }
+                                // h1{
+                                //     font-size: 1.5em;
+                                //     font-weight: 600;
+                                // }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                // h3{
+                                //     font-size: 1em;
+                                // }
+                                .requestAd{
+                                    width: 100%;
+                                    // font-size: 0.8em;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png");
+                }
+                // .one{
+                //     background-image: url("");
+                // }
+                // .two{
+                //     background-image: url("");
+                // }
+                // .three{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-products-image-iPad.png");
+                //     height: 90vh;
+                //     background-size: 100% 100%;
+                //     .requestAd{
+                //         width: 100%;
+                //         // font-size: 0.8em;
+                //     }
+                //     .ask-button-Container{
+                //         .whiteButtonWrapper{
+                //             font-size: 1em;
+                //         }
+                //     }
+                // }
+                // .adComponentOuterLayer{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/vendor-ad-image-iPad.png");
+                //     background-size: 100% 100%;
+                //     height: 72vh;
+                //     .adComponentInnerLayer{
+                //         .headerContainer{
+                //             h1{
+                //                 font-size : 0.9em;
+                //                 width: 60%;
+                //             }
+                //             .line{
+                //                 width: 25%;
+                //             }
+                //         }
+                //         .vendorInfoContainer{
+                //             @include flexCentreRow;
+                //             justify-content: space-between;
+                //             align-items: flex-start;
+                //             width: 94%;
+                //             .profileContainer{
+                //                 width: 50%;
+                //                 .profileImageConatiner{
+                //                     width: 2.5em;
+                //                     height: 2.5em;
+                //                     padding: 0.2em;
+                //                 }
+                //                 .profileDetailsContainer{
+                //                     h1{
+                //                         font-size: 0.8em;
+                //                         // width: 100%;
+                //                     }
+                //                 }
+                //                 .buttonContainer{
+                //                     .whiteButtonWrapper{
+                //                         font-size: 0.8em;
+                //                     }
+                //                 }
+                //             }
+                //             .adContainer{
+                //                 width: 23%;
+                //                 margin-top: 3em;
+                //                 .adPromotionContainer{
+                //                     margin: 0;
+                //                     width: fit-content;
+                //                     height: 6em;
+                //                     .adPromotionContainerInnerLayer{
+                //                         h3{
+                //                             font-size: 0.9em;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                .dyanmicFooterContainer{
+                    // background-image: url(" https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:375px){
+    .homePageWrapper{
+        .mainClass{
+            .homePageInnerLayer{
+                .dataContainer{
+                    .dataContainerInnerLayer{
+                        .data-container-category-one{
+
+                            .headerContainer{
+                                // font-weight: 600;
+                                h3{
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                }
+                                // h1{
+                                //     font-size: 1.5em;
+                                //     font-weight: 600;
+                                // }
+                            }
+                            .imagesContainer{
+                                .imagesContainerInnerLayer{
+                                    grid-template-columns: 1fr 1fr;
+                                    .productGalleryContainer{
+
+                                    }
+                                    .productGalleryContainer:nth-child(2),.productGalleryContainer:nth-child(3) {
+                                        display: none
+                                    }
+                                }
+                            }
+                        }
+                        .trendingComponent{
+                            .headerContentSecondContainer{
+                                .requestAd{
+                                    width: 100%;
+                                }
+                            }
+                            .sliderContainer{
+
+                            }
+                        }
+                    }
+                }
+                .zero{
+                    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png");
+                }
+                // .one{
+                //     background-image: url("");
+                // }
+                // .two{
+                //     background-image: url("");
+                // }
+                // .three{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-products-image-iPad.png");
+                //     height: 80vh;
+                //     background-size: 100% 100%;
+                //     .requestAd{
+                //         width: 100%;
+                //         // font-size: 0.8em;
+                //     }
+                //     .ask-button-Container{
+                //         .whiteButtonWrapper{
+                //             font-size: 1em;
+                //         }
+                //     }
+                // }
+                // .adComponentOuterLayer{
+                //     background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/vendor-ad-image-iPad.png");
+                //     background-size: 100%;
+                //     height: 79vh;
+                //     .adComponentInnerLayer{
+                //         .headerContainer{
+                //             h1{
+                //                 // font-size : 0.9em;
+                //                 width: 80%;
+                //             }
+                //             .line{
+                //                 width: 25%;
+                //             }
+                //         }
+                //         .vendorInfoContainer{
+                //             @include flexCentreRow;
+                //             justify-content: space-between;
+                //             align-items: flex-start;
+                //             width: 94%;
+                //             .profileContainer{
+                //                 width: 50%;
+                //                 .profileImageConatiner{
+                //                     // width: 2.5em;
+                //                     // height: 2.5em;
+                //                     padding: 0.2em;
+                //                 }
+                //                 .profileDetailsContainer{
+                //                     h1{
+                //                         font-size: 0.8em;
+                //                         // width: 100%;
+                //                     }
+                //                 }
+                //                 .buttonContainer{
+                //                     .whiteButtonWrapper{
+                //                         font-size: 0.8em;
+                //                     }
+                //                 }
+                //             }
+                //             .adContainer{
+                //                 width: 23%;
+                //                 margin-top: 3em;
+                //                 .adPromotionContainer{
+                //                     margin: 0;
+                //                     // width: fit-content;
+                //                     height: 6em;
+                //                     .adPromotionContainerInnerLayer{
+                //                         h3{
+                //                             // font-size: 0.9em;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                .dyanmicFooterContainer{
+                    // background-image: url(" https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png");
+                    // background-size: 100% 100%; 
+                    .dynamicFooterInnerLayer{
+                        .headerComponent{
+                            .svgImageSection{}
+                            h3{}
+                        }
+                        .dynamicProductComponent{
+                            .dynamicProductComponentInnerLayer{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// background images for responsiveness for mobile compatibility ( <= 600px )
+// ad-component-Background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-ad-homepage-rolling-logs.png;
+// mobile-footer-dyanmic-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-mobile-background.png;
+// ad-request-mobile-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-ad-request-data-homepage-rolling-logs.png;
+// first-page-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-homepage-rolling-logs.png;
+
+// desktop images for background
+// footer-image-dynamic : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/footer-background.png;
+// ad-request-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/askForProductsBackgroundDesktop.png;
+
+// images for 768px screen size
+// first-page-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png
+// ad-request-background: https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/ask-products-image-iPad.png
+// dynamic-footer-background: https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/footer-image-iPad.png
+// ad-component-background : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/vendor-ad-image-iPad.png
+
+
+// new-footer-image-url : https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/footer-image.png

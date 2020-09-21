@@ -1,0 +1,1720 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-webkit-scrollbar-track {
+  height: 0.5em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.6em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar-thumb {
+  height: 0.5em;
+  background-color: #a5a5a5; }
+
+.loadingClassAnime {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  left: 0;
+  width: 95%;
+  cursor: default;
+  padding-left: 2em; }
+  .loadingClassAnime .loadingAnimeInnerLayer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 95%;
+    height: 100%; }
+    .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      width: 50%;
+      height: 100%;
+      background: #F2F2F2;
+      margin: 0.5em 0; }
+      .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .headerAnimationContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 1em 0; }
+        .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .headerAnimationContainer .headerContainer {
+          width: 13em;
+          height: 2em;
+          background: -webkit-gradient(linear, right top, left top, from(#F2F2F2), color-stop(#F2F2F2), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#F2F2F2), to(#F2F2F2));
+          background: -webkit-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+          background: -o-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+          background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+          -webkit-animation: Gradient 3s ease infinite;
+          animation: Gradient 3s ease infinite;
+          background-size: 1000% 1000%;
+          margin-left: 2em; }
+      .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%; }
+        .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .upperAnimationContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .upperAnimationContainer .bigBoxContainer {
+            width: 13em;
+            height: 13em;
+            background: #ffffff;
+            padding: 0.5em;
+            margin: 0 0.5em; }
+            .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .upperAnimationContainer .bigBoxContainer .bigBoxContainerInnerLayer {
+              width: 100%;
+              height: 100%;
+              background: -webkit-gradient(linear, right top, left top, from(#F2F2F2), color-stop(#F2F2F2), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#F2F2F2), to(#F2F2F2));
+              background: -webkit-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              background: -o-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              -webkit-animation: Gradient 3s ease infinite;
+              animation: Gradient 3s ease infinite;
+              background-size: 1000% 1000%; }
+        .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .lowerAnimationContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin: 1em 0; }
+          .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .lowerAnimationContainer .smallBoxContainer {
+            width: 8em;
+            height: 8em;
+            background: #ffffff;
+            padding: 0.5em;
+            margin: 0 0.5em; }
+            .loadingClassAnime .loadingAnimeInnerLayer .imageAnimationContainer .lower-section .lowerAnimationContainer .smallBoxContainer .smallBoxContainerInnerLayer {
+              width: 100%;
+              height: 100%;
+              background: -webkit-gradient(linear, right top, left top, from(#F2F2F2), color-stop(#F2F2F2), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#e4e4e4), color-stop(#F2F2F2), to(#F2F2F2));
+              background: -webkit-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              background: -o-linear-gradient(right, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+              -webkit-animation: Gradient 3s ease infinite;
+              animation: Gradient 3s ease infinite;
+              background-size: 1000% 1000%; }
+    .loadingClassAnime .loadingAnimeInnerLayer .smallAnimationContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 50%; }
+
+.returnOtherProductsInnerLayer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%; }
+  .returnOtherProductsInnerLayer .imagesInCategory {
+    width: 48%;
+    height: 97%;
+    padding: 0.5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+    background: -webkit-linear-gradient(top, #F2F2F2, #ffffff);
+    background: -o-linear-gradient(top, #F2F2F2, #ffffff);
+    background: linear-gradient(180deg, #F2F2F2, #ffffff); }
+    .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      height: 100%;
+      width: 95%;
+      margin: 0 auto; }
+      .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        width: 100%; }
+        .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection header h3 {
+            font-family: "prata", serif;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 0.5em 0; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection header .line {
+            width: 30%;
+            margin: 0;
+            background: #6d6d6d; }
+        .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection .whiteButtonWrapper {
+          font-size: 0.8em;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          padding: 0.4em 0.8em 0.5em 0.8em;
+          border-radius: 0.355em;
+          background: #b9b9b9;
+          margin-left: 1em;
+          margin-bottom: 0; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection .whiteButtonWrapper:hover {
+            background: #6d6d6d;
+            -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+            .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection .whiteButtonWrapper:hover p {
+              color: white;
+              border-bottom: 0.01em solid #ffffff; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .headerSection .whiteButtonWrapper p {
+            color: #ffffff; }
+      .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.5em; }
+        .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .sliderContainer {
+          width: 100%; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .sliderContainer .productView .innerViewProductLayer {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+        .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 81%;
+          margin: 1em auto; }
+          .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            width: 100%; }
+            .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer .imageTagContainer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              padding: 0.3em;
+              background: #ffffff; }
+              .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer .imageTagContainer:hover {
+                cursor: pointer; }
+              .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer .imageTagContainer img {
+                width: 6em;
+                height: 6em;
+                margin: 0 1em; }
+              .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer .imageTagContainer h1 {
+                font-size: 0.8em;
+                font-weight: 600; }
+              .returnOtherProductsInnerLayer .imagesInCategory .imagesInCategoryInnerLayer .imagesContainer .imagesInnerContainer .imageContainer .imageTagContainer p {
+                background: #F2F2F2;
+                color: #4D4D4D;
+                padding: 0.3em 0.5em; }
+  .returnOtherProductsInnerLayer .productsInCategory {
+    width: 50%;
+    height: 97%;
+    padding: 0.5em;
+    background: #ffffff; }
+    .returnOtherProductsInnerLayer .productsInCategory .headerSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      margin-top: 0.5em; }
+      .returnOtherProductsInnerLayer .productsInCategory .headerSection .flagIcon {
+        margin-left: 0.5em; }
+      .returnOtherProductsInnerLayer .productsInCategory .headerSection p {
+        margin-left: 0.5em; }
+      .returnOtherProductsInnerLayer .productsInCategory .headerSection .selectionCategory .form-group select {
+        background: none;
+        cursor: pointer; }
+    .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer {
+      width: 100%;
+      height: 70vh;
+      margin-top: 0.5em;
+      overflow-y: auto; }
+      .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 97%;
+        padding: 0.4em; }
+        .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 0.5em; }
+          .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%; }
+            .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              width: 100%; }
+              .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer .iconBox {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 1.2em;
+                height: 1.2em;
+                border-radius: 0.2em;
+                margin-right: 0.5em;
+                background: #e4e4e4;
+                cursor: pointer; }
+              .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer .headerSection {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start; }
+                .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer .headerSection h3 {
+                  -webkit-transition: 0.1s;
+                  -o-transition: 0.1s;
+                  transition: 0.1s;
+                  cursor: pointer;
+                  color: #4D4D4D;
+                  font-family: 'Prata', serif;
+                  font-size: 0.9em; }
+                  .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer .headerSection h3:hover {
+                    color: #000000; }
+                .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .subCategoryHeaderContainer .headerSection .line {
+                  width: 50%;
+                  background: #b9b9b9;
+                  margin: 0.3em 0 0 0;
+                  min-height: 0.15em; }
+            .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .productTypesOuterLayer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 90%;
+              margin: 0 auto; }
+              .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .productTypesOuterLayer .productTypes {
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                margin: 0.5em 0; }
+                .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .productTypesOuterLayer .productTypes .productNames {
+                  width: 95%; }
+                  .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .productTypesOuterLayer .productTypes .productNames p {
+                    font-weight: 500;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 0.9em;
+                    padding: 0.3em 0;
+                    -webkit-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    transition: 0.2s; }
+                    .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .productTypesOuterLayer .productTypes .productNames p:hover {
+                      cursor: pointer;
+                      color: #000000;
+                      text-decoration: underline; }
+            .returnOtherProductsInnerLayer .productsInCategory .retunDataContainer .retunDataContainerInnerLayer .subCategoryList .subCategoryContainer .hide {
+              display: none; }
+
+.drop-down-wrap .drop-down-container {
+  position: fixed;
+  left: 0;
+  width: 95%;
+  cursor: default;
+  padding-left: 2em;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-animation: upAndDownHard 0.2s ease;
+  animation: upAndDownHard 0.2s ease; }
+  .drop-down-wrap .drop-down-container .dummy-drop-down-container {
+    width: 100%;
+    min-height: 84vh;
+    background: #ffffff; }
+    .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown {
+      width: 100%;
+      height: 100%; }
+      .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%; }
+        .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 100%;
+          height: 100%; }
+          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            width: 55%;
+            padding: 1em;
+            background: #F2F2F2;
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2; }
+            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .header-select-category {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              padding: 0em 1em;
+              margin-bottom: 1em; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .header-select-category .icon-wrap {
+                margin-right: 0.5em; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .header-select-category .select-category {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+                font-size: 0.9em; }
+            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
+              width: 100%;
+              padding-left: 0.5em; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .productNames {
+                width: 87%;
+                padding: 0.5em;
+                -webkit-transition: 0.15s ease;
+                -o-transition: 0.15s ease;
+                transition: 0.15s ease;
+                background: #F2F2F2;
+                margin-bottom: 0.2em; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .productNames:hover {
+                  cursor: pointer;
+                  background: #ffffff; }
+                  .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .productNames:hover p {
+                    text-decoration: underline;
+                    color: #000000;
+                    font-weight: 500; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .productNames p {
+                  color: #000000;
+                  font-size: 0.9em;
+                  font-weight: 550;
+                  margin: 0;
+                  width: -webkit-fit-content;
+                  width: -moz-fit-content;
+                  width: fit-content;
+                  -webkit-transition: 0.2s;
+                  -o-transition: 0.2s;
+                  transition: 0.2s; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .highlight {
+                background: -webkit-gradient(linear, left top, right top, from(#212529), to(#4D4D4D));
+                background: -webkit-linear-gradient(left, #212529, #4D4D4D);
+                background: -o-linear-gradient(left, #212529, #4D4D4D);
+                background: linear-gradient(90deg, #212529, #4D4D4D); }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .highlight p {
+                  color: #ffffff;
+                  text-decoration: underline; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .highlight:hover {
+                  background: -webkit-gradient(linear, left top, right top, from(#212529), to(#4D4D4D));
+                  background: -webkit-linear-gradient(left, #212529, #4D4D4D);
+                  background: -o-linear-gradient(left, #212529, #4D4D4D);
+                  background: linear-gradient(90deg, #212529, #4D4D4D); }
+                  .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .highlight:hover p {
+                    color: #ffffff;
+                    text-decoration: underline; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .leftLayer .allProductsDropdownModalCategorySection .hide {
+                display: none; }
+          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            width: 100%;
+            width: 40%;
+            height: 97%;
+            padding: 0.5em 0;
+            padding-left: 1em;
+            background: #ffffff;
+            background-attachment: fixed;
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 1; }
+            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .allProductsDropdownModalSubcategorySection {
+              width: 100%; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .allProductsDropdownModalSubcategorySection .vendorsLocation {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                width: 100%;
+                margin-top: 0.5em; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .allProductsDropdownModalSubcategorySection .vendorsLocation p {
+                  margin-left: 0.5em; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .allProductsDropdownModalSubcategorySection .vendorsLocation .flagIcon {
+                  margin-left: 0.5em; }
+            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand {
+              width: 100%;
+              height: 71vh;
+              overflow-y: auto;
+              margin-top: 1em; }
+              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  width: 92%;
+                  margin: 0 auto; }
+                  .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .headerContainer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start; }
+                    .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .headerContainer h3 {
+                      font-family: "prata", serif;
+                      font-size: 0.75em;
+                      margin-bottom: 0.4em; }
+                    .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .headerContainer .line {
+                      width: 20%;
+                      min-height: 0.1em;
+                      margin-top: 0;
+                      background: #b9b9b9; }
+                  .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .sliderContainer {
+                    width: 100%; }
+                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData {
+                  width: 100%; }
+                  .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer {
+                    width: 100%; }
+                    .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      width: 100%;
+                      margin-top: 1em; }
+                      .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin-bottom: 1em; }
+                        .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center; }
+                          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer h3 {
+                            -webkit-transition: 0.1s;
+                            -o-transition: 0.1s;
+                            transition: 0.1s;
+                            cursor: pointer;
+                            color: #6d6d6d;
+                            font-family: "prata", serif;
+                            font-size: 0.8em;
+                            margin-bottom: 0.4em; }
+                            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer h3:hover {
+                              color: #000000; }
+                          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .iconBox {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 1.2em;
+                            height: 1.2em;
+                            border-radius: 0.2em;
+                            background: #e4e4e4; }
+                          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .buttonContainer {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-align: start;
+                            -ms-flex-align: start;
+                            align-items: flex-start;
+                            margin-left: 0.5em; }
+                            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .buttonContainer .line {
+                              width: 20%;
+                              min-height: 0.1em;
+                              margin-top: 0;
+                              background: #b9b9b9; }
+                        .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          width: 90%;
+                          margin: 0 auto; }
+                          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer {
+                            display: -ms-grid;
+                            display: grid;
+                            -ms-grid-columns: 1fr 1fr 1fr;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            width: 100%; }
+                            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes {
+                              width: 90%; }
+                              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes:hover {
+                                cursor: pointer; }
+                                .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes:hover p {
+                                  color: #000000;
+                                  text-decoration: underline; }
+                              .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes p {
+                                padding: 0.3em 0;
+                                font-size: 0.9em;
+                                font-weight: 500;
+                                color: #000000; }
+                      .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes {
+                        width: 90%;
+                        margin: 0 auto; }
+                        .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer {
+                          display: -ms-grid;
+                          display: grid;
+                          -ms-grid-columns: 1fr 1fr 1fr;
+                          grid-template-columns: 1fr 1fr 1fr;
+                          width: 100%;
+                          margin: 0.5em 0; }
+                          .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer .namesOfProductType {
+                            margin: 0.5em 0; }
+                            .drop-down-wrap .drop-down-container .dummy-drop-down-container .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .all-products-dropdown-main-class .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer .namesOfProductType p:hover {
+                              border-bottom: 0.01em solid #6d6d6d;
+                              cursor: pointer; }
+
+.product-categories-menu-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+  .product-categories-menu-wrap .productCategoriesMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 9px 13px 2px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 9px 13px 2px rgba(0, 0, 0, 0.02);
+    z-index: 2; }
+    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%; }
+      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .hide {
+        display: none; }
+      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer {
+        position: relative;
+        z-index: 1;
+        width: 100%; }
+        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-animation: upAndDownHard 0.2s ease;
+          animation: upAndDownHard 0.2s ease;
+          position: absolute;
+          top: 0em;
+          width: 90%;
+          height: 80vh;
+          background: #ffffff;
+          margin: 0 1em; }
+          .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .dummyWrap {
+            right: 0;
+            width: 100%; }
+          .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalOuterLayer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            height: 98%;
+            margin: 0 auto;
+            padding: 0em 0 0.5em 0; }
+            .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalOuterLayer .productCategoriesMenuDropdown {
+              width: 100%;
+              height: 100%; }
+              .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalOuterLayer .productCategoriesMenuDropdown .returnOtherProducts {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 100%;
+                height: 100%; }
+          .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            height: 98%;
+            margin: 0 auto;
+            padding: 0em 0 0.5em 0; }
+            .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown {
+              width: 100%;
+              height: 100%; }
+              .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                width: 100%;
+                height: 100%; }
+                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  width: 55%;
+                  padding: 1em;
+                  margin-right: 1em;
+                  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#ffffff));
+                  background-image: -webkit-linear-gradient(#F2F2F2, #ffffff);
+                  background-image: -o-linear-gradient(#F2F2F2, #ffffff);
+                  background-image: linear-gradient(#F2F2F2, #ffffff); }
+                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection {
+                    display: -ms-grid;
+                    display: grid;
+                    -ms-grid-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    width: 100%;
+                    padding-left: 0.5em; }
+                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .productNames {
+                      width: 87%;
+                      padding: 0.5em;
+                      border-radius: 0.3em;
+                      -webkit-transition: 0.15s ease;
+                      -o-transition: 0.15s ease;
+                      transition: 0.15s ease;
+                      background: #fafafa;
+                      margin-bottom: 0.2em; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .productNames:hover {
+                        cursor: pointer;
+                        -webkit-transform: translateY(-0.2em);
+                        -ms-transform: translateY(-0.2em);
+                        transform: translateY(-0.2em);
+                        background: #ffffff;
+                        -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                        box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+                        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .productNames:hover p {
+                          text-decoration: underline;
+                          color: #000000;
+                          font-weight: 500; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .productNames p {
+                        color: #212529;
+                        font-size: 0.85em;
+                        font-weight: 500;
+                        margin: 0;
+                        width: -webkit-fit-content;
+                        width: -moz-fit-content;
+                        width: fit-content;
+                        -webkit-transition: 0.2s;
+                        -o-transition: 0.2s;
+                        transition: 0.2s; }
+                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .highlight {
+                      background: -webkit-gradient(linear, left top, right top, from(#212529), to(#4D4D4D));
+                      background: -webkit-linear-gradient(left, #212529, #4D4D4D);
+                      background: -o-linear-gradient(left, #212529, #4D4D4D);
+                      background: linear-gradient(90deg, #212529, #4D4D4D); }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .highlight p {
+                        color: #ffffff;
+                        text-decoration: underline; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .highlight:hover {
+                        background: -webkit-gradient(linear, left top, right top, from(#212529), to(#4D4D4D));
+                        background: -webkit-linear-gradient(left, #212529, #4D4D4D);
+                        background: -o-linear-gradient(left, #212529, #4D4D4D);
+                        background: linear-gradient(90deg, #212529, #4D4D4D); }
+                        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .highlight:hover p {
+                          color: #ffffff;
+                          text-decoration: underline; }
+                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .leftLayer .allProductsDropdownModalCategorySection .hide {
+                      display: none; }
+                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: start;
+                  -ms-flex-pack: start;
+                  justify-content: flex-start;
+                  width: 100%;
+                  width: 40%;
+                  height: 97%;
+                  padding: 0.5em;
+                  background: #ffffff; }
+                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .allProductsDropdownModalSubcategorySectionInnerLayer {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    width: 100%; }
+                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .allProductsDropdownModalSubcategorySectionInnerLayer .vendorsLocation {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: start;
+                      -ms-flex-pack: start;
+                      justify-content: flex-start;
+                      width: 100%;
+                      margin-top: 0.5em; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .allProductsDropdownModalSubcategorySectionInnerLayer .vendorsLocation p {
+                        margin-left: 0.5em; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .allProductsDropdownModalSubcategorySectionInnerLayer .vendorsLocation .flagIcon {
+                        margin-left: 0.5em; }
+                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand {
+                    width: 100%;
+                    height: 71vh;
+                    overflow-y: auto;
+                    margin-top: 1em; }
+                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: vertical;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-align: start;
+                      -ms-flex-align: start;
+                      align-items: flex-start;
+                      width: 100%; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        width: 92%;
+                        margin: 0 auto; }
+                        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .headerContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-align: start;
+                          -ms-flex-align: start;
+                          align-items: flex-start; }
+                          .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .headerContainer .line {
+                            width: 30%;
+                            margin-top: 0;
+                            background: #00b0d8; }
+                        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .headerSection .sliderContainer {
+                          width: 100%; }
+                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData {
+                        width: 100%; }
+                        .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer {
+                          width: 100%; }
+                          .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 100%;
+                            margin-top: 1em; }
+                            .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader {
+                              display: -webkit-box;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-orient: vertical;
+                              -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                              flex-direction: column;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              justify-content: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              -webkit-box-align: start;
+                              -ms-flex-align: start;
+                              align-items: flex-start;
+                              width: 100%;
+                              margin-bottom: 1em; }
+                              .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-orient: horizontal;
+                                -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                flex-direction: row;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center; }
+                                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer h3 {
+                                  -webkit-transition: 0.1s;
+                                  -o-transition: 0.1s;
+                                  transition: 0.1s;
+                                  cursor: pointer;
+                                  color: #6d6d6d; }
+                                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer h3:hover {
+                                    color: #ff2c6b; }
+                                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .iconBox {
+                                  display: -webkit-box;
+                                  display: -ms-flexbox;
+                                  display: flex;
+                                  -webkit-box-orient: horizontal;
+                                  -webkit-box-direction: normal;
+                                  -ms-flex-direction: row;
+                                  flex-direction: row;
+                                  -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                  justify-content: center;
+                                  -webkit-box-align: center;
+                                  -ms-flex-align: center;
+                                  align-items: center;
+                                  width: 1.2em;
+                                  height: 1.2em;
+                                  border-radius: 0.2em;
+                                  background: #e4e4e4; }
+                                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .buttonContainer {
+                                  display: -webkit-box;
+                                  display: -ms-flexbox;
+                                  display: flex;
+                                  -webkit-box-orient: vertical;
+                                  -webkit-box-direction: normal;
+                                  -ms-flex-direction: column;
+                                  flex-direction: column;
+                                  -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                  justify-content: center;
+                                  -webkit-box-align: center;
+                                  -ms-flex-align: center;
+                                  align-items: center;
+                                  -webkit-box-align: start;
+                                  -ms-flex-align: start;
+                                  align-items: flex-start;
+                                  margin-left: 0.5em; }
+                                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .expandButtonContainer .buttonContainer .line {
+                                    width: 50%;
+                                    margin-top: 0;
+                                    background: #00b0d8; }
+                              .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-orient: horizontal;
+                                -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                flex-direction: row;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                width: 90%;
+                                margin: 0 auto; }
+                                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer {
+                                  display: -ms-grid;
+                                  display: grid;
+                                  -ms-grid-columns: 1fr 1fr 1fr;
+                                  grid-template-columns: 1fr 1fr 1fr;
+                                  width: 100%; }
+                                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes {
+                                    width: 90%; }
+                                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes:hover {
+                                      cursor: pointer; }
+                                      .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes:hover p {
+                                        color: #000000;
+                                        text-decoration: underline; }
+                                    .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .subCategoryHeader .productTypesOuterLayer .productTypesInnerLayer .wrapperForProductTypes p {
+                                      padding: 0.3em 0;
+                                      font-size: 0.8em;
+                                      font-weight: 400;
+                                      color: #000000; }
+                            .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes {
+                              width: 90%;
+                              margin: 0 auto; }
+                              .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer {
+                                display: -ms-grid;
+                                display: grid;
+                                -ms-grid-columns: 1fr 1fr 1fr;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                width: 100%;
+                                margin: 0.5em 0; }
+                                .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer .namesOfProductType {
+                                  margin: 0.5em 0; }
+                                  .product-categories-menu-wrap .productCategoriesMenu .dropdownModalForCategories .categoryModalContainer .categoryModal .categoryModalInnerLayerForAllProducts .productCategoriesMenuDropdown .mainClass .allProductsDropdownModalOuterLayer .rightLayer .productsOnDemand .productsOnDemandInnerLayer .categoryData .categoryDataContainer .subCategoryHeaderAndImages .returnProductTypes .returnProductTypesInnerLayer .namesOfProductType p:hover {
+                                    border-bottom: 0.01em solid #6d6d6d;
+                                    cursor: pointer; }
+    .product-categories-menu-wrap .productCategoriesMenu .gridWrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      width: 94%;
+      margin: 0 1em; }
+      .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category {
+        padding: 0.3em 1em;
+        margin-right: 0.3em;
+        padding-bottom: 0;
+        cursor: pointer;
+        position: relative; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category h3 {
+          margin-bottom: 0.2em;
+          color: #000000;
+          -webkit-transition: 0.2s ease-in-out;
+          -o-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+          font-weight: 500;
+          font-size: 0.85em;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category:hover .clicked-active {
+          background: #212529;
+          width: 100%; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category:hover h3 {
+          margin-bottom: 0.2em;
+          color: #212529; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category .active {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; }
+          .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category .active h3 {
+            margin-bottom: 0.2em;
+            color: #D4145A;
+            -webkit-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .individual-category .clicked-active {
+          min-height: 0.2em;
+          width: 0%;
+          background: #6d6d6d;
+          -webkit-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out; }
+      .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .all-products-wrap {
+        background: #000000; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .all-products-wrap h3 {
+          margin-bottom: 0.2em;
+          color: #ffffff; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .all-products-wrap:hover .clicked-active {
+          background: #000000;
+          width: 100%; }
+        .product-categories-menu-wrap .productCategoriesMenu .gridWrapper .all-products-wrap:hover h3 {
+          margin-bottom: 0.2em;
+          color: #ffffff; }
+  .product-categories-menu-wrap .responsive-menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none;
+    width: 100%; }
+
+.form-group {
+  position: relative;
+  margin-left: 0.7em; }
+
+.form-group::before {
+  content: "";
+  display: block;
+  background: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/dropDownMagentaArrow-01.png") no-repeat;
+  position: absolute;
+  top: 0.25em;
+  right: 0.4em;
+  width: 1em;
+  height: 1em; }
+
+.form-group select::-ms-expand {
+  display: none; }
+
+.form-group select {
+  position: relative;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  /* Add some styling */
+  display: block;
+  width: 100%;
+  float: right;
+  padding: 0px 2em 0.1em 0.5em;
+  background: transparent;
+  line-height: 1.4;
+  color: #333;
+  border: none;
+  border-bottom: 0.1em solid #212529;
+  outline: none; }
+  .form-group select option {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0.5em; }
+
+.form-group option {
+  background-color: #FFF;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+@media screen and (max-width: 1024px) {
+  .product-categories-menu-wrap {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .product-categories-menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ffffff;
+    top: 99%; }
+    .product-categories-menu-wrap .responsive-menu-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.5em 0; }
+      .product-categories-menu-wrap .responsive-menu-button .submitDesignButton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 0.5em; }
+        .product-categories-menu-wrap .responsive-menu-button .submitDesignButton .whiteButtonWrapper {
+          padding: 0.5em 1.5em;
+          font-size: 0.8em;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background: #ffffff;
+          border: 0.12em solid #00b0d8;
+          margin-right: 1em;
+          color: #00b0d8; }
+      .product-categories-menu-wrap .responsive-menu-button .gradientButtonWrapper {
+        float: right;
+        margin: 0 1em; } }

@@ -1,0 +1,1219 @@
+@import "_vars";
+@import "_mixins";
+
+@include scrollStyles;
+
+
+.loadingClassAnime{
+    // background: green;
+    width: 100%;
+    height: 80vh;
+
+    position: fixed;
+    left: 0;
+    width: 95%;
+    // display: none;
+    cursor: default;
+    padding-left: 2em;
+
+    .loadingAnimeInnerLayer{
+        @include flexCentreRow;
+        width: 95%;
+        height: 100%;
+
+        // padding: 0.5em;
+        .imageAnimationContainer{
+            @include flexCentreCol;
+            justify-content: flex-start;
+            // align-items: flex-start;
+            width: 50%;
+            height: 100%;
+            background: $veryLightGrey;
+            margin: 0.5em 0;
+            .headerAnimationContainer{
+                @include flexCentreRow;
+                justify-content: flex-start;
+                width: 100%;
+                margin: 1em 0;
+                .headerContainer{
+                    width: 13em;
+                    height: 2em;
+                    background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+                    animation: Gradient 3s ease infinite;
+                    background-size: 1000% 1000%;
+                    margin-left: 2em;
+                }
+            }
+            .lower-section{
+                @include flexCentreCol;
+                width: 100%;
+                .upperAnimationContainer{
+                    @include flexCentreRow;
+                    .bigBoxContainer{
+                        width: 13em;
+                        height: 13em;
+                        background: $white;
+                        padding: 0.5em;
+                        margin: 0 0.5em;
+                        .bigBoxContainerInnerLayer{
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+                            animation: Gradient 3s ease infinite;
+                            background-size: 1000% 1000%;
+                        }
+                    }
+                }
+                .lowerAnimationContainer{
+                    @include flexCentreRow;
+                    width: 100%;
+                    margin: 1em 0;
+                    .smallBoxContainer{
+                        width: 8em;
+                        height: 8em;
+                        background: $white;
+                        padding: 0.5em;
+                        margin: 0 0.5em;
+                        .smallBoxContainerInnerLayer{
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(-90deg, #F2F2F2, #F2F2F2, #e4e4e4, #e4e4e4, #e4e4e4, #F2F2F2, #F2F2F2);
+                            animation: Gradient 3s ease infinite;
+                            background-size: 1000% 1000%;
+                        }
+                    }
+                }
+            }
+        }
+        .smallAnimationContainer{
+            @include flexCentreRow;
+            width: 50%;
+        }
+    }
+}
+
+
+
+/// OTHER PRODUCTS SCSS
+
+
+.returnOtherProductsInnerLayer{
+    @include flexCentreRow;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    .imagesInCategory{
+        width: 48%;
+        height: 97%;
+        // margin: 0.3em;
+        padding: 0.5em;
+        // background: $veryLightGrey;
+        background: linear-gradient(180deg, $veryLightGrey, $white);
+        
+        // padding: 0.3em;
+        .imagesInCategoryInnerLayer{
+            @include flexCentreCol;
+            justify-content: flex-start;
+            height: 100%;
+            width: 95%;
+            margin: 0 auto;
+            .headerSection{
+                @include flexCentreRow;
+                justify-content: flex-start;
+                align-items: flex-end;
+                width: 100%;
+
+                header{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+
+                    h3{
+                        font-family: "prata", serif;
+                        font-size: 0.85em;
+                        font-weight: 600;
+                        margin: 0.5em 0;
+                    }
+
+                    .line{
+                        width: 30%;
+                        margin: 0;
+                        background: $darkGrey;
+                    }
+                }
+                .whiteButtonWrapper{
+                    font-size: 0.8em;
+                    box-shadow: none;
+                    padding: 0.4em 0.8em 0.5em 0.8em;
+                    border-radius: 0.355em;
+                    background: $semiLightGrey;
+                    margin-left: 1em;
+                    margin-bottom: 0;
+                    &:hover{
+                        background: $darkGrey;
+                        @include box-shadow;
+                        p{
+                            color: white;
+                            border-bottom: 0.01em solid $white;
+                        }
+                    }
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+            .imagesContainer{
+                @include flexCentreCol;
+                width: 100%;
+                margin-top: 0.5em;
+                .sliderContainer{
+                    width: 100%;
+                    .productView{
+                        .innerViewProductLayer{
+                            justify-content: center;
+                        }
+                    }
+                }
+                .imagesInnerContainer{
+                    @include flexCentreRow;
+                    // justify-content: space-between;
+                    width: 81%;
+                    margin: 1em auto;
+                    .imageContainer{
+                        @include flexCentreRow;
+                        justify-content: space-around;
+                        // padding: 0.5em;
+                        // background: $black;
+                        // margin-right: 1em;
+                        width: 100%;
+                        // margin: 0 auto;
+                        .imageTagContainer{
+                            @include flexCentreCol;
+                            // margin: 0 1em;
+                            padding: 0.3em;
+                            background: $white;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            img{
+                                // display: none;
+                                width: 6em;
+                                height: 6em;
+                                margin: 0 1em;
+                                // width: 100%;
+                                // height: 100%;
+                            }
+
+                            h1{
+                                font-size: 0.8em;
+                                font-weight: 600;
+
+                            }
+                            p{
+                                background: $veryLightGrey;
+                                color: $darkestGrey;
+                                padding: 0.3em 0.5em;
+                                // margin: 0.3em 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .productsInCategory{
+        width: 50%;
+        height: 97%;
+        padding: 0.5em;
+        // margin: 0.3em 0;
+        // padding: 0.3em;
+        background: $white;
+        .headerSection{
+            @include flexCentreRow;
+            justify-content: flex-start;
+            margin-top: 0.5em;
+
+
+            .flagIcon{
+                margin-left: 0.5em;
+            }
+            
+            p{
+                margin-left: 0.5em;
+            }
+            .selectionCategory{
+                .form-group{
+                    select{
+                        background: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .retunDataContainer{
+            width: 100%;
+            height: 70vh;
+            margin-top: 0.5em;
+            overflow-y: auto;
+
+            .retunDataContainerInnerLayer{
+                @include flexCentreCol;
+                justify-content: flex-start;
+                width: 97%;
+                padding: 0.4em;
+
+                .subCategoryList{
+                    @include flexCentreRow;
+                    width: 100%;
+                    // margin: 0.8em 0;
+                    margin-top: 0.5em;
+
+                    .subCategoryContainer{
+                        @include flexCentreCol;
+                        width: 100%;
+                        .subCategoryHeaderContainer{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            width: 100%;
+                            
+
+                            
+                            .iconBox{
+                                @include flexCentreRow;
+                                width: 1.2em;
+                                height: 1.2em;
+                                border-radius: 0.2em;
+                                margin-right: 0.5em;
+                                background: $lightGrey;
+                                cursor: pointer;
+                                // &:hover{
+                                //     // cursor: pointer;
+                                // }
+
+                               
+                            }
+                            .headerSection{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                // background: yellow;
+                                // &:hover{
+                                //     color: $black;
+                                // }
+
+                                h3{
+                                    transition: 0.1s;
+                                    cursor: pointer;
+                                    color: $darkestGrey;
+                                    font-family: 'Prata', serif;
+                                    font-size: 0.9em;
+
+                                    &:hover{
+                                        color: $black;
+                                    }
+                                }
+                               
+
+
+                                .line{
+                                    width: 50%;
+                                    background: $semiLightGrey;
+                                    margin: 0.3em 0 0 0;
+                                    min-height: 0.15em;
+                                }
+                            }
+                        }
+                        // .hide{
+                        //     display: none;
+                        // }
+                        .productTypesOuterLayer{
+                            @include flexCentreRow;
+                            width: 90%;
+                            margin: 0 auto;
+                            .productTypes{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                width: 100%;
+                                margin: 0.5em 0;
+                                .productNames{
+
+                                    width: 95%;
+                                    p{
+                                        
+                                        font-weight: 500;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        font-size: 0.9em;
+                                        padding: 0.3em 0;
+                                        // width: fit-content;
+                                        transition: 0.2s;
+
+                                        &:hover{
+                                            cursor: pointer;
+                                            color: $black;
+                                            text-decoration: underline;;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .hide{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// OTHER PRODUCTS SCSS
+
+
+
+
+
+.drop-down-wrap{
+    
+
+    .drop-down-container{
+        position: fixed;
+        left: 0;
+        width: 95%;
+        // display: none;
+        cursor: default;
+        padding-left: 2em;
+        transform-origin: 0% 0%;
+        animation: upAndDownHard 0.2s ease;
+
+        .dummy-drop-down-container{
+            // height: 10em;
+            width: 100%;
+            min-height: 84vh;
+            background: $white;
+            .productCategoriesMenuDropdown{
+                width: 100%;
+                height: 100%;
+                .mainClass{
+                    .allProductsDropdownModalOuterLayer{
+                        @include flexCentreRow;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        width: 100%;
+                        height: 100%;
+                        .all-products-dropdown-main-class{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 100%;
+
+                            .leftLayer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 55%;
+                                padding: 1em;
+                                background: $veryLightGrey;
+                                order: 2;
+
+
+                                .header-select-category{
+                                    @include flexCentreRow;
+                                    padding: 0em 1em;
+                                    margin-bottom: 1em;
+
+                                    .icon-wrap{
+                                        margin-right: 0.5em;
+                                    }
+
+                                    .select-category{
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        font-weight: 500;
+                                        font-size: 0.9em;
+                                    }
+                                }
+
+                                .allProductsDropdownModalCategorySection{
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    width: 100%;
+                                    padding-left: 0.5em;
+
+                                        .productNames{
+                                            // display: inline-flex;
+                                            width: 87%;
+                                            // margin: 0.3em;
+                                            padding: 0.5em;
+                                            // border-bottom: 0.1em dashed $white;
+                                            // padding-bottom: 0;
+                                            // border-radius: 0.3em;
+                                            transition: 0.15s ease;
+                                            background: $veryLightGrey;
+                                            margin-bottom: 0.2em;
+
+                                            &:hover{
+                                                cursor: pointer;
+                                                background: $white;
+
+                                                p{
+                                                    text-decoration: underline;
+                                                    color: $black;
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                            p{
+                                                color: $black;
+                                                // font-family: 'Prata', serif;
+                                                font-size: 0.9em;
+                                                font-weight: 550;
+                                                margin: 0;
+                                                width: fit-content;
+                                                transition: 0.2s;
+                                            }
+
+                                        
+                                        }    
+
+                                        .highlight{
+                                            p{
+                                                color: $white;
+                                                text-decoration: underline;
+                                            }
+
+                                            &:hover{
+                                                p{
+                                                    color: $white;
+                                                    text-decoration: underline;
+                                                }
+                                                background: linear-gradient(90deg, $darkerGrey, $darkestGrey);
+                                            }
+                                            background: linear-gradient(90deg, $darkerGrey, $darkestGrey);
+
+                                        }
+
+
+                                        .hide{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            
+                            .rightLayer{
+                                @include flexCentreCol;
+                                justify-content: flex-start;
+                                width: 100%;
+                                width: 40%;
+                                height: 97%;
+                                padding: 0.5em 0;
+                                padding-left: 1em;
+                                background: $white;
+                                // background-image: linear-gradient($lightGrey, $white);
+                                background-attachment: fixed;
+                                order: 1;
+
+                                .allProductsDropdownModalSubcategorySection{
+                                    // @include flexCentreCol;
+                                    // justify-content: flex-start;
+                                    width: 100%;
+
+                                    .vendorsLocation{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        width: 100%;
+                                        margin-top: 0.5em;
+                                        p{
+                                            margin-left: 0.5em;
+                                        }
+
+                                        .flagIcon{
+                                            margin-left: 0.5em;
+                                        }
+                                    }
+                                }
+                                    .productsOnDemand{
+                                        width: 100%;
+                                        height: 71vh;
+                                        overflow-y: auto;
+                                        margin-top: 1em;
+
+                                        .productsOnDemandInnerLayer{
+                                            @include flexCentreCol;
+                                            align-items: flex-start;
+                                            width: 100%;
+                                        
+                                            .headerSection{
+                                                @include flexCentreCol;
+                                                align-items: flex-start;
+                                                width: 92%;
+                                                margin: 0 auto;
+
+                                                .headerContainer{
+                                                    @include flexCentreCol;
+                                                    align-items: flex-start;
+
+                                                    h3{
+                                                        font-family: "prata", serif;
+                                                        font-size: 0.75em;
+                                                        margin-bottom: 0.4em;
+                                                    }
+
+                                                    .line{
+                                                        width: 20%;
+                                                        min-height: 0.1em;
+                                                        margin-top: 0;
+                                                        background: $semiLightGrey;
+                                                    }
+                                                }
+
+                                                .sliderContainer{
+                                                    width: 100%;
+                                                }
+                                            }
+                                            .categoryData{
+                                                width: 100%;
+
+                                                    .categoryDataContainer{
+                                                        width: 100%;
+
+                                                        .subCategoryHeaderAndImages{
+                                                            @include flexCentreRow;
+                                                            width: 100%;
+                                                            margin-top: 1em;
+
+                                                            .subCategoryHeader{
+                                                                @include flexCentreCol;
+                                                                align-items: flex-start;
+                                                                width: 100%;
+                                                                margin-bottom: 1em;
+
+                                                                .expandButtonContainer{
+                                                                    @include flexCentreRow;
+
+                                                                    h3{
+                                                                        transition: 0.1s;
+                                                                        cursor: pointer;
+                                                                        color: $darkGrey;
+                                                                        font-family: "prata", serif;
+                                                                        font-size: 0.8em;
+                                                                        margin-bottom: 0.4em;
+
+                                                                        &:hover{
+                                                                            color: $black;
+                                                                        }
+                                                                    }
+
+                                                                    .iconBox{
+                                                                        @include flexCentreRow;
+                                                                        width: 1.2em;
+                                                                        height: 1.2em;
+                                                                        border-radius: 0.2em;
+                                                                        background: $lightGrey;
+                                                                    }
+
+                                                                    .buttonContainer{
+                                                                        @include flexCentreCol;
+                                                                        align-items: flex-start;
+                                                                        margin-left: 0.5em;
+                                                                        .line{
+                                                                            width: 20%;
+                                                                            min-height: 0.1em;
+                                                                            margin-top: 0;
+                                                                            background: $semiLightGrey;
+                                                                        }
+                                                                    }
+                                                                }
+
+                                                                .productTypesOuterLayer{
+                                                                    @include flexCentreRow;
+                                                                    width: 90%;
+                                                                    margin: 0 auto;
+
+                                                                    .productTypesInnerLayer{
+                                                                        display: grid;
+                                                                        grid-template-columns: 1fr 1fr 1fr;
+                                                                        width: 100%;
+
+                                                                        .wrapperForProductTypes{
+                                                                            width: 90%;
+                                                                            // margin: 0.4em 0;
+                                                                            &:hover{
+                                                                                cursor: pointer;
+                                                                                p{
+                                                                                    color: $black;
+                                                                                    text-decoration: underline;
+                                                                                }
+                                                                            }
+                                                                            p{
+                                                                                padding: 0.3em 0;
+                                                                                font-size: 0.9em;
+                                                                                font-weight: 500;
+                                                                                color:$black;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                
+                                                            }
+                                                            .returnProductTypes{
+                                                                width: 90%;
+                                                                margin: 0 auto;
+                                                                .returnProductTypesInnerLayer{
+                                                                    display: grid;
+                                                                    grid-template-columns: 1fr 1fr 1fr;
+                                                                    width: 100%;
+                                                                    margin: 0.5em 0;
+                                                                    .namesOfProductType{
+                                                                        margin: 0.5em 0;
+                                                                        p{
+                                                                            &:hover{
+                                                                                border-bottom: 0.01em solid $darkGrey;
+                                                                                cursor: pointer;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                // }
+                                            }
+                                        }   
+                                    }
+
+                                // }
+                            }
+                        }
+                        }
+                    }
+                }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-categories-menu-wrap{
+    // display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    .productCategoriesMenu{
+        @include flexCentreRow;
+        // margin-top: 0.2em;
+        justify-content: flex-start;
+        // margin-left: 1em;
+        width: 100%;
+        background: $white;
+        @include box_shadow_light;
+        z-index: 2;
+    
+        .dropdownModalForCategories{
+            @include flexCentreCol;
+            // position: relative;
+            // z-index: 1;
+            width: 100%;
+            
+            .hide{
+                display: none;
+            }
+            .categoryModalContainer {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                .categoryModal{
+    
+                    transform-origin: 0% 0%;
+                    animation: upAndDownHard 0.2s ease;
+                    position: absolute;
+                    top: 0em;
+                    width: 90%;
+                    height: 80vh;
+                    background: $white;
+                    margin: 0 1em;
+    
+                    .dummyWrap{
+                        // height: 1em;
+                        right: 0;
+                        width: 100%;
+                    }
+                    .categoryModalOuterLayer{
+                        @include flexCentreRow;
+                        // width: 98%;
+                        width: 100%;
+                        height: 98%;
+                        margin: 0 auto;
+                        padding: 0em 0 0.5em 0;
+                        // padding: 0.5em;  
+                        .productCategoriesMenuDropdown{
+                            width: 100%;
+                            height: 100%;
+                            .returnOtherProducts{
+                                @include flexCentreRow;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .categoryModalInnerLayerForAllProducts{
+                        @include flexCentreRow;
+                        width: 100%;
+                        height: 98%;
+                        margin: 0 auto;
+                        padding: 0em 0 0.5em 0;
+    
+                        .productCategoriesMenuDropdown{
+                            width: 100%;
+                            height: 100%;
+                            .mainClass{
+                                .allProductsDropdownModalOuterLayer{
+                                    @include flexCentreRow;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 100%;
+                                    height: 100%;
+                                        .leftLayer{
+                                            @include flexCentreRow;
+                                            align-items: flex-start;
+                                            width: 55%;
+                                            padding: 1em;
+                                            margin-right: 1em;
+                                            background-image: linear-gradient($veryLightGrey, $white);
+            
+                                            .allProductsDropdownModalCategorySection{
+                                                display: grid;
+                                                grid-template-columns: 1fr 1fr 1fr;
+                                                width: 100%;
+                                                padding-left: 0.5em;
+
+                                                
+            
+                                                    .productNames{
+                                                        // display: inline-flex;
+                                                        width: 87%;
+                                                        // margin: 0.3em;
+                                                        padding: 0.5em;
+                                                        // border-bottom: 0.1em dashed $white;
+                                                        // padding-bottom: 0;
+                                                        border-radius: 0.3em;
+                                                        transition: 0.15s ease;
+                                                        background: $veryVeryLightGrey;
+                                                        margin-bottom: 0.2em;
+            
+                                                        &:hover{
+                                                            cursor: pointer;
+                                                            transform: translateY(-0.2em);
+                                                            background: $white;
+                                                            @include box_shadow;
+            
+                                                            p{
+                                                                text-decoration: underline;
+                                                                color: $black;
+                                                                font-weight: 500;
+                                                            }
+                                                        }
+                                                        p{
+                                                            color: $darkerGrey;
+                                                            font-size: 0.85em;
+                                                            font-weight: 500;
+                                                            margin: 0;
+                                                            width: fit-content;
+                                                            transition: 0.2s;
+                                                        }
+            
+                                                    
+                                                    }    
+
+                                                    .highlight{
+                                                        p{
+                                                            color: $white;
+                                                            text-decoration: underline;
+                                                        }
+
+                                                        &:hover{
+                                                            p{
+                                                                color: $white;
+                                                                text-decoration: underline;
+                                                            }
+                                                            background: linear-gradient(90deg, $darkerGrey, $darkestGrey);
+                                                        }
+                                                        background: linear-gradient(90deg, $darkerGrey, $darkestGrey);
+
+                                                    }
+
+            
+                                                    .hide{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        
+                                        .rightLayer{
+                                            @include flexCentreCol;
+                                            justify-content: flex-start;
+                                            width: 100%;
+                                            width: 40%;
+                                            height: 97%;
+                                            padding: 0.5em;
+                                            background: $white;
+            
+                                            .allProductsDropdownModalSubcategorySectionInnerLayer{
+                                                @include flexCentreCol;
+                                                justify-content: flex-start;
+                                                width: 100%;
+            
+                                                .vendorsLocation{
+                                                    @include flexCentreRow;
+                                                    justify-content: flex-start;
+                                                    width: 100%;
+                                                    margin-top: 0.5em;
+                                                    p{
+                                                        margin-left: 0.5em;
+                                                    }
+
+                                                    .flagIcon{
+                                                        margin-left: 0.5em;
+                                                    }
+                                                }
+                                            }
+                                                .productsOnDemand{
+                                                    width: 100%;
+                                                    height: 71vh;
+                                                    overflow-y: auto;
+                                                    margin-top: 1em;
+            
+                                                    .productsOnDemandInnerLayer{
+                                                        @include flexCentreCol;
+                                                        align-items: flex-start;
+                                                        width: 100%;
+                                                    
+                                                        .headerSection{
+                                                            @include flexCentreCol;
+                                                            align-items: flex-start;
+                                                            width: 92%;
+                                                            margin: 0 auto;
+            
+                                                            .headerContainer{
+                                                                @include flexCentreCol;
+                                                                align-items: flex-start;
+            
+                                                                .line{
+                                                                    width: 30%;
+                                                                    margin-top: 0;
+                                                                    background: $secondaryMagenta;
+                                                                }
+                                                            }
+            
+                                                            .sliderContainer{
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                        .categoryData{
+                                                            width: 100%;
+            
+                                                                .categoryDataContainer{
+                                                                    width: 100%;
+            
+                                                                    .subCategoryHeaderAndImages{
+                                                                        @include flexCentreRow;
+                                                                        width: 100%;
+                                                                        margin-top: 1em;
+            
+                                                                        .subCategoryHeader{
+                                                                            @include flexCentreCol;
+                                                                            align-items: flex-start;
+                                                                            width: 100%;
+                                                                            margin-bottom: 1em;
+            
+                                                                            .expandButtonContainer{
+                                                                                @include flexCentreRow;
+
+                                                                                h3{
+                                                                                    transition: 0.1s;
+                                                                                    cursor: pointer;
+                                                                                    color: $darkGrey;
+                                                                                    &:hover{
+                                                                                        color: $highLightBlue;
+                                                                                    }
+                                                                                }
+            
+                                                                                .iconBox{
+                                                                                    @include flexCentreRow;
+                                                                                    width: 1.2em;
+                                                                                    height: 1.2em;
+                                                                                    border-radius: 0.2em;
+                                                                                    background: $lightGrey;
+                                                                                }
+            
+                                                                                .buttonContainer{
+                                                                                    @include flexCentreCol;
+                                                                                    align-items: flex-start;
+                                                                                    margin-left: 0.5em;
+                                                                                    .line{
+                                                                                        width: 50%;
+                                                                                        margin-top: 0;
+                                                                                        background: $secondaryMagenta;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            .productTypesOuterLayer{
+                                                                                @include flexCentreRow;
+                                                                                width: 90%;
+                                                                                margin: 0 auto;
+                                                                                .productTypesInnerLayer{
+                                                                                    display: grid;
+                                                                                    grid-template-columns: 1fr 1fr 1fr;
+                                                                                    width: 100%;
+                                                                                    .wrapperForProductTypes{
+                                                                                        width: 90%;
+                                                                                        // margin: 0.4em 0;
+                                                                                        &:hover{
+                                                                                            cursor: pointer;
+                                                                                            p{
+                                                                                                color: $black;
+                                                                                                text-decoration: underline;
+                                                                                            }
+                                                                                        }
+                                                                                        p{
+                                                                                            padding: 0.3em 0;
+                                                                                            font-size: 0.8em;
+                                                                                            font-weight: 400;
+                                                                                            color:$black;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            
+                                                                        }
+                                                                        .returnProductTypes{
+                                                                            width: 90%;
+                                                                            margin: 0 auto;
+                                                                            .returnProductTypesInnerLayer{
+                                                                                display: grid;
+                                                                                grid-template-columns: 1fr 1fr 1fr;
+                                                                                width: 100%;
+                                                                                margin: 0.5em 0;
+                                                                                .namesOfProductType{
+                                                                                    margin: 0.5em 0;
+                                                                                    p{
+                                                                                        &:hover{
+                                                                                            border-bottom: 0.01em solid $darkGrey;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            // }
+                                                        }
+                                                    }   
+                                                }
+            
+                                            // }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .gridWrapper{
+                @include flexCentreRow;
+                // justify-content: space-around;
+                justify-content: flex-start;
+                width: 94%;
+                margin: 0 1em;
+                // margin-bottom: 0.4em;
+    
+                .individual-category{
+                    padding: 0.3em 1em;
+                    margin-right: 0.3em;
+                    padding-bottom: 0;
+                    cursor: pointer;
+                    position: relative;
+
+                    
+                    h3{
+                        margin-bottom: 0.2em;
+                        color: $black;
+                        transition: 0.2s ease-in-out;
+                        font-weight: 500;
+                        font-size: 0.85em;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+    
+                    &:hover{
+                        .clicked-active{
+                            background: $darkerGrey;
+                            width: 100%;
+                        }
+    
+                        h3{
+                            margin-bottom: 0.2em;
+                            color: $darkerGrey;
+                            
+                            // font-weight: bold;
+                        }
+
+                        .drop-down-container{
+                            // display: block;
+                        }
+                    }
+                    .active{
+                        @include flexCentreRow;
+                        justify-content: flex-start;
+                        h3{
+                            margin-bottom: 0.2em;
+                            color: $primaryMagenta;
+                            transition: 0.2s ease-in-out;
+                            
+                        }
+                    }
+    
+    
+                    .clicked-active{
+                        min-height: 0.2em;
+                        width: 0%;
+                        background: $darkGrey;
+                        transition: 0.2s ease-out;
+                    }
+
+                }
+
+                .all-products-wrap{
+                    background: $black;
+
+                    h3{
+                        margin-bottom: 0.2em;
+                        color: $white;
+                        // font-weight: bold;
+                    }
+
+                    &:hover{
+                        .clicked-active{
+                            background: $black;
+                            width: 100%;
+                        }
+    
+                        h3{
+                            margin-bottom: 0.2em;
+                            color: $white;
+                            // font-weight: bold;
+                        }
+                    }
+
+                    // .clicked-active{
+                    //     background: $white;
+                    //     width: 100%;
+                    // }
+                }
+            }
+    }
+    .responsive-menu-button{
+        @include flexCentreRow;
+        display: none;
+        width: 100%;
+    }
+}
+
+.form-group{
+    position: relative;
+    margin-left: 0.7em;
+}
+.form-group::before{
+    content: "";
+    display: block;
+    background:url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/dropDownMagentaArrow-01.png")no-repeat;
+    position: absolute;
+    top: 0.25em;
+    right: 0.4em;
+    width: 1em;
+    height: 1em;
+}
+
+.form-group select::-ms-expand {
+    display: none;
+}
+.form-group select {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    /* Add some styling */
+    display: block;
+    width: 100%;
+    float: right;
+    padding: 0px 2em 0.1em 0.5em;
+    background: transparent;
+    line-height: 1.4;
+    color: #333;
+    border: none;
+    border-bottom: 0.1em solid $darkerGrey;
+    outline: none;
+
+    option{
+        background-color: $white;
+        border: 0;
+        border-radius: 0.5em;
+    }
+  }
+.form-group option{
+    background-color:#FFF;
+    outline:none;
+    border:none;
+    box-shadow:none;
+}
+
+@media screen and (max-width: 1024px){
+    .product-categories-menu-wrap{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .product-categories-menu-wrap{
+        @include flexCentreRow;
+        background: $white;
+        top: 99%;
+        .productCategoriesMenu{
+            // display: none;
+        }
+        .responsive-menu-button{
+            @include flexCentreRow;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0.5em 0;
+            // display: block;
+            // float: right;
+            .submitDesignButton{
+                @include flexCentreRow;
+                margin: 0 0.5em;
+                .whiteButtonWrapper{
+                    padding: 0.5em 1.5em;
+                    font-size: 0.8em;
+                    box-shadow: none;
+                    background: $white;
+                    border: 0.12em solid $secondaryMagenta;
+                    margin-right: 1em;
+                    color: $secondaryMagenta;
+                }
+            }
+            .gradientButtonWrapper{
+                float: right;
+                margin: 0 1em;
+            }
+        }
+    }
+}

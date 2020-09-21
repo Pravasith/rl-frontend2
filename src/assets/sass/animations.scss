@@ -1,0 +1,73 @@
+@import "./mixins";
+@import "./vars";
+
+@include ignoreDefaultStyles;
+@include includeCommonStyles;
+
+.architectureBuildingAnimationWrapper{
+    width: 100%;
+    height: 100vh;
+    background: $white;
+    @include flexCentreRow;
+
+    .loadingArchitectureInnerWrap{
+        background: $white;
+        // @include box_shadow;
+        border-radius: 0.3em;
+        margin-bottom: 2.5em;
+
+        .rollingLogsAnimation{
+            padding: 2em 0;
+            @include flexCentreCol;
+            padding-bottom: 0;
+        }
+
+        .aestheticArchitectureBuildingAnimation{
+            h4{
+                padding: 0.8em 1em;
+                margin: 2em 0;
+                font-size: 1.1em;
+                // background: $secondaryMagenta;
+                background: $highLightBlue;
+                color: $white;
+                text-align: center;
+                // background: yellow;
+            }
+        }
+    }
+}
+
+
+.closeButton{
+    cursor: pointer;
+
+
+    #line1{
+        transform-origin: 50% 50%;
+        transform: rotateZ(-45deg);
+        transition: 0.2s;
+    }
+
+    #line2{
+        transform-origin: 50% 50%;
+        transform: rotateZ(45deg);
+        transition: 0.2s;
+    }
+
+    &:hover{
+        #line1{
+            transform-origin: 50% 50%;
+            transform: rotateZ(-0deg);
+        }
+
+        #line2{
+            transform-origin: 50% 50%;
+            transform: rotateZ(0deg);
+        }
+
+        circle{
+            fill: $highLightBlue;
+            transition: 0.2s;
+        }
+    }
+}

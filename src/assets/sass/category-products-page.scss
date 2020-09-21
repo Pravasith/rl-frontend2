@@ -1,0 +1,275 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+.hide{
+    display: none;
+}
+
+.sub-category-main-container{
+    width: 100%;
+    margin-top: 2em;
+    .sub-category-inner-container{
+        @include flexCentreCol;
+        width: 97%;
+        margin: 0 auto;
+        padding: 0.5em;
+        .sub-header-container{
+            @include flexCentreRow;
+            justify-content: flex-start;
+            width: 100%;
+            .header-container-inner-layer{
+                @include flexCentreRow;
+                h3{
+                    font-size: 0.9em;
+                    color: $darkGrey;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $black;
+                    }
+                }
+                p{
+                    font-size: 0.9em;
+                    margin-bottom: 0.2em;
+                    color: $black;
+                }
+                .iconBox{
+                    margin: 0 0.5em;
+                }
+            }
+        }
+        .sub-category-content-container{
+            width: 100%;
+            margin: 1em 0;
+            .content-container-inner-layer{
+                @include flexCentreRow;
+                align-items: flex-start;
+                justify-content: flex-start;
+                .category-selection-container{
+                    width: 25%;
+                    .selection-container-inner-layer{
+                        @include flexCentreCol;
+                        align-items: flex-start;
+                        width: 100%;
+                        padding: 0.3em;
+                        .selection-header{
+                            @include flexCentreRow;
+                            justify-content: space-between;
+                            padding: 1em;
+                            background: $veryVeryLightGrey;
+                            width: 90%;
+                            cursor: pointer;
+                            h3{
+                                font-weight: 500;
+                                font-size: 1.1em;
+                            }
+                        }
+                        .all-categories-container{
+                            width: 100%;
+                            .all-categories-inner-layer{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 95%;
+                                margin: 0 auto;
+                                padding: 0.5em 0.3em;
+                                p{
+                                    color: $darkerGrey;
+                                }
+                                a{
+                                    &:hover{
+                                        p{
+                                            font-weight: 500;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .category-name-container{
+                                    margin: 0.2em 0;
+                                    .header-container{
+                                        transition: 0.3s;
+                                        &:hover{
+                                            p{
+                                                font-weight: 500;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        p{
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+                .sub-category-products-container{
+                    width: 75%;
+                    .sub-category-products-inner-layer{
+                        @include flexCentreCol;
+                        width: 95%;
+                        padding: 0 0.5em;
+                        margin: 0 auto;
+                        .product-header{
+                            width: 100%;
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            h3{
+                                font-size: 1.8em;
+                            }
+                            p{
+                                margin: 0.5em 0;
+                                font-size: 0.9em;
+                            }
+                        }
+                        .product-outer-layer{
+                            width: 100%;
+                            .product-inner-layer{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                margin: 1em 0;
+                                .category-type-container{
+                                    width: 95%;
+                                    margin: 0.5em auto;
+                                    .type-content-container{
+                                        @include flexCentreCol;
+                                        justify-content: flex-start;
+                                        width: 100%;
+                                        padding: 0.5em 0;
+                                        border-radius: 0.3em;
+                                        background: $veryVeryLightGrey;
+                                        transition: 0.3s;
+                                        height: 24em;
+                                        &:hover{
+                                            cursor: pointer;
+                                            transform: translateY(-0.4em);
+                                            background: $white;
+                                            @include box_shadow;
+                
+                                        }
+                                        .image-container{
+                                            width: 100%;
+                                            height: 12em;
+                                        }
+                                        .sub-category-header-container{
+                                            @include flexCentreRow;
+                                            justify-content: flex-start;
+                                            width: 90%;
+                                            margin: 0.5em auto;
+                                            a{
+                                                width: 100%;
+                                                h3{
+                                                    font-size: 1em;
+                                                    font-weight: 500;
+                                                    width: 95%;
+                                                    &:hover{
+                                                        // color: $white;
+                                                    }
+                                                } 
+                                            }
+                                        }
+                                        .product-types-container{
+                                            @include flexCentreCol;
+                                            align-items: flex-start;
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            p{
+                                                font-size: 0.9em;
+                                                margin-bottom: 0.3em;
+                                                transition: 0.2s;
+                                                &:hover{
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                            a{
+                                                display: block !important;
+                                                p{
+                                                    font-weight: 600;
+                
+                                                }
+                                            }
+                                            .product-types-data{
+                                                a{
+                                                    p{
+                                                        font-weight: 400;
+                                                    }
+                                                }
+                                            }
+                                            .product-types-data:nth-child(n+6){
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sub-category-main-container{
+        margin: 0;
+        .sub-category-inner-container{
+           .sub-header-container{
+               display: none;
+           } 
+           .sub-category-content-container{
+             .content-container-inner-layer{
+                .category-selection-container{
+                    display: none;
+                } 
+                .sub-category-products-container{
+                    width: 100%;
+                    .sub-category-products-inner-layer{
+                        .product-outer-layer{
+                            .product-inner-layer{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                            }
+                        }
+                    }
+                }
+             }  
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sub-category-main-container{
+        margin: 0;
+        .sub-category-inner-container{
+           .sub-header-container{
+               display: none;
+           } 
+           .sub-category-content-container{
+             .content-container-inner-layer{
+                .category-selection-container{
+                    display: none;
+                } 
+                .sub-category-products-container{
+                    width: 100%;
+                    .sub-category-products-inner-layer{
+                        .product-outer-layer{
+                            .product-inner-layer{
+                                display: grid;
+                                grid-template-columns: 1fr;
+                            }
+                        }
+                    }
+                }
+             }  
+           }
+        }
+    }
+}

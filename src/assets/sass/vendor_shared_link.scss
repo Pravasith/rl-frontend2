@@ -1,0 +1,648 @@
+@import "_mixins";
+@import "_vars";
+
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+
+.line{
+    
+    width: 90%;
+    height: 0.1em;
+    border-radius: 0.2em;
+    background: $lightGrey;
+    margin: 0.4em 0;
+}
+
+.hide{
+    display: none;
+}
+
+.companyHeaderSection{
+    @include flexCentreCol;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 1em;
+    margin-top: 1em;
+    
+    h1{
+        margin: 0;
+        font-family: 'Prata', serif;
+        margin: 0;
+        font-size: 0.9em;
+        font-weight: 600;
+
+    }
+    .line{
+        background: $lightGrey;
+        width: 10%;
+        // margin-top: 0;
+    }
+
+    p{
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+}
+
+.vendorPublicUrlOuterWrap{
+    position: relative;
+    width: 100%;
+
+    .vendorPublicUrl{
+        @include flexCentreRow;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        margin-top: 1.8em;
+        background: $white;
+        .vendorProfileDetails{
+            width: 21%;
+            // height: 98%;
+            padding: 1em 0.5em;
+            // padding-top: 1em;
+            background: linear-gradient($veryLightGrey, $white);
+            // position: sticky;
+            // top: 10%;
+            top: 7%;
+            // background: $veryLightGrey;
+            .vendorProfileDetailsInnerLayer{
+                @include flexCentreCol;
+                align-items: flex-start;
+                width: 93%;
+                padding: 0.5em;
+                margin: 0 auto;
+                .vendorInfoContainer{
+                    @include flexCentreRow;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 100%;
+                    .vendorImageCategory{
+                        .vendorImageContainerInnerLayer{
+                            @include flexCentreRow;
+                            // border: 0.3em solid $veryVeryLightGrey;
+                            border-radius: 0.2em;   
+                            min-width: 5em;
+                            min-height: 5em;  
+                            background: $white;                      
+                            
+                            img{
+                                width: 4em;
+                                height: 4em;
+                            }
+                        }
+                    }
+                    .vendorCompanyDescriptionCategory{
+                        margin: 0.6em 0;
+                       
+                        p{
+                            // font-size: 0.75em;
+                            margin: 0.4em 0;
+                            text-align: left;
+                            font-size: 0.8em;
+                            font-weight: 400;
+
+                        }
+                        .vendorCompanyLocation{
+                            @include flexCentreRow;
+                            // align-items: flex-end;
+                            justify-content: flex-start;
+                            margin-top: 0.8em;
+                            .locationIconContainer{
+                                @include flexCentreRow;
+                                align-items: flex-end;
+                            }
+                            h3{
+                                font-size: 0.85em;
+                                font-weight: 500;
+                                margin: 0.5em 0.8em;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .iconCategoryContainer{
+                                @include flexCentreRow;
+                                align-items: flex-end;
+                            } 
+                        }
+                    }
+                    .vendorpersonalDescription{
+                        @include flexCentreCol;
+                        width: 100%;
+                        margin: 1em 0;
+                        .headerContainer{
+                            @include flexCentreCol;
+                            width: 100%;
+                            align-items: flex-start;
+                            h3{
+                                margin: 0;
+                                
+                            }
+                            .line{
+                                background: $lightGrey;
+                                width: 10%;
+                                // margin: 0.1em 0 0 0;
+                            }
+                        }
+                        .vendorDetails{
+                            @include flexCentreRow;
+                            width: 100%;
+                            margin: 0.5em 0;
+                            .vendorProfilePic{
+                                min-width: 4em;
+                                min-height: 4em;
+                                margin-right: 0.5em;
+
+                                .vendorProfilePicInnerLayer{
+                                    @include flexCentreRow;
+                                    // border: 0.2em solid $veryVeryLightGrey;
+                                    // width: 3em;
+                                    // height: 3em;
+                                    // padding: 0.3em;
+                                    width: 4em;
+                                    height: 4em;
+                                    border-radius: 50%;
+                                    background: $veryLightGrey;
+
+                                    img{
+                                        width: 80%;
+                                        height: 80%;
+                                        border-radius: 50%;
+                                        // background: grey;
+                                    }
+                                }
+                            }
+                            .vendorNameContainer{
+                                width: 75%;
+
+                                h3{
+                                    font-family: 'Prata', serif;
+                                    font-size: 0.85em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lineSection{
+            // height: 100vh;
+            // width: 0.3em;
+            // background: white;
+            // .line{
+            //     width: 0.2em;
+            //     height: 100%;
+            //     margin: 0;
+            //     border-radius: 0.2em;
+            //     background: linear-gradient(45deg,$light_magenta,$light_blue );
+            // }
+        }
+        .vendorProfileProducts{
+            // background: $veryVeryLightGrey;
+            width: 75%;
+            // height: 100vh;
+            @include flexCentreRow;
+            background: $white;
+            padding: 1.5em 1em;
+            margin: 0;
+            // padding-top: 1em;
+            .vendorProfileProductsInnerLayer{
+                // @include flexCentreCol;
+                // width: 94%;
+                width: 98%;
+                // height: 80vh;
+                // overflow-y: auto;
+                // padding: 1.5em 1em;
+                margin: 0;
+                background: $white;
+                .vendorProfileProductsInnerLayerContainer{
+                    @include flexCentreCol;
+                    width: 97%;
+                    .categoryDataContainer{
+                        @include flexCentreCol;
+                        width: 100%;
+                        .categoryDataHeader{
+                            @include flexCentreCol;
+                            align-items: flex-start;
+                            width: 100%;
+                            margin-bottom: 0.5em;
+                            .headerExpansionContainer{
+                                @include flexCentreRow;
+                                height: 1.2em;
+                                .iconBox{
+                                    @include flexCentreRow;
+                                    width: 1.2em;
+                                    height: 1.2em;
+                                    border-radius: 0.2em;
+                                    margin-left: 0.5em;
+                                    background: #e4e4e4;
+                                    cursor: pointer;   
+                                }
+                                .expandButtonContainer{
+                                    // @include flexCentreRow;
+                                    // cursor: pointer;
+                                    width: 1.5em;
+                                    height: 1.5em;
+                                    margin-left: 0.5em;
+                                    border-radius: 0.2em;
+                                    background: $lightGrey;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                    .iconBox{
+                                        @include flexCentreRow;
+                                        width: 100%;
+                                        height: 100%;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            .line{
+                                background: $secondaryMagenta;
+                                width: 3%;
+                                margin: 0.1em 0 0 0;
+                            }
+                        }
+                        
+                        .subCategoriesWrapper{
+                            @include flexCentreCol;
+                            width: 100%;
+                            .subCategoryHeaderAndImages{
+                                @include flexCentreCol;
+                                align-items: flex-start;
+                                width: 100%;
+                                margin: 0 0 1em 0;
+
+                                .subCategoryHeader{
+                                    @include flexCentreRow;
+                                    align-items: flex-end;
+                                    p{
+                                        font-size: 0.8em;
+                                        font-weight: 500;
+                                        // margin-right: 0.5em;
+                                    }
+                                    .iconBox{
+                                        @include flexCentreRow;
+                                        width: 1.2em;
+                                        height: 1.2em;
+                                        border-radius: 0.2em;
+                                        margin-left: 0.5em;
+                                        background: #e4e4e4;
+                                        cursor: pointer;   
+                                    }
+                                    .expandButtonContainer{
+                                        @include flexCentreRow;
+                                        margin-left: 0.5em;
+                                        padding: 0.5em;
+                                        border-radius: 0.2em;
+                                        background: $lightGrey;
+                                        &:hover{
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                    .expandButtonContainerTwo{
+                                        @include flexCentreRow;
+                                        cursor: pointer;
+                                        margin-left: 0.5em;
+                                        padding: 0.2em 0.5em; 
+                                        border-radius: 0.2em;
+                                        background: $lightGrey;
+                                        transition: 0.3s;
+                                        &:hover{
+                                            background: $semiDarkGrey;
+                                            cursor: pointer;
+                                            p{
+                                                color: $white;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        p{
+                                            font-size: 0.6em;
+                                        }
+                                    }
+                                }
+                                .sliderContainer{
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .hide{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+    
+    .showAllContainer{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        // background: $white;
+        background: #ffffffd6;
+        z-index: 3;
+        .showAllContainerInnerWrap{
+            @include flexCentreCol;
+            width: 100%;
+            height: 100%;
+            .closeModalButton{
+                position: absolute;
+                top: 2em;
+                right: 2em;
+                cursor: pointer;
+            }
+            .modalContainerOuterWrap{
+                width: 50%;
+                margin: 0 auto;
+                padding: 0.5em;
+                background: $white;
+                max-height: 70vh;
+                .modalContainerInnerWrap{
+                    .modalHeaderClass{
+                        @include flexCentreCol;
+                        h3{
+                            font-size: 1em;
+
+                        }
+                        .line{
+                            background: $secondaryMagenta;
+                            width: 15%;
+                        }
+                    }
+                    .uploadedProductsContainer{
+                        @include flexCentreRow;
+                        width: 100%;
+                        margin: 0.5em 0;
+                        .uploadedProductsInnerContainer{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            width: 100%;
+                            height: 62vh;
+                            overflow-y: auto;
+                            .productImagesAndTitle{
+                                @include flexCentreCol;
+                                justify-content: flex-start;
+                                margin: 0.5em;
+                                .productImagesAndTitleInnerLayer{
+                                    @include flexCentreCol;
+                                    width: 80%;
+                                    padding: 0.5em;
+                                    background: $white;
+                                    transition: 0.3s;
+                                    &:hover{
+                                        cursor: pointer;
+                                        // background: $white;
+                                    }
+                                    p{
+                                        margin: 0.3em 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 1300px){
+    .vendorPublicUrlOuterWrap{
+        .showAllContainer{
+            .showAllContainerInnerWrap{
+                .modalContainerOuterWrap{
+                    width: 80%;
+                    .modalContainerInnerWrap{
+                        .uploadedProductsContainer{
+                            .uploadedProductsInnerContainer{
+                                grid-template-columns: 1fr 1fr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .vendorPublicUrlOuterWrap{
+        .vendorPublicUrl{
+            @include flexCentreCol;
+            width: 100%;
+            margin-top: 4em;
+            .vendorProfileDetails{
+                width: 99%;
+                margin: 0 auto;
+                position: relative;
+                padding: 1em 0;
+                .vendorProfileDetailsInnerLayer{
+                    width: 96%;
+                    .vendorInfoContainer{
+                        .vendorCompanyDescriptionCategory{
+                            margin: 0.9em 0 0 0;
+                            .companyHeaderSection{
+                                h1{font-size: 1.2em;}
+                            }
+                            p{font-size: 0.9em;}
+                            .vendorCompanyLocation{
+                                h3{font-size: 1.1em;}
+                            }
+                        }
+                        .vendorpersonalDescription{
+                            .headerContainer{
+                                h3{font-size: 1.1em;}
+                            }
+                            .vendorDetails{}
+                        }
+                    }
+                }
+                h1{
+                    font-size: 1.2em;
+                }
+                h3{
+                    font-size: 1.1em;
+                }
+                p{
+                    font-size: 0.9em;
+                }
+            }
+            .lineSection{
+                height: 0.2em;
+                width: 100%;
+                background: $black;
+            }
+            .vendorProfileProducts{
+                width: 99%;
+                margin: 0;
+                // height: auto;
+                background: $white;
+                padding: 1.5em 0;
+                .vendorProfileProductsInnerLayer{
+                    width: 95%;
+                    height: auto;
+                    background: $white;
+                    .vendorProfileProductsInnerLayerContainer{
+                        .categoryDataContainer{
+                            .categoryDataHeader{
+                                .headerExpansionContainer{
+                                    h3{font-size: 1.2em;}
+                                }
+                            }
+                            .subCategoriesWrapper{
+                                .subCategoryHeaderAndImages {
+                                    width: 100%;
+                                    margin: 1em 0;
+                                    .subCategoryHeader{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        align-items: flex-end;
+                                        width: 100%;
+                                        margin: 0.5em 0;
+                                        p{font-size: 1em;}
+                                        .expandButtonContainerTwo{
+                                            width: 20%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .showAllContainer{
+            .showAllContainerInnerWrap{
+                .modalContainerOuterWrap{
+                    width: 95%;
+                    .modalContainerInnerWrap{
+                        .uploadedProductsContainer{
+                            .uploadedProductsInnerContainer{
+                                grid-template-columns: 1fr 1fr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .vendorPublicUrlOuterWrap{
+        .vendorPublicUrl{
+            @include flexCentreCol;
+            width: 100%;
+            margin-top: 5em;
+            .vendorProfileDetails{
+                width: 99%;
+                margin: 0 auto;
+                position: relative;
+                padding: 1em 0;
+                .vendorProfileDetailsInnerLayer{
+                    width: 96%;
+                    .vendorInfoContainer{
+                        .vendorCompanyDescriptionCategory{
+                            margin: 0.9em 0 0 0;
+                            .companyHeaderSection{
+                                h1{font-size: 1.2em;}
+                            }
+                            p{font-size: 0.9em;}
+                            .vendorCompanyLocation{
+                                h3{font-size: 1.1em;}
+                            }
+                        }
+                        .vendorpersonalDescription{
+                            .headerContainer{
+                                h3{font-size: 1.1em;}
+                            }
+                            .vendorDetails{}
+                        }
+                    }
+                }
+                h1{
+                    font-size: 1.2em;
+                }
+                h3{
+                    font-size: 1.1em;
+                }
+                p{
+                    font-size: 0.9em;
+                }
+            }
+            .lineSection{
+                height: 0.2em;
+                width: 100%;
+                background: $black;
+            }
+            .vendorProfileProducts{
+                width: 99%;
+                margin: 0;
+                // height: auto;
+                background: $white;
+                padding: 1.5em 0;
+                .vendorProfileProductsInnerLayer{
+                    width: 95%;
+                    height: auto;
+                    background: $white;
+                    .vendorProfileProductsInnerLayerContainer{
+                        .categoryDataContainer{
+                            .categoryDataHeader{
+                                .headerExpansionContainer{
+                                    h3{font-size: 1.2em;}
+                                }
+                            }
+                            .subCategoriesWrapper{
+                                .subCategoryHeaderAndImages {
+                                    width: 100%;
+                                    margin: 1em 0;
+                                    .subCategoryHeader{
+                                        @include flexCentreRow;
+                                        justify-content: flex-start;
+                                        align-items: flex-end;
+                                        width: 100%;
+                                        margin: 0.5em 0;
+                                        p{font-size: 1em;}
+                                        .expandButtonContainerTwo{
+                                            width: 20%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .showAllContainer{
+            .showAllContainerInnerWrap{
+                .modalContainerOuterWrap{
+                    width: 95%;
+                    .modalContainerInnerWrap{
+                        .uploadedProductsContainer{
+                            .uploadedProductsInnerContainer{
+                                grid-template-columns: 1fr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 360px){
+    
+}

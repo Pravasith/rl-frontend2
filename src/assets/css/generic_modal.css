@@ -1,0 +1,998 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-moz-selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+::selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Prata', serif;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.hide {
+  display: none; }
+
+.mediumBtn {
+  border: 0.2em solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2em 0.5em 2em;
+  margin: 0.5em;
+  color: #6d6d6d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.355em; }
+  .mediumBtn:hover {
+    color: #4D4D4D;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15); }
+
+.profilePicTiny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.8em;
+  min-height: 2.8em;
+  border-radius: 3em;
+  background: #fff; }
+  .profilePicTiny .innerWrap {
+    width: 2.2em;
+    height: 2.2em; }
+    .profilePicTiny .innerWrap img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 6em;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0.2em 0;
+  color: #000000; }
+
+a {
+  text-decoration: none; }
+
+/* The animation code */
+@-webkit-keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+@keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+
+@-webkit-keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@-webkit-keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+@keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+/* The element to apply the animation to */
+#shakeHands {
+  -webkit-animation: upAndDown 1.5s infinite;
+  animation: upAndDown 1.5s infinite; }
+
+#botBgd {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: scaleYHighAndLow 2s infinite;
+  animation: scaleYHighAndLow 2s infinite; }
+
+#tree {
+  -webkit-transform-origin: 70% 100%;
+  -ms-transform-origin: 70% 100%;
+  transform-origin: 70% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+#loadTree {
+  -webkit-transform-origin: 72% 100%;
+  -ms-transform-origin: 72% 100%;
+  transform-origin: 72% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #6d6d6d; }
+
+.hide {
+  display: none; }
+
+.generic-modal-outer-wrapper {
+  position: fixed;
+  top: 9%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background: #ffffffd6;
+  -webkit-animation: fadeIn 0.2s ease;
+  animation: fadeIn 0.2s ease;
+  z-index: 3; }
+  .generic-modal-outer-wrapper .generic-modal-inner-wrapper {
+    width: 100%;
+    height: 100%; }
+    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; }
+        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+          position: absolute;
+          top: 6%;
+          width: 40%;
+          background-color: #ffffff;
+          -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .loadingAnim {
+            margin-top: 2em; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .loadingAnim .architectureBuildingAnimationWrapper {
+              height: 65vh; }
+          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-color: #F2F2F2; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper {
+              width: 100%; }
+              .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header {
+                  margin: 1em 0;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  position: relative;
+                  width: 100%; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .main-modal-title {
+                    text-align: center;
+                    margin: 0.5em;
+                    margin-left: 1.5em;
+                    width: 65%; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .headerBigText {
+                    font-size: 2.5em;
+                    text-align: center;
+                    margin: 0.5em;
+                    margin-left: 1.5em;
+                    width: 65%;
+                    font-weight: 500; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .hide {
+                    display: none; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .side-text-title {
+                    position: absolute;
+                    left: 0;
+                    background: #D4145A;
+                    padding: 0.5em;
+                    top: 1em;
+                    color: #ffffff; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .close-modal-button {
+                    position: absolute;
+                    right: 3%;
+                    cursor: pointer;
+                    top: -21%; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .close-modal-button .icon-wrap {
+                      margin: 0.25em;
+                      margin-left: 1em; }
+                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .separation-content {
+                  width: 100%;
+                  height: 0.3em; }
+                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body {
+                  padding: 0 1em;
+                  width: 88%; }
+                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content {
+                    width: 100%;
+                    height: 100%; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote {
+                      width: 100%;
+                      min-height: 30em;
+                      max-height: 30em; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        width: 100%;
+                        height: 29em; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection {
+                          width: 100%; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection .inputSectionContainer {
+                            width: 80%; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection .inputSectionContainer .dataInput {
+                              width: 100%;
+                              margin: 0.5em 0; }
+                              .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection .inputSectionContainer .dataInput p {
+                                background: #ff2c6b;
+                                color: #ffffff;
+                                width: 100%;
+                                padding: 0.5em;
+                                text-align: center; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection .callback {
+                            margin: 0.5em 0; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .inputAreaSection .callback h3 {
+                              text-decoration: underline; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .proceedButtonContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-pack: start;
+                          -ms-flex-pack: start;
+                          justify-content: flex-start; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .proceedButtonContainer .whiteButtonWrapper {
+                            font-size: 0.9em;
+                            background: #212529;
+                            color: #ffffff;
+                            padding: 0.5em 2em; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .adRequestQuote .adRequestQuoteInnerLayer .proceedButtonContainer .whiteButtonWrapper:hover {
+                              background: #00b0d8;
+                              color: #ffffff; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .inputSectionContainer .dataInput p {
+                      background: #ff2c6b;
+                      color: #ffffff;
+                      width: 100%;
+                      padding: 0.5em;
+                      text-align: center; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .displayCallTimeValueValidationError {
+                      background: #ff2c6b;
+                      color: #ffffff;
+                      width: 100%;
+                      padding: 0.5em;
+                      text-align: center; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests {
+                      height: 50vh; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests h3 {
+                        font-size: 1.2em;
+                        font-weight: 400;
+                        text-align: center;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests .loadingWrapperRequestsInnerLayer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        width: 100%;
+                        margin: 1em 0; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests .loadingWrapperRequestsInnerLayer .errorHeader {
+                          font-size: 2em; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests .loadingWrapperRequestsInnerLayer .loadingHeader {
+                          font-size: 1.2em;
+                          width: 40%;
+                          text-align: left;
+                          margin: 1em 0; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests .loadingWrapperRequestsInnerLayer h3 span {
+                          text-decoration: underline; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperRequests .loadingWrapperRequestsInnerLayer h3 span:hover {
+                            cursor: pointer; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperProducts {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: vertical;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      width: 100%;
+                      height: 70vh;
+                      text-align: center; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperProducts .loadingWrapperProductsInnerLayer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 100%; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .loadingWrapperProducts .loadingWrapperProductsInnerLayer h3 {
+                          margin: 0.5em 0;
+                          font-size: 1.5em; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote {
+                      width: 100%;
+                      height: 70vh; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 100%; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .inputSectionContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: vertical;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          width: 100%; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .inputSectionContainer .dataInput {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 80%;
+                            margin: 0.3em 0; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .inputSectionContainer .sampleOption {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            justify-content: flex-start;
+                            width: 80%;
+                            margin-top: 0.5em; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer {
+                          display: -webkit-box;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-box-orient: horizontal;
+                          -webkit-box-direction: normal;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          justify-content: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          width: 100%;
+                          margin: 1em 0; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-align: start;
+                            -ms-flex-align: start;
+                            align-items: flex-start;
+                            width: 80%; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingHeaderContainer {
+                              display: -webkit-box;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-orient: horizontal;
+                              -webkit-box-direction: normal;
+                              -ms-flex-direction: row;
+                              flex-direction: row;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              justify-content: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              -webkit-box-pack: start;
+                              -ms-flex-pack: start;
+                              justify-content: flex-start;
+                              width: 100%; }
+                              .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingHeaderContainer h1 {
+                                text-decoration: underline; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingContentOuterLayer {
+                              display: -webkit-box;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-orient: vertical;
+                              -webkit-box-direction: normal;
+                              -ms-flex-direction: column;
+                              flex-direction: column;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              justify-content: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              -webkit-box-align: start;
+                              -ms-flex-align: start;
+                              align-items: flex-start;
+                              width: 100%;
+                              margin: 0.5em 0; }
+                              .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingContentOuterLayer .timingContent {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-orient: horizontal;
+                                -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                flex-direction: row;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-box-pack: start;
+                                -ms-flex-pack: start;
+                                justify-content: flex-start;
+                                margin: 0.5em 0; }
+                                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingContentOuterLayer .timingContent:hover {
+                                  cursor: pointer; }
+                                  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .callTimingContainer .callTimingContainerInnerLayer .timingContentOuterLayer .timingContent:hover .checkBox {
+                                    background: #6d6d6d; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .materialReuestQuote .materialReuestQuoteInnerLayer .hide {
+                          display: none; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer {
+                      position: relative;
+                      margin-top: 1em; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .image-wrapper {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
+                        -webkit-box-align: end;
+                        -ms-flex-align: end;
+                        align-items: flex-end;
+                        width: 100%;
+                        height: 13.5em; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .image-wrapper .winner-text p {
+                          color: #000000;
+                          font-weight: 500; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container {
+                        width: 85%; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput {
+                          margin: 1em 0 0 0; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput p {
+                            background: #ff2c6b;
+                            color: #ffffff;
+                            width: 100%;
+                            padding: 0.5em;
+                            text-align: center; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput .otp-generate-input {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            justify-content: flex-start; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput .otp-generate-input .button-container {
+                              margin-left: 1em; }
+                              .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput .otp-generate-input .button-container .whiteButtonWrapper {
+                                border: 0.1em solid #000000;
+                                color: #000000;
+                                padding: 0.3em 0.7em;
+                                -webkit-transition: 0.2s;
+                                -o-transition: 0.2s;
+                                transition: 0.2s;
+                                -webkit-box-shadow: none;
+                                box-shadow: none; }
+                                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .dataInput .otp-generate-input .button-container .whiteButtonWrapper:hover {
+                                  background: #000000;
+                                  color: #ffffff; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .input-section-container .otp-input {
+                          width: 60%; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .proceedButtonContainer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
+                        margin: 1em 0 0 0; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .proceedButtonContainer .whiteButtonWrapper {
+                          margin-left: 0;
+                          border: 0.1em solid #000000;
+                          color: #000000;
+                          -webkit-transition: 0.2s;
+                          -o-transition: 0.2s;
+                          transition: 0.2s;
+                          -webkit-box-shadow: none;
+                          box-shadow: none; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .subscription-form-innner-layer .proceedButtonContainer .whiteButtonWrapper:hover {
+                            border: 0.1em solid #6d6d6d;
+                            background: #6d6d6d;
+                            color: #ffffff; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer {
+                      width: 100%;
+                      margin: 0.5em 0; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer .orders-modal-inner-layer {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 85%;
+                        margin: 0 auto; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer .orders-modal-inner-layer h3 {
+                          text-align: center;
+                          font-size: 1.5em;
+                          font-weight: 600; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer .orders-modal-inner-layer .cancel-order-button-container {
+                          margin: 1em 0; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer .orders-modal-inner-layer .cancel-order-button-container .go-back-button-container .whiteButtonWrapper {
+                            border-radius: 0;
+                            background: #000000;
+                            color: #ffffff;
+                            -webkit-box-shadow: none;
+                            box-shadow: none; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .orders-modal-outer-layer .orders-modal-inner-layer .cancel-order-button-container .cancel-button-container .whiteButtonWrapper {
+                            border-radius: 0;
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                            border: 0.1em solid #000000; }
+                    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container {
+                      width: 100%;
+                      margin: 0.5em 0; }
+                      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container .cancelled-order-inner-container {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 75%;
+                        margin: 0 auto; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container .cancelled-order-inner-container h3 {
+                          text-align: center;
+                          font-size: 1.5em;
+                          font-weight: 600; }
+                        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container .cancelled-order-inner-container .cancel-confirmation-button-container {
+                          margin: 1em 0; }
+                          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container .cancelled-order-inner-container .cancel-confirmation-button-container .whiteButtonWrapper {
+                            border-radius: 0;
+                            background: #000000;
+                            color: #ffffff;
+                            -webkit-box-shadow: none;
+                            box-shadow: none; }
+                            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .cancelled-order-container .cancelled-order-inner-container .cancel-confirmation-button-container .whiteButtonWrapper p {
+                              font-size: 1em;
+                              margin: 0 0.1em;
+                              color: #ffffff; }
+                .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content footer {
+                  margin: 0.5em;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  width: 88%; }
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+    top: 15%;
+    width: 30%;
+    background: #ffffff; } }
+
+@media screen and (max-width: 1024px) {
+  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+    width: 70%;
+    top: 10%;
+    background: #ffffff; } }
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+    width: 70%;
+    top: 12%;
+    background: #ffffff; } }
+
+@media screen and (max-width: 600px) {
+  .generic-modal-outer-wrapper {
+    top: 0em;
+    z-index: 2;
+    background: #ffffff; }
+    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap {
+      height: 100vh; }
+      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+        top: 0;
+        width: 100%;
+        background: #ffffff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        height: 100%; }
+        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass {
+          height: 100%; }
+          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body {
+            padding: 0;
+            width: 96%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .loginModalContainerInnerLayer .formComponent .forminputSection {
+              width: 100%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .loginModalContainerInnerLayer .socialNetworksForm {
+              width: 80%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .sign-up-option .whiteButtonWrapper {
+              -webkit-box-shadow: none;
+              box-shadow: none; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .subscribe-form-outer-layer .image-wrapper {
+              height: 9.5em; } }
+
+@media screen and (max-width: 412px) {
+  .generic-modal-outer-wrapper {
+    top: 0em;
+    z-index: 2;
+    background: #ffffff; }
+    .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap {
+      height: 100vh; }
+      .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 {
+        width: 100%;
+        background: #ffffff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        height: 100%; }
+        .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass {
+          height: 100%; }
+          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header {
+            margin: 1em 0.5em; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header h3 {
+              margin: 0.5em 0.5em 0.5em 0; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content header .close-modal-button .icon-wrap {
+              margin-left: 0; }
+          .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body {
+            padding: 0;
+            width: 96%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .loginModalContainerInnerLayer .formComponent .forminputSection {
+              width: 100%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .loginModalContainerInnerLayer .socialNetworksForm {
+              width: 90%; }
+            .generic-modal-outer-wrapper .generic-modal-inner-wrapper .modal-inner-wrap .modal-wrap-inner-style .modal-inner-wrap-2 .modalClass .modal-content-outer-wrapper .modal-content .main-modal-body .main-body-content .modalOuterWrapper .dropModalInnerLayer .loginModalContainerOne .sign-up-option .whiteButtonWrapper {
+              -webkit-box-shadow: none;
+              box-shadow: none; } }

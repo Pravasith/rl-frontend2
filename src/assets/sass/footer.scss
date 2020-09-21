@@ -1,0 +1,76 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+
+.footerWrapper{
+    @include flexCentreRow;
+    // position: fixed;
+    // bottom: 0;
+    justify-content: space-between;
+    width: 97.5%;
+    padding: 0.2em 1em;
+    // background: $veryLightGrey;
+    background: $white;
+
+    .leftSideTermsETC{
+        @include flexCentreRow;
+
+        .termsAndConditionsButton{
+            margin-right: 1em;
+            p{
+                margin: 0.5em;
+                transition: 0.2s;
+                text-decoration: underline;
+
+                &:hover{
+                    color: $highLightBlue;
+                }
+            }
+        }
+    }
+
+    .madeWithLoveByArchitectsOfIndia{
+        @include flexCentreRow;
+
+        .iconWrap{
+            @include flexCentreRow;
+            margin: 0.2em 0.5em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+
+    // .footerWrapper{
+    //     position: fixed;
+    //     bottom: 0;
+    // }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .footerWrapper{
+        // display: none;
+        @include flexCentreCol;
+        width: 100%;
+        margin:  0 auto;
+        padding: 0.2em 0;
+        .leftSideTermsETC{
+            display: block;
+            width: 100%;
+            text-align: center;
+            .termsAndConditionsButton{
+                display: inline-flex;
+                margin-right: 0;
+            }
+        }
+        .madeWithLoveByArchitectsOfIndia{
+            margin: 0.5em 0;
+        }
+    }
+}

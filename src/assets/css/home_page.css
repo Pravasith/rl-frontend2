@@ -1,0 +1,1372 @@
+@import url("https://fonts.googleapis.com/css?family=Athiti|Open+Sans|Prata");
+::-moz-selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+::selection {
+  background: #ff2c6b;
+  color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Prata', serif;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.hide {
+  display: none; }
+
+.mediumBtn {
+  border: 0.2em solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2em 0.5em 2em;
+  margin: 0.5em;
+  color: #6d6d6d;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.355em; }
+  .mediumBtn:hover {
+    color: #4D4D4D;
+    -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.15); }
+
+.profilePicTiny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.8em;
+  min-height: 2.8em;
+  border-radius: 3em;
+  background: #fff; }
+  .profilePicTiny .innerWrap {
+    width: 2.2em;
+    height: 2.2em; }
+    .profilePicTiny .innerWrap img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 6em;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0.2em 0;
+  color: #000000; }
+
+a {
+  text-decoration: none; }
+
+/* The animation code */
+@-webkit-keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+@keyframes upAndDownLite {
+  0% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  40% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  60% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px); }
+  100% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); } }
+
+@-webkit-keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@keyframes upAndDownHard {
+  0% {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform-origin: "0% 0%";
+    transform-origin: "0% 0%";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@keyframes scaleYHighAndLow {
+  0% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); }
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  100% {
+    -webkit-transform: scaleY(0.95);
+    transform: scaleY(0.95); } }
+
+@-webkit-keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@keyframes rotateLeftAndRight {
+  0% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); }
+  50% {
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  100% {
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@keyframes flash {
+  0% {
+    background: #ffffff; }
+  50% {
+    background: #ff2c6b; }
+  100% {
+    background: #ffffff; } }
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+@keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0) scaleX(1);
+    transform: translateX(0) scaleX(1);
+    background-position: 0% 50%; }
+  25% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  50% {
+    -webkit-transform: translateX(410%) scaleX(1);
+    transform: translateX(410%) scaleX(1);
+    background-position: 100% 50%; }
+  75% {
+    -webkit-transform: translateX(200%) scaleX(0.2);
+    transform: translateX(200%) scaleX(0.2); }
+  100% {
+    -webkit-transform: translateX(0%) scaleX(1);
+    transform: translateX(0%) scaleX(1);
+    background-position: 0% 50%; } }
+
+/* The element to apply the animation to */
+#shakeHands {
+  -webkit-animation: upAndDown 1.5s infinite;
+  animation: upAndDown 1.5s infinite; }
+
+#botBgd {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: scaleYHighAndLow 2s infinite;
+  animation: scaleYHighAndLow 2s infinite; }
+
+#tree {
+  -webkit-transform-origin: 70% 100%;
+  -ms-transform-origin: 70% 100%;
+  transform-origin: 70% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+#loadTree {
+  -webkit-transform-origin: 72% 100%;
+  -ms-transform-origin: 72% 100%;
+  transform-origin: 72% 100%;
+  -webkit-animation: rotateLeftAndRight 1.5s infinite;
+  animation: rotateLeftAndRight 1.5s infinite; }
+
+body {
+  margin: 0; }
+
+a {
+  color: #6d6d6d; }
+
+::-webkit-scrollbar-track {
+  height: 0.5em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.6em;
+  background-color: #e4e4e4; }
+
+::-webkit-scrollbar-thumb {
+  height: 0.5em;
+  background-color: #a5a5a5; }
+
+.line {
+  width: 90%;
+  height: 0.1em;
+  border-radius: 0.2em;
+  background: #e4e4e4;
+  margin: 0.4em 0; }
+
+.addthis_inline_share_toolbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0; }
+
+.trending-container {
+  padding: 0 0.5em 1em 0.5em; }
+
+.discount-container {
+  width: 95%;
+  padding: 0 0.5em 1em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .discount-container .cost-container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 0.2em 0.5em;
+    margin-left: 0;
+    margin-top: 0.5em; }
+    .discount-container .cost-container .real-cost {
+      padding: 0.15em 0;
+      padding-right: 0.2em; }
+      .discount-container .cost-container .real-cost h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: line-through; }
+    .discount-container .cost-container .offer-cost {
+      padding: 0.2em 0.3em;
+      padding-bottom: 0.1em;
+      padding-left: 0; }
+      .discount-container .cost-container .offer-cost h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 1.1em; }
+      .discount-container .cost-container .offer-cost h3 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 1.1em; }
+  .discount-container .discount-offer-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .discount-container .discount-offer-wrap .discount-percent-wrap h3 {
+      font-family: 'Athiti', sans-serif;
+      font-size: 0.85em;
+      background: #8cc63f;
+      color: #ffffff;
+      padding: 0.3em 0.8em;
+      margin: 0.2em 0.5em;
+      margin-left: 0; }
+    .discount-container .discount-offer-wrap .you-save-wrap {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.8em;
+      font-weight: 400;
+      color: #000000; }
+
+.outer-loader-container {
+  width: 90%;
+  margin: 1em 3em;
+  height: 15em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .outer-loader-container .inner-loader-container {
+    width: 98%;
+    height: 95%;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .outer-loader-container .inner-loader-container .inner-wrap-loader {
+      width: 92%;
+      height: 90%;
+      background: -webkit-linear-gradient(135deg, #ffffff, #ffffff, #e4e4e4, #e4e4e4, #ffffff, #ffffff);
+      background: -o-linear-gradient(135deg, #ffffff, #ffffff, #e4e4e4, #e4e4e4, #ffffff, #ffffff);
+      background: linear-gradient(-45deg, #ffffff, #ffffff, #e4e4e4, #e4e4e4, #ffffff, #ffffff);
+      background-size: 1000% 1000%;
+      -webkit-animation: Gradient 3s ease infinite;
+      -moz-animation: Gradient 3s ease infinite;
+      animation: Gradient 3s ease infinite; }
+
+.homePageWrapper {
+  margin-top: 1.75em;
+  position: relative; }
+  .homePageWrapper .hide {
+    display: none; }
+  .homePageWrapper .modal-main-class {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 3; }
+    .homePageWrapper .modal-main-class .modal-main-class-outer-layer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+      .homePageWrapper .modal-main-class .modal-main-class-outer-layer .modal-main-class-inner-wrapper {
+        width: 40%;
+        background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/askForProductsBackground.png");
+        background-size: 100% 100%;
+        -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+        padding: 0.5em; }
+        .homePageWrapper .modal-main-class .modal-main-class-outer-layer .modal-main-class-inner-wrapper .wrapper-inner-content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%; }
+          .homePageWrapper .modal-main-class .modal-main-class-outer-layer .modal-main-class-inner-wrapper .wrapper-inner-content .wrapper-header-layer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .homePageWrapper .modal-main-class .modal-main-class-outer-layer .modal-main-class-inner-wrapper .wrapper-inner-content .wrapper-header-layer h1 {
+              width: 70%;
+              font-size: 1em;
+              text-align: center; }
+  .homePageWrapper .mainClass .homePageInnerLayer {
+    width: 100%;
+    background-blend-mode: multiply;
+    background-attachment: fixed; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer {
+      width: 100%; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 92%;
+          margin: 0 auto; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            margin: 3.5em 0 0 0; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h1 {
+              color: #000000;
+              font-size: 2.5em;
+              margin: 0em 0;
+              font-weight: 300;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+              color: #000000;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 1.5em;
+              font-weight: 300; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 span {
+                margin: 0 0.3em; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .you-design-we-execute {
+              display: none;
+              font-size: 1.8em;
+              margin: 0.3em 0;
+              font-weight: 400;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer {
+            width: 87%;
+            margin: 1em 0; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr 1fr; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer {
+                background: -webkit-linear-gradient(45deg, #F2F2F2, #fafafa, #ffffff);
+                background: -o-linear-gradient(45deg, #F2F2F2, #fafafa, #ffffff);
+                background: linear-gradient(45deg, #F2F2F2, #fafafa, #ffffff);
+                -webkit-animation: Gradient 1s ease infinite;
+                animation: Gradient 1s ease infinite;
+                background-size: 1000% 1000%;
+                padding: 0.5em;
+                margin: 1em 0.25em;
+                cursor: pointer;
+                -webkit-transition: .4s;
+                -o-transition: .4s;
+                transition: .4s; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:hover {
+                  -webkit-transform: translateY(-0.4em);
+                  -ms-transform: translateY(-0.4em);
+                  transform: translateY(-0.4em);
+                  background: #ffffff;
+                  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+                .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer .imageContainer {
+                  width: 100%; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer .titleContainer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  margin: 0.7em 0; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer .titleContainer p {
+                    font-size: 0.6em;
+                    margin: 0.2em 0;
+                    color: #ffffff;
+                    background: #4D4D4D;
+                    padding: 0.3em 0.5em;
+                    border-radius: 0.3em;
+                    margin-top: 0.3em; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 100%;
+          margin-bottom: 0.4em;
+          padding: 1.5em 0; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            width: 92%;
+            margin: 0em auto;
+            margin-top: 1.2em;
+            margin-bottom: 0.3em; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h1 {
+              font-size: 1.1em;
+              font-weight: 590;
+              color: #000000;
+              font-family: 'Prata', serif; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h3 {
+              font-size: 1.1em;
+              font-weight: 590;
+              color: #000000;
+              font-family: 'Prata', serif; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .showButtonContainer {
+              margin: 0 0.8em; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .showButtonContainer .whiteButtonWrapper {
+                font-size: 0.7em;
+                background: #000000;
+                color: #ffffff;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                margin: 0 0.5em;
+                -webkit-transition: .3s;
+                -o-transition: .3s;
+                transition: .3s; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .showButtonContainer .whiteButtonWrapper:hover {
+                  background: #00b0d8;
+                  color: #ffffff;
+                  text-decoration: underline; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one {
+            width: 92%;
+            margin: 0 auto; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one h1 {
+              font-size: 1em;
+              font-weight: 600; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one .askProductHeader {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size: 1.8em;
+              font-weight: bold; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one .ask-button-Container {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              width: 100%;
+              margin: 0.5em 0; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one .ask-button-Container .whiteButtonWrapper {
+                background: #000000;
+                padding: 0.5 0.7em;
+                color: #ffffff;
+                font-size: 1em;
+                -webkit-box-shadow: none;
+                box-shadow: none; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContainerSecondContainer-one .ask-button-Container .whiteButtonWrapper:hover {
+                  background: #ffffff;
+                  text-decoration: underline;
+                  color: #000000;
+                  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .sliderContainer {
+            width: 100%; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .productCategoryContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 100%;
+          margin: 1.5em 0; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .productCategoryContainer .header {
+            margin: 0.5em 0; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .productCategoryContainer .header h3 {
+              font-size: 1.1em; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .productCategoryContainer .sliderContainer {
+            width: 100%; }
+    .homePageWrapper .mainClass .homePageInnerLayer .addProductDetailClass:hover {
+      cursor: pointer; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer {
+      width: 100%; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .headerComponent {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          margin: 1em 0 0em 4em; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .headerComponent h1 {
+            margin: 1.2em 0.8em 0.5em 0.8em;
+            font-size: 1em;
+            font-weight: 600; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .headerComponent h3 {
+            font-family: "Prata", serif;
+            margin: 0.3em 0.6em;
+            margin-top: 0.6em;
+            font-size: 1.2em; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent {
+          width: 100%;
+          position: relative;
+          max-height: 80em;
+          overflow-y: hidden; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer {
+            width: 95%;
+            margin: 1.5em auto; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer {
+              width: 100%;
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr 1fr; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer {
+                width: 85%;
+                background: -webkit-gradient(linear, left bottom, left top, from(#F2F2F2), color-stop(#fafafa), to(#F2F2F2));
+                background: -webkit-linear-gradient(bottom, #F2F2F2, #fafafa, #F2F2F2);
+                background: -o-linear-gradient(bottom, #F2F2F2, #fafafa, #F2F2F2);
+                background: linear-gradient(0deg, #F2F2F2, #fafafa, #F2F2F2);
+                padding: 0.7em;
+                margin: 1em auto;
+                cursor: pointer;
+                -webkit-transition: .4s;
+                -o-transition: .4s;
+                transition: .4s;
+                height: -webkit-fit-content;
+                height: -moz-fit-content;
+                height: fit-content; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer:hover {
+                  -webkit-transform: translateY(-0.4em);
+                  -ms-transform: translateY(-0.4em);
+                  transform: translateY(-0.4em);
+                  background: #ffffff;
+                  -webkit-box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1);
+                  box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.1); }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer:hover .imageContainer .see-more-of {
+                    opacity: 1; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer {
+                  position: relative;
+                  width: 100%;
+                  height: 18em;
+                  background: #ffffff; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .see-more-of {
+                    position: absolute;
+                    width: 100%;
+                    background: #000000;
+                    top: -1%;
+                    left: 0;
+                    opacity: 0;
+                    -webkit-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    transition: 0.2s; }
+                    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .see-more-of .inner-see-more {
+                      width: 100%;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: vertical;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center; }
+                      .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .see-more-of .inner-see-more p {
+                        padding: 0.5em 1em;
+                        font-size: 0.8em;
+                        font-weight: 400;
+                        color: #ffffff;
+                        text-align: center; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .image-inner-container {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%; }
+                    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .image-inner-container .image-wrap-dummy {
+                      width: 100%;
+                      height: 100%;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .brandLogoContainer {
+                    position: absolute;
+                    width: 4em;
+                    height: 4em;
+                    padding: 0.3em;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(#ffffff), to(#fafafa));
+                    background: -webkit-linear-gradient(#F2F2F2, #ffffff, #fafafa);
+                    background: -o-linear-gradient(#F2F2F2, #ffffff, #fafafa);
+                    background: linear-gradient(#F2F2F2, #ffffff, #fafafa);
+                    bottom: 5%;
+                    left: -9%;
+                    border-radius: 0.1em; }
+                    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .brandLogoContainer .brandLogoContainerInnerLayer {
+                      background: #ffffff;
+                      width: 100%;
+                      height: 100%;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-orient: horizontal;
+                      -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-align: start;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  margin: 0.7em 0 0 0; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer h1 {
+                    font-size: 0.85em; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer h3 {
+                    font-size: 0.85em; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer p {
+                    font-size: 0.75em;
+                    font-weight: 400;
+                    margin: 0.2em 0;
+                    color: #4D4D4D;
+                    background: #ffffff;
+                    padding: 0.3em 0.5em;
+                    border-radius: 0.3em;
+                    margin-top: 0.3em; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .costContainer {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: start;
+                  -ms-flex-pack: start;
+                  justify-content: flex-start;
+                  margin: 0.5em 0; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .costContainer h3 {
+                    color: #000000;
+                    font-size: 1.3em;
+                    margin: 0 0.5em 0 0; }
+                  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .costContainer p {
+                    padding: 0.3em;
+                    color: #ffffff;
+                    background: #82c727;
+                    border-radius: 0.3em;
+                    font-size: 0.6em; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .showMoreButton {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4em;
+            padding-top: 50px;
+            text-align: center;
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(45%, #fff));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 45%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 45%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 45%); }
+            .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .showMoreButton .showButtonInnerLayer {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              width: 100%; }
+              .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .showMoreButton .showButtonInnerLayer .whiteButtonWrapper {
+                background: #6d6d6d;
+                color: #ffffff;
+                font-size: 1.2em;
+                padding: 0.5em 1.5em 0.5em 1.5em; }
+                .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .showMoreButton .showButtonInnerLayer .whiteButtonWrapper p {
+                  color: #ffffff; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .open {
+          max-height: 526em;
+          -webkit-transition: max-height 0.7s;
+          -o-transition: max-height 0.7s;
+          transition: max-height 0.7s; }
+
+@media screen and (max-width: 1024px) {
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer {
+    background-image: none; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer {
+      margin: 3.5em 0 0 0; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+        font-size: 1.2em;
+        font-weight: 300; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer a:nth-child(n+4) {
+        display: none; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+      width: 100%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer {
+    width: 99%; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer {
+      width: 100%;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 768px) {
+  .homePageWrapper {
+    margin-top: 6em; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer {
+      margin: 0; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+        font-size: 1.2em;
+        font-weight: 300; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+        color: #000000; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 span {
+          margin: 0 0.3em; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .you-design-we-execute {
+        display: none;
+        font-size: 1.2em;
+        margin: 0.3em 0;
+        font-weight: 400;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer {
+      width: 77%; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer a:nth-child(n+3) {
+          display: none; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+        width: 100%; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer {
+      width: 92%;
+      margin: 1.5em auto; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer {
+        width: 100%;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 420px) {
+  .outer-loader-container {
+    width: 90%;
+    margin: 1em auto;
+    height: 5em; }
+    .outer-loader-container .inner-loader-container {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer {
+    margin-top: 0; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .amazing-products h1 {
+      font-size: 2.5em;
+      font-weight: 300; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .amazing-products h3 {
+      font-size: 1.2em;
+      font-weight: 300; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .amazing-products h3 {
+      color: #000000; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .amazing-products h3 span {
+        margin: 0 0.3em; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .you-design-we-execute {
+      display: none;
+      font-size: 1.2em;
+      margin: 0.3em 0;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(1), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+      display: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent {
+    margin-bottom: 0; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h1 {
+        font-size: 1em;
+        width: 68%; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h3 {
+        font-size: 1.2em; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer a {
+        width: 30%;
+        margin-left: 0.5em; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer a .showButtonContainer {
+          margin: 0; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+        width: 100%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .zero {
+    background-image: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .headerComponent {
+    margin: 0 0 0 1em;
+    width: 95%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent {
+    margin: 0.5em 0; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer {
+      width: 100%;
+      margin: 0em 0 1.5em 0; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer {
+        width: 99%;
+        margin: 0 auto;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; }
+        .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer {
+          width: 90%;
+          padding: 0.3em; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .imageContainer .brandLogoContainer {
+            display: none; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer {
+            width: 90%;
+            margin: 0.5em auto; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer h1 {
+              font-size: 1em; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer h3 {
+              font-size: 0.85em; }
+            .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer p {
+              font-size: 0.85em; }
+          .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .discount-container {
+            display: none; } }
+
+@media screen and (max-width: 375px) {
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    font-size: 1.2em;
+    font-weight: 300; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    color: #000000; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 span {
+      margin: 0 0.3em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .you-design-we-execute {
+    display: none;
+    font-size: 1.2em;
+    margin: 0.3em 0;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(1), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+      display: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h1 {
+    font-size: 1em;
+    width: 65%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h3 {
+    font-size: 0.9em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+    width: 100%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer a {
+    width: 30%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .ask-button-Container .whiteButtonWrapper {
+    font-size: 0.8em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .zero {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/mobile-background-for-homepage-rolling-logs.png");
+    background-image: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .headerComponent h3 {
+    font-size: 1em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer .productGalleryDynamicContainer .titleContainer p {
+    font-size: 0.75em; } }
+
+@media screen and (max-width: 320px) {
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    font-size: 1.2em;
+    font-weight: 300; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    color: #000000; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 span {
+      margin: 0 0.3em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer .you-design-we-execute {
+    display: none;
+    font-size: 1.2em;
+    margin: 0.3em 0;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(1), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+      display: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer h3 {
+    font-size: 1em;
+    width: 69%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+    width: 100%;
+    font-size: 0.8em; }
+  .homePageWrapper .mainClass .homePageInnerLayer .zero {
+    background-image: none; } }
+
+@media screen and (max-height: 450px) {
+  .homePageWrapper {
+    margin-top: 5em; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer {
+      margin-top: 1em; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+        font-size: 1.2em;
+        font-weight: 600; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+        display: none; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+      width: 100%; }
+    .homePageWrapper .mainClass .homePageInnerLayer .zero {
+      background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png"); }
+    .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer {
+      width: 92%;
+      margin: 1.5em auto; }
+      .homePageWrapper .mainClass .homePageInnerLayer .dyanmicFooterContainer .dynamicFooterInnerLayer .dynamicProductComponent .dynamicProductComponentInnerLayer .dynamicImagesContainer .dynamicImagesContainerInnerLayer {
+        width: 100%;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-height: 320px) {
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    font-size: 1.2em;
+    font-weight: 600; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+      display: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+    width: 100%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .zero {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png"); } }
+
+@media screen and (max-height: 375px) {
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .headerContainer h3 {
+    font-size: 1.2em;
+    font-weight: 600; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+    .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(2), .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .data-container-category-one .imagesContainer .imagesContainerInnerLayer .productGalleryContainer:nth-child(3) {
+      display: none; }
+  .homePageWrapper .mainClass .homePageInnerLayer .dataContainer .dataContainerInnerLayer .trendingComponent .headerContentSecondContainer .requestAd {
+    width: 100%; }
+  .homePageWrapper .mainClass .homePageInnerLayer .zero {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/rolling-logs/app-data/backgrounds/responsive-backgrounds/home-page-image-iPad.png"); } }

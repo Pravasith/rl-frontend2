@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./vars";
+
+@include ignoreDefaultStyles;
+@include includeCommonStyles;
+
+
+.rollingLogsLogoWrap{
+    border-radius: 2em;
+    min-width: 2.7em;
+    min-height: 2.7em;
+    background: $darkGrey;
+    margin: 0.25em;
+    transition: 0.2s;
+    @include flexCentreRow;
+
+    &:hover{
+        background: $highLightBlue;
+    }
+
+    #rollingLogsLogo{
+        width: 1.9em;
+        height: 1.9em;
+        margin: 0.3em;
+    }
+}
+

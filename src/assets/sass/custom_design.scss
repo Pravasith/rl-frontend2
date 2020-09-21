@@ -1,0 +1,407 @@
+@import "_mixins";
+@import "_vars";
+
+@include includeCommonStyles;
+@include ignoreDefaultStyles;
+
+@include scrollStyles;
+
+.line{
+    
+    width: 90%;
+    height: 0.1em;
+    border-radius: 0.2em;
+    background: $lightGrey;
+    margin: 0.4em 0;
+}
+
+.submitDesginContainer{
+    // @include flexCentreRow;
+    position: relative;
+    width: 100%;
+    background: $white;
+    margin-top: 1.7em;
+    .submitDesignContainerInnerLayer{
+        @include flexCentreCol;
+        align-items: flex-start;
+        width: 90%;
+        padding: 0.5em;
+        margin: 0 auto;
+        .headerContainer{
+            @include flexCentreCol;
+            align-items: flex-start;
+            width: 100%;
+            margin: 1.5em 0 1em 0;
+            .submitButtonHeaderContainer{
+                @include flexCentreRow;
+                justify-content: space-between;
+                align-items: flex-start;
+                .headerTextContainer{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 51%;
+                    h2{
+                        margin: 0;
+                        font-size: 1.2em;
+                    }
+                    .boldText{
+                        color: $darkerGrey;
+                        margin: 0.5em 0;
+                        font-size: 0.8em;
+                    }
+                }
+                .buttonContainer{
+                    // margin: 1em 0;
+                    .gradientButtonWrapper{
+                        background: $primaryMagenta;
+
+                        box-shadow: none;
+                        color: $white;
+                        padding: 1em 1.5em;
+                        border-radius: 0;
+                        transition: 0.2s;
+
+                        &:hover{
+                            background: $highLightBlue;
+                        // background: $primaryMagenta;
+                        }
+                    }
+                }
+            }
+            .boldText{
+                color: $darkerGrey;
+                margin: 0.5em 0;
+                font-size: 0.8em;
+            }
+            .iconBoxContainer{
+                @include flexCentreRow;
+                justify-content: flex-start;
+                margin-top: 0.8em;
+                .icon{}
+                p{
+                    margin-left: 0.5em;
+                    span{
+                        text-decoration: underline;
+                        color: $darkerGrey;
+                        margin: 0 0.3em;
+                    }
+                }
+            }
+        }
+        .formInfoContaier{
+            @include flexCentreRow;
+            width: 100%;
+            .formInfoContainerInnerLayer{
+                @include flexCentreCol;
+                width: 90%;
+                margin: 0 auto;
+                padding: 0.5em;
+                .stepInfoContainer{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin: 1em 0;
+                    // .testing-div{
+                    //     img{
+                    //         float: left;
+                    //         margin: 0 11px 1px 0;
+                    //         width: 150px;
+                    //         height: 150px;
+                    //     }
+                        
+                    //         p {
+                    //             text-align: justify;
+                    //             text-indent: 2em;
+                    //         }
+                    // }
+                    .customInfoStepsContainer{
+                        @include flexCentreRow;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 100%;
+                        margin: 1.5em 0;
+                        .imgContainer{
+                            // @include flexCentreRow;
+                            width: 25%;
+                            img{
+                                width: 100%;
+                                // height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .processInfoContainer{
+                            @include flexCentreRow;
+                            justify-content: flex-start;
+                            width: 70%;
+                            margin-left: 2em;
+                            .processInfoContainerInnerLayer{
+                                @include flexCentreRow;
+                                align-items: flex-start;
+                                .pointIdentityContainer{
+                                    h2{
+                                        margin: 0;
+                                        font-size: 2em;
+                                    }
+                                }
+                                .pointInfoContainer{
+                                    @include flexCentreCol;
+                                    align-items: flex-start;
+                                    margin-left: 1em;
+                                    margin: 0.5em 0 0 2em; 
+                                    h3{
+                                        font-size: 1.2em;
+                                    }
+                                    p{
+                                        font-size: 0.8em;
+                                        margin: 0.5em 0;
+                                        color: $darkerGrey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttonContainer{
+                    margin: 1em 0;
+                    .gradientButtonWrapper{
+                        background: $primaryMagenta;
+                        box-shadow: none;
+                        color: $white;
+                        padding: 0.8em 1em;
+                        border-radius: 0;
+                        transition: 0.2s;
+
+
+                        &:hover{
+                            background: $highLightBlue;
+                        // background: $primaryMagenta;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .modalContainer{
+        // width: 100%;
+        // position: absolute;
+    }
+}
+
+.getDesigncontainer{
+    @include flexCentreCol;
+    width: 100%;
+    // background: yellow;
+    .inputFieldWrapper{
+        @include flexCentreCol;
+        width: 100%;
+        .inputWrap{
+            @include flexCentreCol;
+            width: 100%;
+            margin: 0.5em 0;
+            p{
+                background: $highLightBlue;
+                color: $white;
+                width: 100%;
+                padding: 0.5em;
+                text-align: center;
+            }
+        }
+    }
+    .imageFieldWrapper{
+        @include flexCentreCol;
+        width: 98%;
+        background: $veryVeryLightGrey;
+        margin: 0.5em 0;
+        padding: 0.5em;
+        h3{
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .imageFieldInnerLayer{
+            @include flexCentreRow;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 10em;
+            max-height: 10em;
+            margin: 0.5em 0;
+            .imageUploadreWrapper{
+                width: 45%;
+            }
+            .imageSliderWrapper{
+                @include flexCentreCol;
+                width: 52%;
+                .imageSliderParentWrap{
+                    width: 95%;
+                    margin: 0 auto;
+                }
+                .imageSliderWrap2{
+                    width: 95%;
+                    margin: 0 auto;
+                    .imageSliderParentWrap{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        p{
+            color: $red;
+            margin: 0.3em 0;
+        }
+    }
+}
+.proceedButtonContainer{
+    @include flexCentreRow;
+    width: 100%;
+}
+
+.productView{
+    .innerViewProductLayer{
+        .arrowButtonContainer{}
+        .imageContainerMiddleLayer{
+            width: 90%;
+            .outerMostLayer{
+                width: 87%;
+              .innerWrapperImage{
+                  .productCatalogueImage{
+                      .outerProductImageLayer{
+                          width: 95%;
+                          padding: 0.3em 0.1em 0.2em 0.1em;
+                         .innerImageLayer{
+                            .imgConatiner{
+                             .imgOuterLayer{
+                               .imageDetails{
+                                   .imageDetailsDummyWrap {
+                                       height: 95%;
+                                     img{
+
+                                     }  
+                                   }
+                               }  
+                             }
+                            } 
+                         } 
+                      }
+                  }
+                  .tagContainer{
+                     //  display: none;
+                  }
+              }  
+            }
+        }
+        .arrowButtonContainer{}
+    } 
+ }
+
+
+
+input{
+    border: none;
+    // border-bottom: 0.2em solid $black;
+    background: transparent;
+    color: $darkerGrey;
+    outline: none;
+    height: 1.5em;
+    width: 100%;
+    border-bottom: 0.2em solid $lightGrey;
+    &:focus + .InputSeparatorLine {
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+    &:hover + .InputSeparatorLine{
+        transform: scaleX(1) translateY(-2px);   
+        opacity: 1;
+    }
+}
+
+
+.InputSeparatorLine {
+    height:0.2em;
+    width: 100%;
+    background: $darkGrey;
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all .15s $curve;
+}
+
+
+* :focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+@media screen and (max-width: 768px){
+    .submitDesginContainer{
+        margin-top: 0em;
+        .submitDesignContainerInnerLayer{
+            width: 95%;
+            .headerContainer{
+                width: 100%;
+                .submitButtonHeaderContainer{
+                    @include flexCentreCol;
+                    align-items: flex-start;
+                    .headerTextContainer{
+                        width: 100%;
+                    }
+                    .buttonContainer{
+                        margin: 1em 0;
+                        .gradientButtonWrapper{
+                            background: $primaryMagenta;
+                            color: $white;
+                            padding: 0.8em 1em;
+                            border-radius: 0;;
+                        }
+                    }
+                }
+                .iconBoxContainer{
+                    p{
+                        font-size: 0.85em;
+                    }
+                }
+            }
+            .formInfoContaier{
+                .formInfoContainerInnerLayer{
+                    width: 100%;
+                    padding: 0;
+                    .stepInfoContainer{
+                        margin: 0;
+                        .customInfoStepsContainer{
+                            @include flexCentreCol;
+                            .imgContainer{
+                                width: 50%;
+                                img{}
+                            }
+                            .processInfoContainer{
+                                margin: 0;
+                                width: 100%;
+                                .processInfoContainerInnerLayer{
+                                    .pointIdentityContainer{
+                                        margin: 0 1em;
+                                        h2{}
+                                    }
+                                    .pointInfoContainer{
+                                        margin: 0.3em 0 0 0;
+                                        h3{}
+                                        p{}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .getDesigncontainer{
+      .inputFieldWrapper{}
+      .imageFieldWrapper{
+        width: 100%;
+        height: 14em;
+      }
+    }
+}
